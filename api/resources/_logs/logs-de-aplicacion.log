@@ -1,0 +1,163 @@
+info: 2023-04-11T15:03:03.216Z ::1 - POST /cleints HTTP/1.1 - - - - ms
+info: 2023-04-11T15:04:07.299Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T15:04:07.318Z ::1 - POST /clients HTTP/1.1 500 1455 - 108.291 ms
+info: 2023-04-11T15:05:21.465Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T15:05:21.480Z ::1 - POST /clients HTTP/1.1 500 1455 - 100.757 ms
+info: 2023-04-11T15:05:50.672Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T15:05:50.687Z ::1 - POST /clients HTTP/1.1 500 1455 - 90.664 ms
+info: 2023-04-11T15:05:55.304Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T15:05:55.308Z ::1 - POST /clients HTTP/1.1 500 1455 - 10.685 ms
+info: 2023-04-11T15:06:21.108Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T15:06:21.111Z ::1 - POST /clients HTTP/1.1 500 1455 - 13.114 ms
+info: 2023-04-11T15:07:15.356Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T15:07:15.451Z ::1 - POST /clients HTTP/1.1 500 1016 - 182.609 ms
+info: 2023-04-11T15:08:33.623Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T15:08:33.662Z ::1 - POST /clients HTTP/1.1 201 1304 - 50.962 ms
+info: 2023-04-11T15:08:55.971Z ::1 - GET /png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAB0CAYAAABUmhYnAAAAAklEQVR4AewaftIAAAKnSURBVO3BQY7cWAwFwXyE7n/lnFpyNh8QpGq3aUbED9YYxRqlWKMUa5RijVKsUYo1SrFGKdYoxRqlWKMUa5RijVKsUYo1SrFGuXgoCT9J5SQJnUqXhE7lJAk/SeWJYo1SrFGKNcrFy1TelIQ3qXRJ6FROVN6UhDcVa5RijVKsUS6+LAl3qNyRhJMkdCqdyhNJuEPlm4o1SrFGKdYoF8OodEk4SUKn8jcr1ijFGqVYo1wMp/IvKdYoxRqlWKNcfJnKb5KETuUJld+kWKMUa5RijXLxsiT8JknoVLokdConSfjNijVKsUYp1ijxg79YEk5U/iXFGqVYoxRrlPjBA0noVLokvEnlJAl3qJwk4U0q31SsUYo1SrFGiR88kIQTlTcl4UTlJAknKidJuEPlJAmdyhPFGqVYoxRrlIuHVJ5IQqfSJeGJJHQqXRK6JJyo3JGEE5U3FWuUYo1SrFHiBw8koVPpktCpnCShU3kiCU+odEn4JpUnijVKsUYp1igXPywJnUqn0iXhRKVLQqdykoROpUtCp9IloVP5k4o1SrFGKdYo8YO/WBI6lS4JnUqXhDep3JGETuWJYo1SrFGKNcrFQ0n4SSqdyh1J6FS6JNyh0iXhDpU3FWuUYo1SrFEuXqbypiScJKFT6VSeUOmS8KYkdCpPFGuUYo1SrFEuviwJd6g8kYQ7VDqVLgmdyonKHUl4U7FGKdYoxRrlYjiVkyScqJwk4Q6VTuVNxRqlWKMUa5SL9T8qd6h0SfiTijVKsUYp1igXX6byTSonSbgjCZ1Kl4TfrFijFGuUYo1y8bIk/KQkdCpPqHRJ6FS6JHQqJ0noVN5UrFGKNUqxRokfrDGKNUqxRinWKMUapVijFGuUYo1SrFGKNUqxRinWKMUapVijFGuUYo3yH9MxDN0j/wFQAAAAAElFTkSuQmCC HTTP/1.1 - - - - ms
+info: 2023-04-11T15:09:11.291Z ::1 - GET /png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAB0CAYAAABUmhYnAAAAAklEQVR4AewaftIAAAKnSURBVO3BQY7cWAwFwXyE7n/lnFpyNh8QpGq3aUbED9YYxRqlWKMUa5RijVKsUYo1SrFGKdYoxRqlWKMUa5RijVKsUYo1SrFGuXgoCT9J5SQJnUqXhE7lJAk/SeWJYo1SrFGKNcrFy1TelIQ3qXRJ6FROVN6UhDcVa5RijVKsUS6+LAl3qNyRhJMkdCqdyhNJuEPlm4o1SrFGKdYoF8OodEk4SUKn8jcr1ijFGqVYo1wMp/IvKdYoxRqlWKNcfJnKb5KETuUJld+kWKMUa5RijXLxsiT8JknoVLokdConSfjNijVKsUYp1ijxg79YEk5U/iXFGqVYoxRrlPjBA0noVLokvEnlJAl3qJwk4U0q31SsUYo1SrFGiR88kIQTlTcl4UTlJAknKidJuEPlJAmdyhPFGqVYoxRrlIuHVJ5IQqfSJeGJJHQqXRK6JJyo3JGEE5U3FWuUYo1SrFHiBw8koVPpktCpnCShU3kiCU+odEn4JpUnijVKsUYp1igXPywJnUqn0iXhRKVLQqdykoROpUtCp9IloVP5k4o1SrFGKdYo8YO/WBI6lS4JnUqXhDep3JGETuWJYo1SrFGKNcrFQ0n4SSqdyh1J6FS6JNyh0iXhDpU3FWuUYo1SrFEuXqbypiScJKFT6VSeUOmS8KYkdCpPFGuUYo1SrFEuviwJd6g8kYQ7VDqVLgmdyonKHUl4U7FGKdYoxRrlYjiVkyScqJwk4Q6VTuVNxRqlWKMUa5SL9T8qd6h0SfiTijVKsUYp1igXX6byTSonSbgjCZ1Kl4TfrFijFGuUYo1y8bIk/KQkdCpPqHRJ6FS6JHQqJ0noVN5UrFGKNUqxRokfrDGKNUqxRinWKMUapVijFGuUYo1SrFGKNUqxRinWKMUapVijFGuUYo3yH9MxDN0j/wFQAAAAAElFTkSuQmCC HTTP/1.1 - - - - ms
+info: 2023-04-11T15:09:58.439Z ::1 - GET /data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAB0CAYAAABUmhYnAAAAAklEQVR4AewaftIAAAKnSURBVO3BQY7cWAwFwXyE7n/lnFpyNh8QpGq3aUbED9YYxRqlWKMUa5RijVKsUYo1SrFGKdYoxRqlWKMUa5RijVKsUYo1SrFGuXgoCT9J5SQJnUqXhE7lJAk/SeWJYo1SrFGKNcrFy1TelIQ3qXRJ6FROVN6UhDcVa5RijVKsUS6+LAl3qNyRhJMkdCqdyhNJuEPlm4o1SrFGKdYoF8OodEk4SUKn8jcr1ijFGqVYo1wMp/IvKdYoxRqlWKNcfJnKb5KETuUJld+kWKMUa5RijXLxsiT8JknoVLokdConSfjNijVKsUYp1ijxg79YEk5U/iXFGqVYoxRrlPjBA0noVLokvEnlJAl3qJwk4U0q31SsUYo1SrFGiR88kIQTlTcl4UTlJAknKidJuEPlJAmdyhPFGqVYoxRrlIuHVJ5IQqfSJeGJJHQqXRK6JJyo3JGEE5U3FWuUYo1SrFHiBw8koVPpktCpnCShU3kiCU+odEn4JpUnijVKsUYp1igXPywJnUqn0iXhRKVLQqdykoROpUtCp9IloVP5k4o1SrFGKdYo8YO/WBI6lS4JnUqXhDep3JGETuWJYo1SrFGKNcrFQ0n4SSqdyh1J6FS6JNyh0iXhDpU3FWuUYo1SrFEuXqbypiScJKFT6VSeUOmS8KYkdCpPFGuUYo1SrFEuviwJd6g8kYQ7VDqVLgmdyonKHUl4U7FGKdYoxRrlYjiVkyScqJwk4Q6VTuVNxRqlWKMUa5SL9T8qd6h0SfiTijVKsUYp1igXX6byTSonSbgjCZ1Kl4TfrFijFGuUYo1y8bIk/KQkdCpPqHRJ6FS6JHQqJ0noVN5UrFGKNUqxRokfrDGKNUqxRinWKMUapVijFGuUYo1SrFGKNUqxRinWKMUapVijFGuUYo3yH9MxDN0j/wFQAAAAAElFTkSuQmCC HTTP/1.1 - - - - ms
+error: 2023-04-11T15:12:13.457Z uncaughtException: await is only valid in async function
+C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\clients\clients.route.js:51
+        const qrImage = await qrcode.toBuffer(client.codeQr)
+                        ^^^^^
+
+SyntaxError: await is only valid in async function
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:5:23)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Tue Apr 11 2023 12:12:13 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1047},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":152955,"external":1777600,"heapTotal":53882880,"heapUsed":21597424,"rss":64061440},"pid":16912,"uid":null,"version":"v14.18.0"},"stack":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\clients\\clients.route.js:51\n        const qrImage = await qrcode.toBuffer(client.codeQr)\n                        ^^^^^\n\nSyntaxError: await is only valid in async function\n    at wrapSafe (internal/modules/cjs/loader.js:1001:16)\n    at Module._compile (internal/modules/cjs/loader.js:1049:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:5:23)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":1001,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1049,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":23,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":5,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-11T15:12:30.158Z uncaughtException: await is only valid in async function
+C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\clients\clients.route.js:51
+        const qrImage = await qrcode.toBuffer(client.codeQr)
+                        ^^^^^
+
+SyntaxError: await is only valid in async function
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:5:23)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Tue Apr 11 2023 12:12:30 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1064},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":450139,"external":2079277,"heapTotal":35532800,"heapUsed":25609152,"rss":61739008},"pid":14464,"uid":null,"version":"v14.18.0"},"stack":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\clients\\clients.route.js:51\n        const qrImage = await qrcode.toBuffer(client.codeQr)\n                        ^^^^^\n\nSyntaxError: await is only valid in async function\n    at wrapSafe (internal/modules/cjs/loader.js:1001:16)\n    at Module._compile (internal/modules/cjs/loader.js:1049:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:5:23)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":1001,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1049,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":23,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":5,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+info: 2023-04-11T15:13:50.480Z ::1 - GET /clients/1 HTTP/1.1 401 - - 2.610 ms
+info: 2023-04-11T15:14:06.867Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T15:14:07.138Z ::1 - GET /clients/1 HTTP/1.1 200 23845 - 329.983 ms
+info: 2023-04-11T15:15:40.209Z ::1 - GET /clients/1 HTTP/1.1 401 - - 1.401 ms
+info: 2023-04-11T15:15:40.218Z ::1 - GET /favicon.ico HTTP/1.1 - - - - ms
+info: 2023-04-11T15:16:26.307Z ::1 - GET /clients/1 HTTP/1.1 401 - - 0.370 ms
+info: 2023-04-11T15:16:26.316Z ::1 - GET /favicon.ico HTTP/1.1 - - - - ms
+info: 2023-04-11T15:17:45.967Z ::1 - GET /clients/1 HTTP/1.1 401 - - 0.306 ms
+info: 2023-04-11T15:18:04.078Z ::1 - GET /clients/1 HTTP/1.1 401 - - 0.385 ms
+info: 2023-04-11T15:18:04.093Z ::1 - GET /favicon.ico HTTP/1.1 - - - - ms
+info: 2023-04-11T15:24:53.834Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T15:24:53.981Z ::1 - GET /clients/1 HTTP/1.1 200 23845 - 154.867 ms
+info: 2023-04-11T15:24:54.008Z ::1 - GET /favicon.ico HTTP/1.1 - - - - ms
+info: 2023-04-11T15:27:35.090Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T15:27:35.110Z ::1 - GET /clients/qrcode HTTP/1.1 404 310 - 79.026 ms
+info: 2023-04-11T15:28:49.848Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T15:28:50.145Z ::1 - GET /clients/1/qrcode HTTP/1.1 200 - - 377.353 ms
+info: 2023-04-11T15:57:04.866Z ::1 - POST /clients/import HTTP/1.1 400 43 - 5.090 ms
+info: 2023-04-11T15:57:49.619Z ::1 - POST /clients/import HTTP/1.1 400 43 - 1.212 ms
+info: 2023-04-11T15:58:50.351Z ::1 - POST /clients/import HTTP/1.1 400 43 - 0.501 ms
+info: 2023-04-11T15:59:28.135Z ::1 - POST /clients/import HTTP/1.1 400 43 - 0.921 ms
+info: 2023-04-11T16:00:05.520Z ::1 - POST /clients/import HTTP/1.1 400 43 - 7.436 ms
+info: 2023-04-11T16:00:14.849Z ::1 - POST /clients/import HTTP/1.1 400 43 - 133.872 ms
+info: 2023-04-11T16:01:02.432Z ::1 - POST /clients/import HTTP/1.1 400 43 - 8.830 ms
+error: 2023-04-11T16:03:12.519Z uncaughtException: missing ) after argument list
+C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\clients\clients.route.js:154
+  })
+   ^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:5:23)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Tue Apr 11 2023 13:03:12 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":4107},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":56771,"external":1685909,"heapTotal":53882880,"heapUsed":20195552,"rss":63934464},"pid":18588,"uid":null,"version":"v14.18.0"},"stack":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\clients\\clients.route.js:154\n  })\n   ^\n\nSyntaxError: missing ) after argument list\n    at wrapSafe (internal/modules/cjs/loader.js:1001:16)\n    at Module._compile (internal/modules/cjs/loader.js:1049:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:5:23)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":1001,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1049,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":23,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":5,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+info: 2023-04-11T16:05:38.540Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:05:38.560Z ::1 - POST /clients/import HTTP/1.1 400 43 - 81.237 ms
+info: 2023-04-11T16:06:17.592Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:06:17.623Z ::1 - POST /clients/import HTTP/1.1 500 1357 - 102.664 ms
+info: 2023-04-11T16:07:29.026Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:07:29.112Z ::1 - POST /clients/import HTTP/1.1 500 1270 - 154.148 ms
+info: 2023-04-11T16:07:50.312Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:07:50.425Z ::1 - POST /clients/import HTTP/1.1 200 51 - 188.744 ms
+info: 2023-04-11T16:12:50.206Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:12:50.278Z ::1 - POST /clients/import HTTP/1.1 500 1132 - 135.165 ms
+info: 2023-04-11T16:13:37.185Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:13:37.210Z ::1 - POST /clients/import HTTP/1.1 500 1132 - 34.262 ms
+info: 2023-04-11T16:13:59.629Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:13:59.643Z ::1 - POST /clients/import HTTP/1.1 500 1132 - 21.925 ms
+info: 2023-04-11T16:14:07.995Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:14:08.066Z ::1 - POST /clients/import HTTP/1.1 500 1132 - 143.481 ms
+info: 2023-04-11T16:16:22.898Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:16:22.966Z ::1 - POST /clients/import HTTP/1.1 500 1274 - 125.073 ms
+info: 2023-04-11T16:16:38.178Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:16:38.254Z ::1 - POST /clients/import HTTP/1.1 500 1177 - 151.125 ms
+info: 2023-04-11T16:17:14.704Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:17:14.788Z ::1 - POST /clients/import HTTP/1.1 500 1177 - 145.553 ms
+info: 2023-04-11T16:17:26.245Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:17:26.263Z ::1 - POST /clients/import HTTP/1.1 500 1177 - 25.219 ms
+info: 2023-04-11T16:17:56.123Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:17:56.204Z ::1 - POST /clients/import HTTP/1.1 500 1177 - 146.183 ms
+info: 2023-04-11T16:18:29.191Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:18:29.362Z ::1 - POST /clients/import HTTP/1.1 200 51 - 181.846 ms
+info: 2023-04-11T16:20:39.728Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:20:39.905Z ::1 - POST /clients/import HTTP/1.1 200 51 - 235.328 ms
+info: 2023-04-11T16:22:11.308Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:22:11.378Z ::1 - POST /clients/import HTTP/1.1 500 1197 - 136.151 ms
+info: 2023-04-11T16:22:13.655Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:22:13.673Z ::1 - POST /clients/import HTTP/1.1 500 1197 - 23.285 ms
+info: 2023-04-11T16:23:52.470Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:23:52.709Z ::1 - POST /clients/import HTTP/1.1 200 51 - 301.699 ms
+info: 2023-04-11T16:24:15.244Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:24:15.371Z ::1 - POST /clients/import HTTP/1.1 200 51 - 134.777 ms
+info: 2023-04-11T16:27:02.483Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:27:02.597Z ::1 - POST /clients/import HTTP/1.1 200 51 - 120.997 ms
+info: 2023-04-11T16:27:10.848Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:27:10.913Z ::1 - POST /clients/import HTTP/1.1 400 66 - 142.513 ms
+info: 2023-04-11T16:28:33.745Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:28:33.958Z ::1 - POST /clients/import HTTP/1.1 200 51 - 271.824 ms
+info: 2023-04-11T16:28:35.361Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:28:35.446Z ::1 - POST /clients/import HTTP/1.1 200 51 - 91.664 ms
+info: 2023-04-11T16:28:46.986Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:28:46.996Z ::1 - POST /clients/import HTTP/1.1 400 70 - 16.641 ms
+info: 2023-04-11T16:37:59.697Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:37:59.716Z ::1 - POST /clients/export HTTP/1.1 500 45 - 91.334 ms
+info: 2023-04-11T16:38:14.096Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:38:14.102Z ::1 - POST /clients/export HTTP/1.1 500 45 - 13.987 ms
+info: 2023-04-11T16:42:20.177Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:42:20.209Z ::1 - POST /clients/export HTTP/1.1 200 16378 - 81.259 ms
+info: 2023-04-11T16:46:15.202Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:46:15.238Z ::1 - POST /clients/export HTTP/1.1 200 16378 - 98.125 ms
+info: 2023-04-11T16:46:25.313Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:46:25.324Z ::1 - POST /clients/export HTTP/1.1 200 16378 - 21.188 ms
+info: 2023-04-11T16:46:49.154Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:46:49.166Z ::1 - POST /clients/export HTTP/1.1 200 16378 - 19.862 ms
+info: 2023-04-11T16:47:32.141Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:47:32.217Z ::1 - POST /clients/export HTTP/1.1 200 16378 - 154.878 ms
+info: 2023-04-11T16:52:31.181Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:52:31.209Z ::1 - POST /clients/export HTTP/1.1 200 17140 - 82.106 ms
+info: 2023-04-11T16:52:38.704Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:52:38.716Z ::1 - POST /clients/export HTTP/1.1 200 17140 - 18.089 ms
+info: 2023-04-11T16:52:40.914Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-11T16:52:40.931Z ::1 - POST /clients/export HTTP/1.1 200 17140 - 21.567 ms
+info: 2023-04-11T19:06:36.745Z Usuario undefined completo autenticacion exitosamente
+info: 2023-04-11T19:06:36.754Z ::1 - POST /auth/login HTTP/1.1 200 149 - 364.367 ms
+info: 2023-04-11T19:08:09.538Z ::1 - GET /forms?pet=Perro&age=1%20a%205%20a%C3%B1os&size=Mediano%20(4%20hasta%208%20kilos)&necessity=Ninguno HTTP/1.1 500 44 - 7.296 ms
+info: 2023-04-11T19:09:08.072Z ::1 - GET /forms?pet=Perro&age=1%20a%205%20a%C3%B1os&size=Mediano%20(4%20hasta%208%20kilos)&necessity=Ninguno HTTP/1.1 200 229 - 65.441 ms
+info: 2023-04-11T19:09:53.891Z ::1 - GET /forms?pet=Perro&age=1%20a%205%20a%C3%B1os&size=Mediano%20(4%20hasta%208%20kilos)&necessity=Ninguno HTTP/1.1 200 54 - 58.937 ms
