@@ -14,7 +14,6 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Pet.init({
-    pet_id: DataTypes.BIGINT,
     name: DataTypes.STRING,
     deletedAt: DataTypes.DATE
   }, {

@@ -10,6 +10,7 @@ const jwtAuthenticate = passport.authenticate('jwt', { session: false })
 const qrcode = require('qrcode')
 const xlsx = require('xlsx')
 
+const path = require('path');
 
 const multer = require('multer')
 const storage = multer.memoryStorage()
@@ -193,13 +194,14 @@ clientRouter.post('/import',  [jwtAuthenticate], upload.single('file'),procesarE
 clientRouter.post('/export', [jwtAuthenticate],procesarErrores((async (req, res) => {
     try {
         // Obtener todos los clientes sin paginar
-        const clients = await clientController.all(undefined, undefined, true);
+        const clients = await clientController.all(undefined, undefined, false);
     
         // Crear un libro de trabajo de Excel
         const workbook = xlsx.utils.book_new();
     
         // Crear una hoja de trabajo de Excel para los clientes
-        const worksheet = xlsx.utils.json_to_sheet(clients);
+        const worksheet = xlsx.utils.json_to_sheet(clients, { header: ['code', 'name','address','city','province'] });
+
     
         // Agregar encabezados a las columnas
         worksheet['A1'] = { v: 'Código' };

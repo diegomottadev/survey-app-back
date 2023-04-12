@@ -4,6 +4,9 @@ const authRouter = require('./api/resources/auth/auth.route')
 const usersRouter = require('./api/resources/users/users.route')
 const clientsRouter = require('./api/resources/clients/clients.route')
 const formsRouter = require('./api/resources/forms/forms.route')
+const agesRouter = require('./api/resources/parameterizations/ages/ages.route')
+const sizesRouter = require('./api/resources/parameterizations/sizes/sizes.route')
+const petsRouter = require('./api/resources/parameterizations/pets/pets.route')
 
 
 const morgan = require('morgan');
@@ -38,6 +41,9 @@ app.use('/auth',authRouter)
 app.use('/users',usersRouter)
 app.use('/clients',clientsRouter)
 app.use('/forms',formsRouter)
+app.use('/ages',agesRouter)
+app.use('/sizes',sizesRouter)
+app.use('/pets',petsRouter)
 
 
 app.use(errorHandler.procesarErrores)
