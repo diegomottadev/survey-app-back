@@ -76,8 +76,6 @@ clientRouter.get('/:id',[jwtAuthenticate],procesarErrores(async(req, res) => {
     })
 }))
 
-
-
 clientRouter.get('/:id/qrcode',[jwtAuthenticate],procesarErrores(async(req, res) => {
 
 
