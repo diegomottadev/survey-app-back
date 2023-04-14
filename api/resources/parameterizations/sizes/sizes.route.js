@@ -33,15 +33,18 @@ sizeRouter.post('/', [jwtAuthenticate,validationSize], procesarErrores(async (re
     })
   }))
 
-sizeRouter.get("/",[jwtAuthenticate], procesarErrores((req, res) => {
-    const { page = 1, pageSize = 10 } = req.query;
+sizeRouter.get('/', procesarErrores((req, res) => {
+  const { page = 1, pageSize = 10, pet_id = null } = req.query;
 
-    return sizeController.all(page,pageSize).then(sizes =>{
-        res.json({data:sizes})
-    }).catch(err =>{
-        res.status(500).json({message:'Error al obtener todos los tamaños'})
+  return sizeController
+    .all(page, pageSize, true, pet_id)
+    .then((sizes) => {
+      res.json({ data: sizes });
     })
-}))
+    .catch((err) => {
+      res.status(500).json({ message: 'Error al obtener todas los tamaños' });
+    });
+}));
 
 sizeRouter.get('/:id',[jwtAuthenticate],procesarErrores(async(req, res) => {
 

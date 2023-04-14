@@ -32,7 +32,7 @@ petRouter.post('/', [jwtAuthenticate,validationPet], procesarErrores(async (req,
     })
   }))
 
-petRouter.get("/",[jwtAuthenticate], procesarErrores((req, res) => {
+petRouter.get("/", procesarErrores((req, res) => {
     const { page = 1, pageSize = 10 } = req.query;
 
     return petController.all(page,pageSize).then(pets =>{

@@ -33,11 +33,11 @@ necessityRouter.post('/', [jwtAuthenticate, validationNecessity], procesarErrore
   });
 }));
 
-necessityRouter.get('/', [jwtAuthenticate], procesarErrores((req, res) => {
-  const { page = 1, pageSize = 10 } = req.query;
+necessityRouter.get('/', procesarErrores((req, res) => {
+  const { page = 1, pageSize = 10, pet_id = null } = req.query;
 
   return necessityController
-    .all(page, pageSize)
+    .all(page, pageSize, true, pet_id)
     .then((necessities) => {
       res.json({ data: necessities });
     })

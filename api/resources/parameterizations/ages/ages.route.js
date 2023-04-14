@@ -33,15 +33,19 @@ ageRouter.post('/', [jwtAuthenticate,validationAge], procesarErrores(async (req,
     })
   }))
 
-ageRouter.get("/",[jwtAuthenticate], procesarErrores((req, res) => {
-    const { page = 1, pageSize = 10 } = req.query;
+ageRouter.get('/', procesarErrores((req, res) => {
+  const { page = 1, pageSize = 10, pet_id = null } = req.query;
 
-    return ageController.all(page,pageSize).then(clients =>{
-        res.json({data:clients})
-    }).catch(err =>{
-        res.status(500).json({message:'Error al obtener todos las edades'})
+  return ageController
+    .all(page, pageSize, true, pet_id)
+    .then((ages) => {
+      res.json({ data: ages });
     })
-}))
+    .catch((err) => {
+      res.status(500).json({ message: 'Error al obtener todas las edades' });
+    });
+    
+}));
 
 ageRouter.get('/:id',[jwtAuthenticate],procesarErrores(async(req, res) => {
 

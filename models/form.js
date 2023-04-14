@@ -18,7 +18,9 @@ module.exports = (sequelize, DataTypes) => {
     age: DataTypes.STRING,
     size: DataTypes.STRING,
     necessity: DataTypes.STRING,
-    answer: DataTypes.STRING
+    answer: DataTypes.STRING,
+    nombre: DataTypes.STRING,
+    telefono: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Form',

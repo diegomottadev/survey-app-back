@@ -8,11 +8,12 @@ function create(necessity) {
   });
 }
 
-async function all(page = 1, pageSize = 10, raw = true) {
+async function all(page = 1, pageSize = 10, raw = true, pet_id = null) {
   const options = {
     offset: page && pageSize ? (page - 1) * pageSize : undefined,
     limit: page && pageSize ? pageSize : null,
     attributes: raw ? undefined : ['name', 'pet_id'],
+    where: pet_id ? { pet_id } : undefined,
   };
   const necessities = await Necessity.findAll(options);
   return raw ? necessities : necessities.map(({ name, pet_id }) => ({ name, pet_id }));

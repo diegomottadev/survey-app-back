@@ -8,15 +8,16 @@ function create(size) {
     })
 }
 
-async function all(page = 1, pageSize = 10, raw = true) {
+async function all(page = 1, pageSize = 10, raw = true, pet_id = null) {
     const options = {
-        offset: page && pageSize ? (page - 1) * pageSize : undefined,
-        limit: page && pageSize ? pageSize : null,
-        attributes: raw ? undefined : ['name', 'pet_id'],
+      offset: page && pageSize ? (page - 1) * pageSize : undefined,
+      limit: page && pageSize ? pageSize : null,
+      attributes: raw ? undefined : ['name', 'pet_id'],
+      where: pet_id ? { pet_id } : undefined,
     };
     const sizes = await sizesInstance.findAll(options);
     return raw ? sizes : sizes.map(({ name, pet_id }) => ({ name, pet_id }));
-}
+  }
 
 function findById(id = null) {
     if (!id) throw new Error("No especifico el parametro id para buscar el tamaño")

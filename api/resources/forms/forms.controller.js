@@ -1,10 +1,5 @@
 const formInstance   = require('../../../models').Form;
 
-
-
-const { Op, Association } = require("sequelize")
-
-
 function find (pet,age,size,necessity) {
 
         if(!pet || !age || !size || !necessity) throw new Error("No especifico los parametros para buscar el producto")
@@ -23,8 +18,5 @@ function find (pet,age,size,necessity) {
 }
 
 module.exports  = {
-   
-    find,
- 
-
+    find
 }

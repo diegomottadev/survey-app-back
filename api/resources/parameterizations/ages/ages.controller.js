@@ -14,22 +14,19 @@ function create(age) {
 // page: número de página (opcional, predeterminado: 1)
 // pageSize: tamaño de página (opcional, predeterminado: 10)
 // raw: indicador de formato de salida personalizado (opcional, predeterminado: true)
-async function all(page = 1, pageSize = 10, raw = true) {
-    // Define opciones para la consulta a la base de datos.
-    const options = {
-      // Calcula el desplazamiento en función de la página y el tamaño de la página.
-      offset: page && pageSize ? (page - 1) * pageSize : undefined,
-      // Establece el límite en función del tamaño de la página, o en null para obtener todos los registros.
-      limit: page && pageSize ? pageSize : null,
-      // Indica si se deben incluir todas las propiedades del modelo o solo algunas.
-      attributes: raw ? undefined : ['name', 'pet_id'],
-    };
-    // Realiza la consulta a la base de datos utilizando las opciones definidas.
-    const ages = await agesInstance.findAll(options);
-    // Si el formato de salida es personalizado, mapea los registros a un nuevo arreglo de objetos con las propiedades deseadas.
-    return raw ? ages : ages.map(({ name, pet_id }) => ({ name, pet_id }));
-  }
+async function all(page = 1, pageSize = 10, raw = true, pet_id = null) {
 
+    const options = {
+      offset: page && pageSize ? (page - 1) * pageSize : undefined,
+      limit: page && pageSize ? pageSize : null,
+      attributes: raw ? undefined : ['name', 'pet_id'],
+      where: pet_id ? { pet_id } : undefined,
+    };
+    const ages = await agesInstance.findAll(options);
+    return raw ? ages : ages.map(({ name, pet_id }) => ({ name, pet_id }));
+
+  }
+  
 function findById(id = null) {
     if (!id) throw new Error("No especifico el parametro id para buscar la edad")
     return new Promise((resolve, reject) => {
