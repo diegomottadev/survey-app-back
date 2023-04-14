@@ -15,7 +15,7 @@ const blueprintSurvey  = Joi.object({
     name: Joi.any(),
     telephone: Joi.any(),
     answer: Joi.string().required(),
-    client_id: Joi.number().required()
+    client_code: Joi.number().required()
 })
 
 let validationSurvey = (req, res, next) => {

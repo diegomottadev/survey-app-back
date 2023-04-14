@@ -8,6 +8,7 @@ const agesRouter = require('./api/resources/parameterizations/ages/ages.route')
 const sizesRouter = require('./api/resources/parameterizations/sizes/sizes.route')
 const petsRouter = require('./api/resources/parameterizations/pets/pets.route')
 const surveysRouter = require('./api/resources/surveys/surveys.route')
+const imagesRouter = require('./api/resources/images/images.route')
 
 
 const morgan = require('morgan');
@@ -46,9 +47,7 @@ app.use('/ages',agesRouter)
 app.use('/sizes',sizesRouter)
 app.use('/pets',petsRouter)
 app.use('/surveys',surveysRouter)
-
-
-
+app.use('/images',imagesRouter)
 
 app.use(errorHandler.procesarErrores)
 

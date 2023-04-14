@@ -24,6 +24,11 @@ module.exports = {
       answer: {
         type: Sequelize.STRING
       },
+      image_id: {
+        type: Sequelize.BIGINT,
+        reference: 'Images',
+        referenceKey: 'id'
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

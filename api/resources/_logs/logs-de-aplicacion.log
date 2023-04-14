@@ -510,3 +510,719 @@ info: 2023-04-14T15:39:46.684Z ::1 - POST /surveys HTTP/1.1 400 35 - 5.477 ms
 warn: 2023-04-14T15:40:01.377Z El siguiente usuario no pasó la validación: [object Object] - ["size" must be a string]   
 info: 2023-04-14T15:40:01.379Z ::1 - POST /surveys HTTP/1.1 400 25 - 4.465 ms
 info: 2023-04-14T15:40:47.810Z ::1 - POST /surveys HTTP/1.1 201 182 - 127.978 ms
+error: 2023-04-14T16:05:19.306Z uncaughtException: express.imagesRouter is not a function
+TypeError: express.imagesRouter is not a function
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:5:30)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:05:19 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":132701},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3270498,"external":4895143,"heapTotal":69251072,"heapUsed":41032688,"rss":82173952},"pid":604,"uid":null,"version":"v14.18.0"},"stack":"TypeError: express.imagesRouter is not a function\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:5:30)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":30,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","function":null,"line":5,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:05:42.678Z uncaughtException: express.imagesRouter is not a function
+TypeError: express.imagesRouter is not a function
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:5:30)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:05:42 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":132725},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3251912,"external":4876557,"heapTotal":69251072,"heapUsed":41178640,"rss":83197952},"pid":18752,"uid":null,"version":"v14.18.0"},"stack":"TypeError: express.imagesRouter is not a function\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:5:30)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":30,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","function":null,"line":5,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+info: 2023-04-14T16:06:44.338Z ::1 - POST /images HTTP/1.1 500 1306 - 13.339 ms
+info: 2023-04-14T16:08:33.101Z ::1 - POST /images HTTP/1.1 500 314 - 10.313 ms
+info: 2023-04-14T16:09:40.709Z ::1 - POST /images HTTP/1.1 - - - - ms
+info: 2023-04-14T16:10:06.222Z ::1 - POST /images HTTP/1.1 - - - - ms
+info: 2023-04-14T16:10:28.353Z ::1 - POST /images HTTP/1.1 - - - - ms
+error: 2023-04-14T16:12:43.378Z uncaughtException: Cannot find module '../../../../models'
+Require stack:
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.controller.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js
+Error: Cannot find module '../../../../models'
+Require stack:
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.controller.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.controller.js:1:15)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19) {"date":"Fri Apr 14 2023 13:12:43 GMT-0300 (hora estándar de Argentina)","error":{"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.controller.js","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":133145},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3273162,"external":4897807,"heapTotal":69251072,"heapUsed":41176752,"rss":82874368},"pid":14940,"uid":null,"version":"v14.18.0"},"stack":"Error: Cannot find module '../../../../models'\nRequire stack:\n- C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.controller.js\n- C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js\n- C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:746:27)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.controller.js:1:15)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)","trace":[{"column":15,"file":"internal/modules/cjs/loader.js","function":"Module._resolveFilename","line":902,"method":"_resolveFilename","native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":746,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":15,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.controller.js","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false}]}
+error: 2023-04-14T16:12:51.819Z uncaughtException: Cannot find module '../../../../models'
+Require stack:
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.controller.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js
+Error: Cannot find module '../../../../models'
+Require stack:
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.controller.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.controller.js:1:15)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19) {"date":"Fri Apr 14 2023 13:12:51 GMT-0300 (hora estándar de Argentina)","error":{"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.controller.js","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":133154},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3251912,"external":4876557,"heapTotal":69513216,"heapUsed":41301272,"rss":83955712},"pid":16724,"uid":null,"version":"v14.18.0"},"stack":"Error: Cannot find module '../../../../models'\nRequire stack:\n- C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.controller.js\n- C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js\n- C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:746:27)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.controller.js:1:15)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)","trace":[{"column":15,"file":"internal/modules/cjs/loader.js","function":"Module._resolveFilename","line":902,"method":"_resolveFilename","native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":746,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":15,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.controller.js","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false}]}
+info: 2023-04-14T16:13:22.629Z ::1 - POST /images HTTP/1.1 - - - - ms
+info: 2023-04-14T16:13:34.952Z ::1 - POST /images HTTP/1.1 200 88 - 124.451 ms
+info: 2023-04-14T16:15:24.281Z ::1 - POST /images HTTP/1.1 200 88 - 134.657 ms
+info: 2023-04-14T16:18:56.900Z ::1 - POST /images HTTP/1.1 200 178 - 102.731 ms
+error: 2023-04-14T16:24:04.101Z uncaughtException: ageRouter is not defined
+ReferenceError: ageRouter is not defined
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:30:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:24:04 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":133826},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3278727,"external":4903372,"heapTotal":69251072,"heapUsed":41228264,"rss":82677760},"pid":9264,"uid":null,"version":"v14.18.0"},"stack":"ReferenceError: ageRouter is not defined\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:30:1)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":1,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","function":null,"line":30,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:24:22.886Z uncaughtException: Cannot find module '../../../libs/errorHandler'
+Require stack:
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js
+Error: Cannot find module '../../../libs/errorHandler'
+Require stack:
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:3:26)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19) {"date":"Fri Apr 14 2023 13:24:22 GMT-0300 (hora estándar de Argentina)","error":{"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":133845},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3251912,"external":4876557,"heapTotal":68726784,"heapUsed":41240768,"rss":82931712},"pid":17076,"uid":null,"version":"v14.18.0"},"stack":"Error: Cannot find module '../../../libs/errorHandler'\nRequire stack:\n- C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js\n- C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:746:27)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:3:26)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)","trace":[{"column":15,"file":"internal/modules/cjs/loader.js","function":"Module._resolveFilename","line":902,"method":"_resolveFilename","native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":746,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":26,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","function":null,"line":3,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false}]}
+error: 2023-04-14T16:25:09.537Z uncaughtException: Cannot find module '../../../libs/errorHandler'
+Require stack:
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js
+Error: Cannot find module '../../../libs/errorHandler'
+Require stack:
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:3:26)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19) {"date":"Fri Apr 14 2023 13:25:09 GMT-0300 (hora estándar de Argentina)","error":{"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":133892},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3273162,"external":4897807,"heapTotal":69251072,"heapUsed":41023104,"rss":83120128},"pid":20532,"uid":null,"version":"v14.18.0"},"stack":"Error: Cannot find module '../../../libs/errorHandler'\nRequire stack:\n- C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js\n- C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:746:27)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:3:26)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)","trace":[{"column":15,"file":"internal/modules/cjs/loader.js","function":"Module._resolveFilename","line":902,"method":"_resolveFilename","native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":746,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":26,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","function":null,"line":3,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false}]}
+error: 2023-04-14T16:25:37.712Z uncaughtException: ageRouter is not defined
+ReferenceError: ageRouter is not defined
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:31:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:25:37 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":133920},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3251912,"external":4876557,"heapTotal":69251072,"heapUsed":41434232,"rss":83771392},"pid":9240,"uid":null,"version":"v14.18.0"},"stack":"ReferenceError: ageRouter is not defined\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:31:1)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":1,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","function":null,"line":31,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:25:53.938Z uncaughtException: jwtAuthenticate is not defined
+ReferenceError: jwtAuthenticate is not defined
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:31:25)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:25:53 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":133936},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3264970,"external":4894108,"heapTotal":69251072,"heapUsed":41236296,"rss":82771968},"pid":17688,"uid":null,"version":"v14.18.0"},"stack":"ReferenceError: jwtAuthenticate is not defined\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:31:25)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","function":null,"line":31,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:26:00.462Z uncaughtException: jwtAuthenticate is not defined
+ReferenceError: jwtAuthenticate is not defined
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:31:25)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:26:00 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":133942},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3279451,"external":4904096,"heapTotal":68988928,"heapUsed":41082464,"rss":82587648},"pid":19548,"uid":null,"version":"v14.18.0"},"stack":"ReferenceError: jwtAuthenticate is not defined\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:31:25)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","function":null,"line":31,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:26:04.073Z uncaughtException: jwtAuthenticate is not defined
+ReferenceError: jwtAuthenticate is not defined
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:27:25)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:26:04 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":133946},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3270205,"external":4894850,"heapTotal":69513216,"heapUsed":41147816,"rss":82767872},"pid":15408,"uid":null,"version":"v14.18.0"},"stack":"ReferenceError: jwtAuthenticate is not defined\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:27:25)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","function":null,"line":27,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:26:36.217Z uncaughtException: passport is not defined
+ReferenceError: passport is not defined
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:7:25)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:26:36 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":133978},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3251912,"external":4876557,"heapTotal":69251072,"heapUsed":41447472,"rss":83558400},"pid":17492,"uid":null,"version":"v14.18.0"},"stack":"ReferenceError: passport is not defined\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:7:25)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:27:02.166Z uncaughtException: router is not defined
+ReferenceError: router is not defined
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:55:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:27:02 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":134004},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3266393,"external":4891038,"heapTotal":69513216,"heapUsed":41210616,"rss":83247104},"pid":5480,"uid":null,"version":"v14.18.0"},"stack":"ReferenceError: router is not defined\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:55:1)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":1,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","function":null,"line":55,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:30:12.557Z uncaughtException: Identifier 'id' has already been declared
+C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:59
+  const id = req.params.id;
+        ^
+
+SyntaxError: Identifier 'id' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:30:12 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":134195},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3266393,"external":4891038,"heapTotal":69251072,"heapUsed":41083080,"rss":82788352},"pid":18416,"uid":null,"version":"v14.18.0"},"stack":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:59\n  const id = req.params.id;\n        ^\n\nSyntaxError: Identifier 'id' has already been declared\n    at wrapSafe (internal/modules/cjs/loader.js:1001:16)\n    at Module._compile (internal/modules/cjs/loader.js:1049:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":1001,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1049,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:33:32.134Z uncaughtException: Unexpected token '}'
+C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:57
+}))
+^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:33:32 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":134394},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3264970,"external":4889615,"heapTotal":68988928,"heapUsed":40989240,"rss":82735104},"pid":1220,"uid":null,"version":"v14.18.0"},"stack":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:57\n}))\n^\n\nSyntaxError: Unexpected token '}'\n    at wrapSafe (internal/modules/cjs/loader.js:1001:16)\n    at Module._compile (internal/modules/cjs/loader.js:1049:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":1001,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1049,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+info: 2023-04-14T16:37:14.388Z JWT token no es valido. Usuario con el id 5 no existe
+info: 2023-04-14T16:37:14.402Z ::1 - DELETE /images HTTP/1.1 401 - - 85.642 ms
+error: 2023-04-14T16:37:24.710Z Usuario[ diegomottadev@gmail.com] no existe. No pudo ser autenticado
+info: 2023-04-14T16:37:24.715Z ::1 - POST /auth/login HTTP/1.1 409 386 - 35.603 ms
+error: 2023-04-14T16:37:28.390Z Usuario[ diegomottadev@gmail.com] no existe. No pudo ser autenticado
+info: 2023-04-14T16:37:28.392Z ::1 - POST /auth/login HTTP/1.1 409 386 - 7.066 ms
+error: 2023-04-14T16:37:38.498Z Usuario[ diegomottadev@gmail.com] no existe. No pudo ser autenticado
+info: 2023-04-14T16:37:38.501Z ::1 - POST /auth/login HTTP/1.1 409 386 - 5.836 ms
+info: 2023-04-14T16:38:03.622Z Usuario undefined completo autenticacion exitosamente
+info: 2023-04-14T16:38:03.633Z ::1 - POST /auth/login HTTP/1.1 200 149 - 178.717 ms
+info: 2023-04-14T16:38:31.324Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:38:31.343Z ::1 - DELETE /images HTTP/1.1 500 46 - 32.881 ms
+info: 2023-04-14T16:38:46.280Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:38:46.325Z ::1 - POST /images HTTP/1.1 201 187 - 54.840 ms
+info: 2023-04-14T16:39:24.771Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:39:24.781Z ::1 - DELETE /images HTTP/1.1 500 46 - 16.990 ms
+info: 2023-04-14T16:39:47.821Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:39:47.848Z ::1 - POST /images HTTP/1.1 201 187 - 33.413 ms
+info: 2023-04-14T16:39:56.260Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:39:56.282Z ::1 - DELETE /images HTTP/1.1 500 46 - 27.802 ms
+info: 2023-04-14T16:45:21.187Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:45:21.274Z ::1 - POST /images HTTP/1.1 201 225 - 172.974 ms
+info: 2023-04-14T16:45:26.560Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:45:26.578Z ::1 - DELETE /images HTTP/1.1 500 46 - 24.462 ms
+info: 2023-04-14T16:45:46.705Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:45:46.723Z ::1 - DELETE /images HTTP/1.1 200 54 - 113.290 ms
+info: 2023-04-14T16:45:49.182Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:45:49.188Z ::1 - DELETE /images HTTP/1.1 200 54 - 9.004 ms
+info: 2023-04-14T16:45:50.463Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:45:50.468Z ::1 - DELETE /images HTTP/1.1 200 54 - 8.097 ms
+info: 2023-04-14T16:47:32.411Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:47:32.427Z ::1 - DELETE /images HTTP/1.1 200 54 - 97.438 ms
+info: 2023-04-14T16:47:33.534Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:47:33.540Z ::1 - DELETE /images HTTP/1.1 200 54 - 13.229 ms
+info: 2023-04-14T16:47:41.465Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:47:41.481Z ::1 - DELETE /images HTTP/1.1 200 45 - 85.148 ms
+info: 2023-04-14T16:47:45.869Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:47:45.916Z ::1 - POST /images HTTP/1.1 201 225 - 53.982 ms
+info: 2023-04-14T16:47:50.447Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:47:50.473Z ::1 - DELETE /images HTTP/1.1 500 46 - 29.811 ms
+info: 2023-04-14T16:49:05.101Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:49:05.189Z ::1 - POST /images HTTP/1.1 201 225 - 176.015 ms
+info: 2023-04-14T16:49:14.454Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:49:14.459Z ::1 - GET /images/3 HTTP/1.1 500 1512 - 13.158 ms
+info: 2023-04-14T16:50:10.999Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:50:11.019Z ::1 - GET /images/3 HTTP/1.1 500 470 - 79.956 ms
+info: 2023-04-14T16:50:59.137Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:50:59.154Z ::1 - GET /images/3 HTTP/1.1 500 470 - 85.653 ms
+info: 2023-04-14T16:51:30.931Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:51:30.938Z ::1 - GET /images/3 HTTP/1.1 500 470 - 15.861 ms
+info: 2023-04-14T16:51:38.817Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:51:38.838Z ::1 - GET /images/3 HTTP/1.1 500 274 - 93.866 ms
+info: 2023-04-14T16:51:54.848Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:51:54.888Z ::1 - GET /images/3 HTTP/1.1 500 470 - 118.166 ms
+info: 2023-04-14T16:52:47.562Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T16:52:47.596Z ::1 - GET /images/3 HTTP/1.1 200 493227 - 101.943 ms
+error: 2023-04-14T16:55:43.428Z uncaughtException: missing ) after argument list
+C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:96
+});
+ ^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:55:43 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":135725},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3251912,"external":4881050,"heapTotal":69251072,"heapUsed":41184224,"rss":83046400},"pid":15192,"uid":null,"version":"v14.18.0"},"stack":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:96\n});\n ^\n\nSyntaxError: missing ) after argument list\n    at wrapSafe (internal/modules/cjs/loader.js:1001:16)\n    at Module._compile (internal/modules/cjs/loader.js:1049:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":1001,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1049,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:55:47.233Z uncaughtException: Unexpected token ')'
+C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:95
+  }))
+   ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:55:47 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":135729},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3251912,"external":4876557,"heapTotal":69513216,"heapUsed":41165248,"rss":83787776},"pid":6000,"uid":null,"version":"v14.18.0"},"stack":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:95\n  }))\n   ^\n\nSyntaxError: Unexpected token ')'\n    at wrapSafe (internal/modules/cjs/loader.js:1001:16)\n    at Module._compile (internal/modules/cjs/loader.js:1049:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":1001,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1049,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:56:37.582Z uncaughtException: Unexpected token ')'
+C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:95
+  }))
+   ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:56:37 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":135780},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3273162,"external":4897807,"heapTotal":69251072,"heapUsed":41006464,"rss":82804736},"pid":5748,"uid":null,"version":"v14.18.0"},"stack":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:95\n  }))\n   ^\n\nSyntaxError: Unexpected token ')'\n    at wrapSafe (internal/modules/cjs/loader.js:1001:16)\n    at Module._compile (internal/modules/cjs/loader.js:1049:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":1001,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1049,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:56:44.139Z uncaughtException: Unexpected token ')'
+C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:95
+  }))
+   ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:56:44 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":135786},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3260104,"external":4884749,"heapTotal":69251072,"heapUsed":41029600,"rss":82804736},"pid":17120,"uid":null,"version":"v14.18.0"},"stack":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:95\n  }))\n   ^\n\nSyntaxError: Unexpected token ')'\n    at wrapSafe (internal/modules/cjs/loader.js:1001:16)\n    at Module._compile (internal/modules/cjs/loader.js:1049:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":1001,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1049,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:57:15.452Z uncaughtException: Unexpected token ')'
+C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:95
+  }))
+   ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:57:15 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":135817},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3270535,"external":4895180,"heapTotal":69251072,"heapUsed":40932608,"rss":82763776},"pid":2880,"uid":null,"version":"v14.18.0"},"stack":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:95\n  }))\n   ^\n\nSyntaxError: Unexpected token ')'\n    at wrapSafe (internal/modules/cjs/loader.js:1001:16)\n    at Module._compile (internal/modules/cjs/loader.js:1049:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":1001,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1049,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:57:24.883Z uncaughtException: Unexpected token ')'
+C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:95
+  }))
+   ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:57:24 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":135827},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3251912,"external":4876557,"heapTotal":69251072,"heapUsed":41173936,"rss":83550208},"pid":13792,"uid":null,"version":"v14.18.0"},"stack":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:95\n  }))\n   ^\n\nSyntaxError: Unexpected token ')'\n    at wrapSafe (internal/modules/cjs/loader.js:1001:16)\n    at Module._compile (internal/modules/cjs/loader.js:1049:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":1001,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1049,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+error: 2023-04-14T16:57:31.577Z uncaughtException: Unexpected token ')'
+C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:95
+  }))
+   ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 13:57:31 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":135834},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3251912,"external":4876557,"heapTotal":69513216,"heapUsed":41241936,"rss":83566592},"pid":12164,"uid":null,"version":"v14.18.0"},"stack":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:95\n  }))\n   ^\n\nSyntaxError: Unexpected token ')'\n    at wrapSafe (internal/modules/cjs/loader.js:1001:16)\n    at Module._compile (internal/modules/cjs/loader.js:1049:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":1001,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1049,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+info: 2023-04-14T17:48:34.909Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:48:34.930Z ::1 - GET /images/ HTTP/1.1 500 53 - 107.068 ms
+info: 2023-04-14T17:49:05.178Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:49:05.197Z ::1 - GET /images/ HTTP/1.1 500 53 - 86.787 ms
+info: 2023-04-14T17:49:06.419Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:49:06.424Z ::1 - GET /images/ HTTP/1.1 500 53 - 11.669 ms
+info: 2023-04-14T17:49:28.766Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:49:28.787Z ::1 - GET /images/ HTTP/1.1 200 66 - 104.162 ms
+info: 2023-04-14T17:50:52.504Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:50:52.533Z ::1 - DELETE /images/ HTTP/1.1 500 46 - 94.192 ms
+info: 2023-04-14T17:51:10.470Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:51:10.487Z ::1 - DELETE /images/ HTTP/1.1 200 45 - 108.556 ms
+info: 2023-04-14T17:51:47.868Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:51:47.926Z ::1 - POST /images HTTP/1.1 201 203 - 119.681 ms
+info: 2023-04-14T17:51:53.134Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:51:53.142Z ::1 - GET /images/ HTTP/1.1 200 66 - 14.115 ms
+info: 2023-04-14T17:52:15.600Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:52:15.616Z ::1 - GET /images/ HTTP/1.1 200 66 - 75.994 ms
+info: 2023-04-14T17:52:32.309Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:52:32.332Z ::1 - DELETE /images/ HTTP/1.1 500 46 - 37.029 ms
+info: 2023-04-14T17:52:41.526Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:52:41.595Z ::1 - POST /images HTTP/1.1 201 219 - 78.276 ms
+info: 2023-04-14T17:53:05.478Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:53:05.522Z ::1 - DELETE /images/ HTTP/1.1 500 46 - 107.887 ms
+info: 2023-04-14T17:53:09.466Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:53:09.511Z ::1 - POST /images HTTP/1.1 201 211 - 51.821 ms
+info: 2023-04-14T17:53:11.964Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:53:11.995Z ::1 - POST /images HTTP/1.1 201 211 - 33.833 ms
+info: 2023-04-14T17:53:15.898Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:53:15.917Z ::1 - DELETE /images/ HTTP/1.1 500 46 - 22.180 ms
+info: 2023-04-14T17:53:19.038Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:53:19.042Z ::1 - DELETE /images/ HTTP/1.1 200 45 - 7.467 ms
+info: 2023-04-14T17:53:38.189Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:53:38.215Z ::1 - POST /images HTTP/1.1 201 211 - 34.956 ms
+info: 2023-04-14T17:53:45.430Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:53:45.445Z ::1 - DELETE /images/ HTTP/1.1 200 54 - 30.283 ms
+info: 2023-04-14T17:54:03.754Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:54:03.759Z ::1 - DELETE /images/ HTTP/1.1 200 45 - 10.943 ms
+info: 2023-04-14T17:54:28.681Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:54:28.802Z ::1 - POST /images HTTP/1.1 201 1477 - 128.758 ms
+info: 2023-04-14T17:54:46.722Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:54:46.727Z ::1 - GET /images/ HTTP/1.1 200 435 - 11.825 ms
+info: 2023-04-14T17:56:16.553Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T17:56:16.686Z ::1 - POST /images HTTP/1.1 201 1472 - 206.677 ms
+error: 2023-04-14T18:06:05.552Z uncaughtException: Cannot find module './image.error'
+Require stack:
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js
+Error: Cannot find module './image.error'
+Require stack:
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:8:43)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19) {"date":"Fri Apr 14 2023 15:06:05 GMT-0300 (hora estándar de Argentina)","error":{"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":139948},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3256597,"external":4881242,"heapTotal":68726784,"heapUsed":41210344,"rss":83177472},"pid":11168,"uid":null,"version":"v14.18.0"},"stack":"Error: Cannot find module './image.error'\nRequire stack:\n- C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js\n- C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:746:27)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:8:43)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)","trace":[{"column":15,"file":"internal/modules/cjs/loader.js","function":"Module._resolveFilename","line":902,"method":"_resolveFilename","native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":746,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":43,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false}]}
+info: 2023-04-14T18:06:39.229Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:06:39.283Z ::1 - POST /images HTTP/1.1 500 1199 - 113.469 ms
+info: 2023-04-14T18:06:57.587Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:06:57.650Z ::1 - POST /images HTTP/1.1 500 1199 - 125.307 ms
+info: 2023-04-14T18:07:14.167Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:07:14.202Z ::1 - POST /images HTTP/1.1 500 1199 - 45.246 ms
+info: 2023-04-14T18:07:37.882Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:07:37.946Z ::1 - POST /images HTTP/1.1 500 1455 - 161.149 ms
+info: 2023-04-14T18:08:01.691Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:08:01.758Z ::1 - POST /images HTTP/1.1 500 431 - 130.745 ms
+error: 2023-04-14T18:08:31.364Z uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js
+- C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:9:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19) {"date":"Fri Apr 14 2023 15:08:31 GMT-0300 (hora estándar de Argentina)","error":{"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":140093},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3251912,"external":4876557,"heapTotal":69513216,"heapUsed":41446080,"rss":84062208},"pid":13120,"uid":null,"version":"v14.18.0"},"stack":"Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js\n- C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:746:27)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:9:13)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)","trace":[{"column":15,"file":"internal/modules/cjs/loader.js","function":"Module._resolveFilename","line":902,"method":"_resolveFilename","native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":746,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","function":null,"line":9,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false}]}
+info: 2023-04-14T18:08:43.262Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-14T18:08:43.335Z Imagen [undefined] ya existen.
+info: 2023-04-14T18:08:43.350Z ::1 - POST /images HTTP/1.1 409 52 - 168.490 ms
+warn: 2023-04-14T18:08:43.360Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:08:43.376Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:08:43.384Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:08:43.390Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:08:43.393Z Imagen [undefined] ya existen.
+info: 2023-04-14T18:08:46.555Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-14T18:08:46.596Z Imagen [undefined] ya existen.
+info: 2023-04-14T18:08:46.600Z ::1 - POST /images HTTP/1.1 409 52 - 51.460 ms
+warn: 2023-04-14T18:08:46.601Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:08:46.605Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:08:46.608Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:08:46.611Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:08:46.613Z Imagen [undefined] ya existen.
+info: 2023-04-14T18:09:21.688Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-14T18:09:21.751Z Imagen [undefined] ya existen.
+info: 2023-04-14T18:09:21.763Z ::1 - POST /images HTTP/1.1 409 65 - 156.357 ms
+warn: 2023-04-14T18:09:21.768Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:09:21.783Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:09:21.793Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:09:21.798Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:09:21.800Z Imagen [undefined] ya existen.
+info: 2023-04-14T18:09:28.572Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-14T18:09:28.619Z Imagen [undefined] ya existen.
+info: 2023-04-14T18:09:28.629Z ::1 - POST /images HTTP/1.1 409 111 - 117.058 ms
+warn: 2023-04-14T18:09:28.634Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:09:28.644Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:09:28.651Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:09:28.656Z Imagen [undefined] ya existen.
+warn: 2023-04-14T18:09:28.659Z Imagen [undefined] ya existen.
+info: 2023-04-14T18:22:02.829Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:22:02.846Z ::1 - GET /images/ HTTP/1.1 201 430 - 84.614 ms
+info: 2023-04-14T18:22:15.533Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:22:15.557Z ::1 - GET /images/3 HTTP/1.1 201 194847 - 32.031 ms
+info: 2023-04-14T18:23:09.216Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-14T18:23:09.278Z Imagen [Azul Blanco Abstracto TecnologÃ­a LinkedIn Banner.png] ya existen.
+info: 2023-04-14T18:23:09.289Z ::1 - POST /images HTTP/1.1 409 111 - 142.211 ms
+warn: 2023-04-14T18:23:09.297Z Imagen [20200818_180620.jpg] ya existen.
+warn: 2023-04-14T18:23:09.324Z Imagen [programming-gc4c1961be_1280.jpg] ya existen.
+warn: 2023-04-14T18:23:09.340Z Imagen [3949102-PhotoRoom.png-PhotoRoom.png] ya existen.
+warn: 2023-04-14T18:23:09.345Z Imagen [doors-g1611299e4_1280.jpg] ya existen.
+warn: 2023-04-14T18:23:09.347Z Imagen [cubes-2492010_1280.webp] ya existen.
+info: 2023-04-14T18:24:37.933Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-14T18:24:37.982Z Imagen [Azul Blanco Abstracto TecnologÃ­a LinkedIn Banner.png] ya existen.
+info: 2023-04-14T18:24:37.987Z ::1 - POST /images HTTP/1.1 409 111 - 62.995 ms
+warn: 2023-04-14T18:24:37.990Z Imagen [20200818_180620.jpg] ya existen.
+warn: 2023-04-14T18:24:38.002Z Imagen [programming-gc4c1961be_1280.jpg] ya existen.
+warn: 2023-04-14T18:24:38.006Z Imagen [3949102-PhotoRoom.png-PhotoRoom.png] ya existen.
+warn: 2023-04-14T18:24:38.010Z Imagen [doors-g1611299e4_1280.jpg] ya existen.
+warn: 2023-04-14T18:24:38.013Z Imagen [cubes-2492010_1280.webp] ya existen.
+info: 2023-04-14T18:25:31.284Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:25:31.289Z ::1 - POST /images/ HTTP/1.1 500 1306 - 13.388 ms
+error: 2023-04-14T18:25:57.157Z uncaughtException: upload is not defined
+ReferenceError: upload is not defined
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\api\resources\images\images.route.js:51:43)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey\index.js:11:22)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Fri Apr 14 2023 15:25:57 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":141139},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3256257,"external":4880902,"heapTotal":69513216,"heapUsed":41567512,"rss":84353024},"pid":11436,"uid":null,"version":"v14.18.0"},"stack":"ReferenceError: upload is not defined\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js:51:43)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js:11:22)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":43,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\api\\resources\\images\\images.route.js","function":null,"line":51,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":22,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey\\index.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+info: 2023-04-14T18:26:10.610Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:26:10.629Z ::1 - POST /images/ HTTP/1.1 500 1306 - 109.164 ms
+info: 2023-04-14T18:26:22.181Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:26:22.186Z ::1 - POST /images/ HTTP/1.1 500 1306 - 12.260 ms
+info: 2023-04-14T18:27:27.243Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:27:27.268Z ::1 - POST /images/ HTTP/1.1 500 1306 - 100.617 ms
+info: 2023-04-14T18:27:37.800Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:27:37.804Z ::1 - POST /images/ HTTP/1.1 500 1306 - 13.232 ms
+info: 2023-04-14T18:28:20.731Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:28:20.773Z ::1 - POST /images/single HTTP/1.1 500 1290 - 114.291 ms
+info: 2023-04-14T18:28:35.829Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:28:35.903Z ::1 - POST /images/single HTTP/1.1 201 241 - 174.929 ms
+info: 2023-04-14T18:29:50.242Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:29:50.258Z ::1 - GET /images/ HTTP/1.1 201 496 - 71.999 ms
+info: 2023-04-14T18:30:19.664Z ::1 - GET /images/7 HTTP/1.1 201 60366 - 110.324 ms
+info: 2023-04-14T18:33:45.467Z ::1 - GET /images/7 HTTP/1.1 500 1431 - 6.341 ms
+info: 2023-04-14T18:33:48.753Z ::1 - GET /images/7 HTTP/1.1 500 1431 - 2.229 ms
+error: 2023-04-14T18:34:09.715Z Error no controlado al al leer el archivo.
+info: 2023-04-14T18:34:09.726Z ::1 - GET /images/7 HTTP/1.1 500 39 - 91.605 ms
+info: 2023-04-14T18:35:19.302Z ::1 - GET /images/7 HTTP/1.1 201 194847 - 12.978 ms
+info: 2023-04-14T18:41:46.818Z ::1 - POST /surveys HTTP/1.1 201 182 - 171.680 ms
+info: 2023-04-14T18:41:49.566Z ::1 - POST /surveys HTTP/1.1 201 182 - 12.929 ms
+info: 2023-04-14T18:41:54.099Z ::1 - POST /surveys HTTP/1.1 201 182 - 17.574 ms
+info: 2023-04-14T18:43:50.428Z ::1 - GET /surveys/all HTTP/1.1 - - - - ms
+info: 2023-04-14T18:44:29.694Z ::1 - GET /surveys/all HTTP/1.1 - - - - ms
+info: 2023-04-14T18:44:31.772Z ::1 - GET /forms/all HTTP/1.1 500 1477 - 3.891 ms
+info: 2023-04-14T18:48:32.101Z ::1 - GET /surveys/all HTTP/1.1 - - - - ms
+info: 2023-04-14T18:49:45.246Z ::1 - GET /surveys/all HTTP/1.1 - - - - ms
+info: 2023-04-14T18:50:35.515Z ::1 - GET /surveys/all HTTP/1.1 - - - - ms
+info: 2023-04-14T18:50:41.877Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:50:41.892Z ::1 - GET /surveys HTTP/1.1 200 625 - 73.647 ms
+info: 2023-04-14T18:51:01.336Z ::1 - POST /surveys HTTP/1.1 201 182 - 54.946 ms
+info: 2023-04-14T18:51:02.229Z ::1 - POST /surveys HTTP/1.1 201 182 - 8.238 ms
+info: 2023-04-14T18:51:09.669Z ::1 - POST /surveys HTTP/1.1 201 182 - 6.855 ms
+info: 2023-04-14T18:51:16.647Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:51:16.654Z ::1 - GET /surveys HTTP/1.1 200 1240 - 13.331 ms
+info: 2023-04-14T18:51:58.109Z ::1 - POST /surveys HTTP/1.1 201 182 - 103.387 ms
+info: 2023-04-14T18:51:59.213Z ::1 - POST /surveys HTTP/1.1 201 182 - 7.920 ms
+info: 2023-04-14T18:52:00.066Z ::1 - POST /surveys HTTP/1.1 201 182 - 5.378 ms
+info: 2023-04-14T18:52:03.333Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:52:03.343Z ::1 - GET /surveys HTTP/1.1 200 1855 - 29.501 ms
+info: 2023-04-14T18:52:34.074Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:52:34.081Z ::1 - GET /surveys?page HTTP/1.1 200 1855 - 16.035 ms
+info: 2023-04-14T18:52:44.515Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:52:44.519Z ::1 - GET /surveys?page=2 HTTP/1.1 200 11 - 11.670 ms
+warn: 2023-04-14T18:53:17.599Z El siguiente usuario no pasó la validación: [object Object] - ["client_id" is required],["client_code" is not allowed]   
+info: 2023-04-14T18:53:17.601Z ::1 - POST /surveys HTTP/1.1 400 56 - 4.284 ms
+warn: 2023-04-14T18:53:18.605Z El siguiente usuario no pasó la validación: [object Object] - ["client_id" is required],["client_code" is not allowed]   
+info: 2023-04-14T18:53:18.608Z ::1 - POST /surveys HTTP/1.1 400 56 - 3.587 ms
+info: 2023-04-14T18:53:30.275Z ::1 - POST /surveys HTTP/1.1 201 194 - 101.789 ms
+info: 2023-04-14T18:53:31.604Z ::1 - POST /surveys HTTP/1.1 201 194 - 12.623 ms
+info: 2023-04-14T18:53:32.428Z ::1 - POST /surveys HTTP/1.1 201 194 - 9.266 ms
+info: 2023-04-14T18:53:33.214Z ::1 - POST /surveys HTTP/1.1 201 194 - 7.144 ms
+info: 2023-04-14T18:53:34.399Z ::1 - POST /surveys HTTP/1.1 201 194 - 9.448 ms
+info: 2023-04-14T18:53:37.407Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:53:37.417Z ::1 - GET /surveys?page=2 HTTP/1.1 200 830 - 26.296 ms
+info: 2023-04-14T18:55:26.461Z ::1 - POST /surveys HTTP/1.1 201 219 - 91.654 ms
+info: 2023-04-14T18:55:27.281Z ::1 - POST /surveys HTTP/1.1 201 219 - 8.303 ms
+info: 2023-04-14T18:55:28.081Z ::1 - POST /surveys HTTP/1.1 201 219 - 10.800 ms
+info: 2023-04-14T18:55:28.940Z ::1 - POST /surveys HTTP/1.1 201 219 - 15.046 ms
+info: 2023-04-14T18:55:29.721Z ::1 - POST /surveys HTTP/1.1 201 219 - 7.560 ms
+info: 2023-04-14T18:55:32.670Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:55:32.682Z ::1 - GET /surveys?page=2 HTTP/1.1 200 1885 - 27.229 ms
+info: 2023-04-14T18:58:01.782Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T18:58:01.814Z ::1 - GET /surveys?page=2 HTTP/1.1 200 2386 - 105.529 ms
+info: 2023-04-14T19:10:50.406Z ::1 - POST /surveys HTTP/1.1 201 219 - 99.853 ms
+warn: 2023-04-14T19:10:57.232Z Codigo del cliente no existen: 4
+info: 2023-04-14T19:10:57.234Z ::1 - POST /surveys HTTP/1.1 409 52 - 6.002 ms
+warn: 2023-04-14T19:11:15.844Z Codigo del cliente no existen: 4
+info: 2023-04-14T19:11:15.855Z ::1 - POST /surveys HTTP/1.1 409 51 - 83.356 ms
+warn: 2023-04-14T19:11:31.002Z Codigo del cliente no existen: 4
+info: 2023-04-14T19:11:31.005Z ::1 - POST /surveys HTTP/1.1 409 51 - 13.525 ms
+info: 2023-04-14T19:11:35.249Z ::1 - POST /surveys HTTP/1.1 201 219 - 36.563 ms
+info: 2023-04-14T19:11:42.955Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-14T19:11:42.973Z ::1 - GET /surveys?page=2 HTTP/1.1 200 2686 - 26.495 ms
+info: 2023-04-14T19:12:15.007Z ::1 - POST /surveys HTTP/1.1 201 226 - 17.232 ms
+warn: 2023-04-14T19:12:19.637Z El siguiente usuario no pasó la validación: [object Object] - ["size" is not allowed to be empty]   
+info: 2023-04-14T19:12:19.640Z ::1 - POST /surveys HTTP/1.1 400 35 - 3.012 ms
+error: 2023-04-14T19:14:53.695Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:14:53.697Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 26.558 ms
+error: 2023-04-14T19:17:51.340Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:17:51.342Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 18.874 ms
+error: 2023-04-14T19:18:16.464Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:18:16.467Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 17.319 ms
+error: 2023-04-14T19:18:57.612Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:18:57.614Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 19.060 ms
+error: 2023-04-14T19:18:59.979Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:18:59.981Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 16.662 ms
+error: 2023-04-14T19:19:34.801Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:19:34.804Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 17.523 ms
+error: 2023-04-14T19:19:54.946Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:19:54.956Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 78.197 ms
+error: 2023-04-14T19:21:11.107Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:21:11.116Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 83.442 ms
+error: 2023-04-14T19:21:12.151Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:21:12.153Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 16.353 ms
+error: 2023-04-14T19:22:00.520Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:22:00.531Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 80.407 ms
+error: 2023-04-14T19:22:27.642Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:22:27.654Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 97.281 ms
+error: 2023-04-14T19:23:45.271Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:23:45.281Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 81.844 ms
+error: 2023-04-14T19:25:49.905Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:25:49.913Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 89.251 ms
+error: 2023-04-14T19:25:50.891Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:25:50.893Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 15.587 ms
+error: 2023-04-14T19:27:09.765Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:27:09.767Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 20.748 ms
+error: 2023-04-14T19:27:53.923Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:27:53.933Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 94.559 ms
+error: 2023-04-14T19:28:16.631Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:28:16.641Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 73.057 ms
+error: 2023-04-14T19:32:45.211Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:32:45.224Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 95.784 ms
+error: 2023-04-14T19:32:46.410Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:32:46.413Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 17.538 ms
+error: 2023-04-14T19:34:59.595Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:34:59.608Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 75.516 ms
+error: 2023-04-14T19:36:50.729Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:36:50.740Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 97.970 ms
+error: 2023-04-14T19:39:10.338Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:39:10.351Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 86.176 ms
+error: 2023-04-14T19:39:23.838Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:39:23.848Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 82.699 ms
+error: 2023-04-14T19:41:02.311Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:41:02.323Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 82.966 ms
+info: 2023-04-14T19:42:09.782Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 200 50 - 71.266 ms
+info: 2023-04-14T19:42:10.903Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 200 50 - 6.254 ms
+error: 2023-04-14T19:45:38.975Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:45:38.987Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 86.702 ms
+error: 2023-04-14T19:45:40.470Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:45:40.472Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 15.862 ms
+error: 2023-04-14T19:45:42.422Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:45:42.424Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 17.635 ms
+error: 2023-04-14T19:46:21.536Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:46:21.548Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 93.354 ms
+error: 2023-04-14T19:46:24.803Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:46:24.806Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 16.223 ms
+error: 2023-04-14T19:46:26.159Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:46:26.161Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 16.806 ms
+error: 2023-04-14T19:46:44.816Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:46:44.819Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 20.357 ms
+info: 2023-04-14T19:48:13.125Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 200 50 - 68.748 ms
+info: 2023-04-14T19:48:29.541Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 200 50 - 63.484 ms
+error: 2023-04-14T19:48:53.937Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:48:53.949Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 92.955 ms
+error: 2023-04-14T19:50:27.982Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:50:28.000Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 100.521 ms
+error: 2023-04-14T19:51:21.148Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:51:21.157Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 89.302 ms
+error: 2023-04-14T19:51:22.071Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:51:22.073Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 16.860 ms
+error: 2023-04-14T19:51:24.976Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:51:24.978Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 16.713 ms
+error: 2023-04-14T19:54:17.613Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:54:17.623Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 82.434 ms
+error: 2023-04-14T19:54:18.528Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:54:18.531Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 18.298 ms
+error: 2023-04-14T19:54:19.568Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:54:19.570Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 15.301 ms
+error: 2023-04-14T19:54:39.798Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:54:39.801Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 19.806 ms
+error: 2023-04-14T19:55:44.645Z Error no controlado. Devolución del producto en base a los parametros ha fallado: [Perro, 7 años o mas, Pequeño (hasta 4 kilos), Castrado/Sobrepeso}].
+info: 2023-04-14T19:55:44.659Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 500 44 - 95.383 ms
+info: 2023-04-14T19:56:59.266Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 200 50 - 57.873 ms
+info: 2023-04-14T19:57:02.348Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 200 50 - 5.003 ms
+info: 2023-04-14T19:57:05.159Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 200 50 - 3.508 ms
