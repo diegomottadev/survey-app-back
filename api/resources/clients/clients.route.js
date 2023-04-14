@@ -7,7 +7,14 @@ const { InfoClientInUse , ClientNotExist} = require('./clients.error');
 const procesarErrores  = require('../../libs/errorHandler').procesarErrores
 const validationClient = require('./clients.validation').validationClient
 const jwtAuthenticate = passport.authenticate('jwt', { session: false })
+require('dotenv').config()
+
 const qrcode = require('qrcode')
+const { Buffer } = require('buffer');
+
+
+
+
 const xlsx = require('xlsx')
 
 const path = require('path');
@@ -17,25 +24,26 @@ const storage = multer.memoryStorage()
 const upload = multer({ storage: storage })
 
 const clientRouter = express.Router()
+const qr_site_url = process.env.QR_SITE_URL;
 
 clientRouter.post('/', [jwtAuthenticate,validationClient], procesarErrores(async (req, res) => {
-    let newClient = req.body
-    const clientExist = await clientController.clienteExist(newClient.code)
-    if (clientExist) {
-      log.warn(`Codigo del [${newClient.name}] ya existen.`)
-      res.status(409).json({message:'Existe un cliente con el mismo codigo.'})
-      throw new InfoClientInUse()
-    }
-  
-    // Generar el código QR
-    const codeQr =  await clientController.generateQRCode(newClient.code)
-  
-    const clientCreated = await clientController.create(newClient, codeQr)
-    res.status(201).json({
-      message: `Cliente con codigo [${clientCreated.id}] creado exitosamente.`,
-      data: clientCreated
-    })
-  }))
+  let newClient = req.body
+  const clientExist = await clientController.clienteExist(newClient.code)
+  if (clientExist) {
+    log.warn(`Codigo del [${newClient.name}] ya existen.`)
+    res.status(409).json({message:'Existe un cliente con el mismo codigo.'})
+    throw new InfoClientInUse()
+  }
+
+  // Generar el código QR
+  const codeQr =  await clientController.generateQRCode(`${qr_site_url}${newClient.code}`)
+
+  const clientCreated = await clientController.create(newClient, codeQr)
+  res.status(201).json({
+    message: `Cliente con codigo [${clientCreated.id}] creado exitosamente.`,
+    data: clientCreated
+  })
+}))
 
 clientRouter.get("/",[jwtAuthenticate], procesarErrores((req, res) => {
     const { page = 1, pageSize = 10 } = req.query;
@@ -43,7 +51,7 @@ clientRouter.get("/",[jwtAuthenticate], procesarErrores((req, res) => {
     return clientController.all(page,pageSize).then(clients =>{
         res.json({data:clients})
     }).catch(err =>{
-        res.status(500).json({message:'Error al obtener todos las categorias'})
+        res.status(500).json({message:'Error al obtener todos los clients'})
     })
 }))
 
@@ -59,12 +67,12 @@ clientRouter.get('/:id',[jwtAuthenticate],procesarErrores(async(req, res) => {
     }
 
     // Generar el código QR para el cliente
-    const qrImage = await qrcode.toBuffer(client.codeQr)
-
+    //const qrImage = await qrcode.toBuffer(`${qr_site_url}${client.code}`, {scale: 8 })
+    const qrImageBase64 = `data:image/png;base64,${client.codeQr}`
     // Escribir la respuesta HTTP con el cliente y su código QR
     res.json({
-        data: client,
-        qrImage: qrImage.toString('base64')
+        data : client,
+        qr : qrImageBase64
     })
 }))
 
@@ -82,12 +90,24 @@ clientRouter.get('/:id/qrcode',[jwtAuthenticate],procesarErrores(async(req, res)
         throw new ClientNotExist(`El cliente con id [${id}] no existe.`)
     }
 
+    /*
+
     // Generar el código QR para el cliente
-    const qrImage = await qrcode.toBuffer(client.codeQr)
+    const qrImage = await qrcode.toBuffer(`${qr_site_url}${client.code}`, {scale: 8 });
 
     // Escribir la respuesta HTTP con el cliente y su código QR
     res.writeHead(200, { 'Content-Type': 'image/png' })
-    res.end(qrImage)
+    res.end(qrImage)*/
+
+    const qrImageBase64 = client.codeQr
+
+    // Convertir la cadena base64 en un búfer de imagen
+    const qrImageBuffer = Buffer.from(qrImageBase64, 'base64')
+
+    // Escribir la respuesta HTTP con el cliente y su código QR
+    res.writeHead(200, { 'Content-Type': 'image/png' })
+    res.write(qrImageBuffer)
+    res.end()
 }))
 
 clientRouter.put('/:id',[jwtAuthenticate], procesarErrores(async (req, res) => {
@@ -180,7 +200,8 @@ clientRouter.post('/import',  [jwtAuthenticate], upload.single('file'),procesarE
 
     // Crea los clientes y genera los códigos QR para cada cliente
     const promises = clients.map(async (client) => {
-        const codeQr = await clientController.generateQRCode(client.code)
+
+        const codeQr = await clientController.generateQRCode(`${qr_site_url}${client.code}`)
         return clientController.create(client, codeQr)
     })
 

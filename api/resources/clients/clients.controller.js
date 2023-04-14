@@ -4,18 +4,24 @@ const { Op } = require("sequelize")
 const QRCode = require('qrcode')
 
 async function generateQRCode(code) {
-  const qrCode = await QRCode.toDataURL(code)
+ const options = {
+    errorCorrectionLevel: 'M', // Nivel de corrección de errores
+    scale: 8 // Escala del código QR
+    }
+  const qrCode = await QRCode.toDataURL(code,options)
   return qrCode
 }
 
 function create(client,codeQr) {
+
+    const base64StringWithoutPrefix = codeQr.replace(/^data:image\/png;base64,/, '');
     return clientInstance.create({
         code: client.code,
         name: client.name,
         address: client.address,
         city: client.city,
         province: client.province,
-        codeQr: codeQr
+        codeQr: base64StringWithoutPrefix
     })
 }
 
