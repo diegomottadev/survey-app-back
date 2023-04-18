@@ -17,10 +17,10 @@ function find (pet,age,size,necessity) {
 
   return formInstance.findOne({ 
           where: { 
-          pet: pet, 
-          age: age, 
-          size: size, 
-          necessity: necessity 
+          pet: pet.trim(), 
+          age: age.trim(), 
+          size: size.trim(), 
+          necessity: necessity.trim() 
           },
           attributes: ['pet', 'age', 'size','necessity','answer']
       }

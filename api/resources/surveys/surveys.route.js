@@ -28,7 +28,7 @@ surveysRouter.get('/', [jwtAuthenticate],procesarErrores((req, res) => {
 
 surveysRouter.post('/', [validationSurvey], procesarErrores(async (req, res) => {
     
-    const { pet, age, size, necessity, answer,name, telephone, client_code} = req.body;
+    const { pet, age, size, necessity, answer, client_code} = req.body;
 
     const clientExist = await clientController.clienteExist(client_code)
     if (!clientExist) {
@@ -38,7 +38,7 @@ surveysRouter.post('/', [validationSurvey], procesarErrores(async (req, res) => 
     }
 
 
-    const survey = await surveyController.create(pet, age, size, necessity, answer,name, telephone,client_code);
+    const survey = await surveyController.create(pet, age, size, necessity, answer,client_code);
 
     res.status(201).json({data: survey})
 

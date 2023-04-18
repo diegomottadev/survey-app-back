@@ -25,8 +25,6 @@ function create(pet, age, size, necessity, answer,name, telephone,client_code) {
         age: age,
         size: size,
         necessity:necessity,
-        name: name,
-        telephone: telephone,
         answer:answer,
         client_id: client_code
     })

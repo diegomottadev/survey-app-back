@@ -11,10 +11,8 @@ const blueprintSurvey  = Joi.object({
         otherwise: Joi.allow(null)
 
     }),
-    necessity: Joi.string().required(),
-    name: Joi.any(),
-    telephone: Joi.any(),
     answer: Joi.string().required(),
+    necessity: Joi.string().required(),
     client_code: Joi.number().required()
 })
 

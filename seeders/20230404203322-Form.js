@@ -119,7 +119,7 @@ module.exports = {
     await queryInterface.bulkInsert('Forms', [{
       pet: 'Perro',
       age: 'Menos de 1 año',
-      size: 'Grande (mas 8 kilos)',
+      size: 'Grande (mas de 8 kilos)',
       necessity: "Problemas de piel",
       answer: 'Nutrique Skin Sensitivity Dog',
       createdAt:new Date(),
@@ -149,7 +149,7 @@ module.exports = {
     await queryInterface.bulkInsert('Forms', [{
       pet: 'Perro',
       age: '1 a 6 años',
-      size: 'Grande (mas 8 kilos)',
+      size: 'Grande (mas de 8 kilos)',
       necessity: "Problemas de piel",
       answer: 'Nutrique Skin Sensitivity Dog',
       createdAt:new Date(),
@@ -179,7 +179,7 @@ module.exports = {
     await queryInterface.bulkInsert('Forms', [{
       pet: 'Perro',
       age: '7 años o mas',
-      size: 'Grande (mas 8 kilos)',
+      size: 'Grande (mas de 8 kilos)',
       necessity: "Problemas de piel",
       answer: 'Nutrique Skin Sensitivity Dog',
       createdAt:new Date(),
@@ -212,7 +212,7 @@ module.exports = {
     await queryInterface.bulkInsert('Forms', [{
       pet: 'Perro',
       age: 'Menos de 1 año',
-      size: 'Grande (mas 8 kilos)',
+      size: 'Grande (mas de 8 kilos)',
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Healthy Weight Dog',
       createdAt:new Date(),
@@ -242,7 +242,7 @@ module.exports = {
     await queryInterface.bulkInsert('Forms', [{
       pet: 'Perro',
       age: '1 a 6 años',
-      size: 'Grande (mas 8 kilos)',
+      size: 'Grande (mas de 8 kilos)',
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Healthy Weight Dog',
       createdAt:new Date(),
@@ -272,7 +272,7 @@ module.exports = {
     await queryInterface.bulkInsert('Forms', [{
       pet: 'Perro',
       age: '7 años o mas',
-      size: 'Grande (mas 8 kilos)',
+      size: 'Grande (mas de 8 kilos)',
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Healthy Weight Dog',
       createdAt:new Date(),

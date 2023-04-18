@@ -9,6 +9,7 @@ const sizesRouter = require('./api/resources/parameterizations/sizes/sizes.route
 const petsRouter = require('./api/resources/parameterizations/pets/pets.route')
 const surveysRouter = require('./api/resources/surveys/surveys.route')
 const imagesRouter = require('./api/resources/images/images.route')
+const necessitiesRouter = require('./api/resources/parameterizations/necessities/necessities.route')
 
 
 const morgan = require('morgan');
@@ -48,6 +49,7 @@ app.use('/sizes',sizesRouter)
 app.use('/pets',petsRouter)
 app.use('/surveys',surveysRouter)
 app.use('/images',imagesRouter)
+app.use('/necessities',necessitiesRouter)
 
 app.use(errorHandler.procesarErrores)
 

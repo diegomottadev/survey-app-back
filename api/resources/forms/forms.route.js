@@ -29,7 +29,7 @@ formsRouter.get('/', procesarErrores(async (req, res) => {
       
       if (!form) {
         log.error(`No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [${pet}, ${age}, ${size}, ${necessity}].`)
-        return res.status(404).json({ message: 'No se encontró ningún producto que cumpla con los criterios de búsqueda.' });
+        return res.status(404).json({ message: 'No se encontró ningún producto que cumpla con los criterios ingresados.' });
       }
       
       res.json({ data: {product: form.answer} });
