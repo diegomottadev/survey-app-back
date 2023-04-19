@@ -30,22 +30,25 @@ const Upload = multer({ storage: Storage });
 
 
 imagesRouter.post('/', [jwtAuthenticate],Upload.array('images', 10), procesarErrores(async (req, res) => {
-  const imagenes = req.files;
+ 
 
-  const imagenesCreadas = await Promise.all(
-    imagenes.map( async(image) =>{
-      const imageExist = await imageController.imageExist(image.originalname)
-      if (imageExist) {
-        log.warn(`Imagen [${image.originalname}] ya existen.`)
-        res.status(409).json({message:`Existe una imagen con el mismo nombre: [${image.originalname}].`})
-        throw new InfoImageInUse()
-      }
-      imageController.create(image)
-    })
-  );
+    const imagenes = req.files;
 
-  res.status(201).json({ data: imagenesCreadas})
+    const imagenesCreadas = await Promise.all(
+      imagenes.map( async(image) =>{
+        const imageExist = await imageController.imageExist(image.originalname)
+        console.log("imageExiste", imageExist)
+        if (imageExist) {
+          log.warn(`Imagen [${image.originalname}] ya existen.`)
+          res.status(409).json({message:`Existe una imagen con el mismo nombre: [${image.originalname}].`})
+          throw new InfoImageInUse()
+        }
+        return imageController.create(image)
+      })
+    );
 
+    res.status(201).json({ data: imagenesCreadas})
+  
 }))
 
 imagesRouter.post('/single', [jwtAuthenticate], Upload.single('image'), procesarErrores(async (req, res) => {
@@ -65,12 +68,25 @@ imagesRouter.post('/single', [jwtAuthenticate], Upload.single('image'), procesar
 
 // Endpoint de visualización de imágenes
 imagesRouter.get('/:id',  procesarErrores(async (req, res) => {
-  let id = req.params.id
-  const imagen = await imageController.findByName(id);
-  if (!imagen) {
-    log.warn(`No se encontró la imagen solicitada con nombre [${image.originalname}].`)
-    return res.status(404).json({ message: 'No se encontró la imagen solicitada.' });
+  let name =  req.params.id.toString()
+  const imagen = await imageController.findByName(name);
+  if (imagen == null) {
+    // log.warn(`No se encontró la imagen solicitada con nombre [${image.originalname}].`)
+    // return res.status(404).json({ message: 'No se encontró la imagen solicitada.' });
+    fs.readFile("utils/images/image_not_found.jpg", (err, contenido) => {
+      if (err) {
+        console.error(err);
+        log.error(`Error no controlado al al leer el archivo.`)
+        res.status(500).json({ message: 'Error al leer el archivo.' });
+      } else {
+        res.setHeader('Content-Type', 'image/jpeg');
+        res.status(201).send(contenido);
+      }
+    });
+    return         
   }
+ 
+
   fs.readFile(imagen.path, (err, contenido) => {
     if (err) {
       console.error(err);

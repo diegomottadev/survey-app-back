@@ -44,6 +44,23 @@ surveysRouter.post('/', [validationSurvey], procesarErrores(async (req, res) => 
 
 }));
 
+surveysRouter.put('/:id', [validationSurvey], procesarErrores(async (req, res) => {
+    
+  let id = req.params.id
+  let surveyToUpdate = await surveyController.findById(id)
+
+  if(!surveyToUpdate){
+      throw new  AgeNotExist(`La encuesta con id [${id}] no existe.`)
+  }
+  const {name, telefone} = req.body;
+  return surveyController.edit(id,name, telefone)
+  .then(surveyUpdated => {
+          res.json({message:`La encuenta con id [${surveyUpdated.id}] ha sido modificado con exito.`,data:surveyUpdated})
+          log.info(`La encuenta con id [${surveyUpdated.id}] ha sido modificado con exito.`)
+  })
+
+}));
+
 
 
 module.exports = surveysRouter;

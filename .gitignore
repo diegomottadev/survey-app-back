@@ -1,4 +1,5 @@
 /node_modules
 package-lock.json
-/resources/_log/logs-de-aplicacion.log
+/resources/_logs/logs-de-aplicacion.log
 /uploads
+.env

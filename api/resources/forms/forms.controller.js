@@ -15,14 +15,16 @@ function find (pet,age,size,necessity) {
 
   if(!pet || !age || !size || !necessity) throw new Error("No especifico los parametros para buscar el producto")
 
+  let sizeP = size == 'null' ? null : size
+
   return formInstance.findOne({ 
           where: { 
           pet: pet.trim(), 
           age: age.trim(), 
-          size: size.trim(), 
+          size: sizeP, 
           necessity: necessity.trim() 
           },
-          attributes: ['pet', 'age', 'size','necessity','answer']
+          attributes: ['pet', 'age', 'size','necessity','answer','image_id']
       }
   )
 }

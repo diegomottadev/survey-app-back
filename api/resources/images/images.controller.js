@@ -16,13 +16,19 @@ async function all(page = 1, pageSize = 10, raw = true) {
   }
 
 function create(image) {
-    console.log(image);
+    const filename = image.originalname; // ejemplo: "1.jpg"
+    const nameWithoutExtension = filename.split('.')[0]; 
     return Image.create({
-      name: image.originalname,
+      name: nameWithoutExtension,
       type: image.mimetype,
       path: image.path,
-      filename: image.filename
-    });
+      filename: image.filename,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      fields: ['name', 'type', 'path', 'filename', 'createdAt', 'updatedAt'],
+    })
   }
 
   function findById(id = null) {
@@ -41,7 +47,11 @@ function create(image) {
 function findByName(name = null) {
   if (!name) throw new Error("No especificó el parámetro nombre para buscar la imagen")
   return new Promise((resolve, reject) => {
-      Image.findOne({ where: { name: name } }).
+      Image.findOne(
+        { where: { name: name },
+          attributes: ['name', 'type', 'path', 'filename', 'createdAt', 'updatedAt'] 
+        },
+        ).
           then(img => {
               resolve(img)
           })
@@ -80,17 +90,22 @@ function findByName(name = null) {
   
 
   function imageExist( name ) {
+    const filename = name; // ejemplo: "1.jpg"
+    const nameWithoutExtension = filename.split('.')[0]; 
     return new Promise((resolve, reject) => {
-        Image.findAll({
+        Image.findOne({
+            attributes: ['name'],
+
             where: {
-                [Op.or]: [
-                    {
-                        name: name
-                    }
-                ]
+
+              name: {
+                [Op.like]: `%${nameWithoutExtension}%`
+              }
+     
             }
-        }).then(ages => {
-            resolve(ages.length > 0)
+        }).then(image => {
+          const exists = !!image;
+          resolve(exists);
         })
         .catch(err => {
             reject(err)

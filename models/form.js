@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Form.belongsTo(models.Image,{foreignKey:"image_id",targetKey:"id", as:"image"})
+      Form.belongsTo(models.Image,{foreignKey:"image_id",targetKey:"name", as:"image"})
 
     }
   }
@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
     size: DataTypes.STRING,
     necessity: DataTypes.STRING,
     answer: DataTypes.STRING,
-    image_id: DataTypes.BIGINT,
+    image_id: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'Form',

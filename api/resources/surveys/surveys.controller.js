@@ -30,8 +30,40 @@ function create(pet, age, size, necessity, answer,name, telephone,client_code) {
     })
 }
 
+function edit(id, name, telephone) {
+
+  return new Promise(function (resolve, reject) {
+    Survey.update({
+          name: name,
+          telephone: telephone,
+      }, {
+          where: {
+              id: id
+          }
+      }).then(() => {
+          let response = findById(id);
+          resolve(response);
+      });
+  })
+}
+
+function findById(id = null) {
+  if (!id) throw new Error("No especifico el parametro id para buscar la encuesta")
+  return new Promise((resolve, reject) => {
+    Survey.findOne({ where: { id: id } }).
+          then(age => {
+              resolve(age)
+          })
+          .catch(err => {
+              reject(err)
+          })
+  })
+}
+
 
 module.exports  = {   
     create,
-    all
+    all,
+    edit,
+    findById
 }

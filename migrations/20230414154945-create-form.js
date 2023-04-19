@@ -25,7 +25,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       image_id: {
-        type: Sequelize.BIGINT,
+        type: Sequelize.STRING,
         reference: 'Images',
         referenceKey: 'id'
       },

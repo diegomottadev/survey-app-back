@@ -32,7 +32,8 @@ formsRouter.get('/', procesarErrores(async (req, res) => {
         return res.status(404).json({ message: 'No se encontró ningún producto que cumpla con los criterios ingresados.' });
       }
       
-      res.json({ data: {product: form.answer} });
+      res.json({ data:form} );
+      
     } catch (error) {
       console.error(error);
       log.error(`Error no controlado. Devolución del producto en base a los parametros ha fallado: [${pet}, ${age}, ${size}, ${necessity}}].`)

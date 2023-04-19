@@ -2074,3 +2074,739 @@ info: 2023-04-18T20:55:38.110Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(h
 info: 2023-04-18T20:55:38.133Z ::1 - POST /surveys HTTP/1.1 500 279 - 7.680 ms
 info: 2023-04-18T20:56:15.561Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(hasta%204%20kilos)&age=Menos%20de%201%20a%C3%B1o&necessity=Problemas%20de%20piel HTTP/1.1 304 - - 97.472 ms
 info: 2023-04-18T20:56:15.656Z ::1 - POST /surveys HTTP/1.1 201 240 - 78.481 ms
+info: 2023-04-18T20:59:57.679Z ::1 - GET /pets HTTP/1.1 304 - - 35.296 ms
+info: 2023-04-18T20:59:57.686Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 34.561 ms
+info: 2023-04-18T20:59:57.692Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 36.145 ms
+info: 2023-04-18T20:59:57.697Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 37.995 ms
+info: 2023-04-18T20:59:57.718Z ::1 - GET /pets HTTP/1.1 304 - - 17.276 ms
+info: 2023-04-18T20:59:57.723Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 18.227 ms
+info: 2023-04-18T20:59:57.736Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 18.688 ms
+info: 2023-04-18T20:59:57.750Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 32.025 ms
+info: 2023-04-18T21:00:02.177Z ::1 - GET /pets HTTP/1.1 304 - - 15.726 ms
+info: 2023-04-18T21:00:02.181Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 14.847 ms
+info: 2023-04-18T21:00:02.185Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 15.857 ms
+info: 2023-04-18T21:00:02.189Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 16.448 ms
+info: 2023-04-18T21:00:02.217Z ::1 - GET /pets HTTP/1.1 304 - - 22.728 ms
+info: 2023-04-18T21:00:02.222Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 27.445 ms
+info: 2023-04-18T21:00:02.226Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 28.497 ms
+info: 2023-04-18T21:00:02.229Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 26.852 ms
+info: 2023-04-18T21:01:07.078Z ::1 - GET /pets HTTP/1.1 304 - - 12.590 ms
+info: 2023-04-18T21:01:07.096Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 14.717 ms
+info: 2023-04-18T21:01:07.102Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 16.915 ms
+info: 2023-04-18T21:01:07.107Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 18.790 ms
+info: 2023-04-18T21:01:07.161Z ::1 - GET /pets HTTP/1.1 304 - - 47.455 ms
+info: 2023-04-18T21:01:07.173Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 44.061 ms
+info: 2023-04-18T21:01:07.180Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 41.376 ms
+info: 2023-04-18T21:01:07.192Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 40.646 ms
+info: 2023-04-18T21:01:13.963Z ::1 - GET /forms?pet=Perro&size=Grande%20(mas%20de%208%20kilos)&age=1%20a%206%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 304 - - 6.382 ms
+info: 2023-04-18T21:01:13.996Z ::1 - POST /surveys HTTP/1.1 201 235 - 18.622 ms
+info: 2023-04-18T21:01:33.183Z ::1 - GET /pets HTTP/1.1 304 - - 26.846 ms
+info: 2023-04-18T21:01:33.186Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 25.138 ms
+info: 2023-04-18T21:01:33.192Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 23.547 ms
+info: 2023-04-18T21:01:33.197Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 31.842 ms
+error: 2023-04-18T21:01:36.104Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, null, null, null].
+info: 2023-04-18T21:01:36.107Z ::1 - GET /forms?pet=Perro&size=null&age=null&necessity=null HTTP/1.1 404 87 - 6.188 ms
+info: 2023-04-18T21:01:39.373Z ::1 - GET /pets HTTP/1.1 304 - - 9.826 ms
+info: 2023-04-18T21:01:39.382Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 12.935 ms
+info: 2023-04-18T21:01:39.391Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 14.085 ms
+info: 2023-04-18T21:01:39.398Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 13.022 ms
+info: 2023-04-18T21:01:39.414Z ::1 - GET /pets HTTP/1.1 304 - - 19.630 ms
+info: 2023-04-18T21:01:39.423Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 23.240 ms
+info: 2023-04-18T21:01:39.426Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 19.990 ms
+info: 2023-04-18T21:01:39.430Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 13.981 ms
+info: 2023-04-18T21:01:44.072Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%206%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 304 - - 3.562 ms
+info: 2023-04-18T21:01:44.101Z ::1 - POST /surveys HTTP/1.1 201 237 - 15.317 ms
+info: 2023-04-18T21:06:49.023Z ::1 - GET /pets HTTP/1.1 304 - - 26.973 ms
+info: 2023-04-18T21:06:49.029Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 28.963 ms
+info: 2023-04-18T21:06:49.040Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 33.723 ms
+info: 2023-04-18T21:06:49.052Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 42.530 ms
+info: 2023-04-18T21:06:49.064Z ::1 - GET /pets HTTP/1.1 304 - - 19.625 ms
+info: 2023-04-18T21:06:49.072Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 17.726 ms
+info: 2023-04-18T21:06:49.075Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 16.745 ms
+info: 2023-04-18T21:06:49.082Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 12.182 ms
+info: 2023-04-18T21:07:40.030Z ::1 - GET /pets HTTP/1.1 304 - - 20.399 ms
+info: 2023-04-18T21:07:40.036Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 22.941 ms
+info: 2023-04-18T21:07:40.039Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 22.801 ms
+info: 2023-04-18T21:07:40.043Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 24.433 ms
+info: 2023-04-18T21:07:56.011Z ::1 - GET /pets HTTP/1.1 304 - - 12.031 ms
+info: 2023-04-18T21:07:56.031Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 7.386 ms
+info: 2023-04-18T21:07:56.061Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 11.178 ms
+info: 2023-04-18T21:07:56.074Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 15.492 ms
+info: 2023-04-18T21:12:07.023Z ::1 - GET /pets HTTP/1.1 304 - - 16.861 ms
+info: 2023-04-18T21:12:07.028Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 18.662 ms
+info: 2023-04-18T21:12:07.035Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 22.458 ms
+info: 2023-04-18T21:12:07.039Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 21.166 ms
+info: 2023-04-18T21:12:52.412Z ::1 - GET /pets HTTP/1.1 304 - - 26.399 ms
+info: 2023-04-18T21:12:52.417Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 22.314 ms
+info: 2023-04-18T21:12:52.423Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 33.231 ms
+info: 2023-04-18T21:12:52.444Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 38.177 ms
+info: 2023-04-18T21:12:52.461Z ::1 - GET /pets HTTP/1.1 304 - - 35.158 ms
+info: 2023-04-18T21:12:52.471Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 20.385 ms
+info: 2023-04-18T21:12:52.475Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 20.996 ms
+info: 2023-04-18T21:12:52.479Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 14.981 ms
+error: 2023-04-18T21:12:57.676Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Mediano (4 hasta 8 kilos), Problemas de piel].
+info: 2023-04-18T21:12:57.678Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 404 87 - 5.107 ms
+info: 2023-04-18T21:13:03.499Z ::1 - GET /forms?pet=Perro&size=Grande%20(mas%20de%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Ninguno HTTP/1.1 200 53 - 3.439 ms
+warn: 2023-04-18T21:13:03.516Z El siguiente usuario no pasó la validación: [object Object] - ["answer" must be a string]   
+info: 2023-04-18T21:13:03.518Z ::1 - POST /surveys HTTP/1.1 400 27 - 4.524 ms
+error: 2023-04-18T21:13:13.169Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Pequeño (hasta 4 kilos), Problemas de piel].
+info: 2023-04-18T21:13:13.172Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(hasta%204%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 404 87 - 4.654 ms
+error: 2023-04-18T21:13:25.604Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Pequeño (hasta 4 kilos), Castrado/Sobrepeso].
+info: 2023-04-18T21:13:25.607Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(hasta%204%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 7.650 ms
+error: 2023-04-18T21:13:32.931Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Grande (mas de 8 kilos), Castrado/Sobrepeso].
+info: 2023-04-18T21:13:32.934Z ::1 - GET /forms?pet=Perro&size=Grande%20(mas%20de%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 5.774 ms
+error: 2023-04-18T21:13:37.057Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Pequeño (hasta 4 kilos), Castrado/Sobrepeso].
+info: 2023-04-18T21:13:37.061Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(hasta%204%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 5.286 ms
+error: 2023-04-18T21:13:39.866Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Grande (mas de 8 kilos), Castrado/Sobrepeso].
+info: 2023-04-18T21:13:39.871Z ::1 - GET /forms?pet=Perro&size=Grande%20(mas%20de%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 7.534 ms
+info: 2023-04-18T21:13:45.956Z ::1 - GET /pets HTTP/1.1 304 - - 6.066 ms
+info: 2023-04-18T21:13:45.974Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 15.084 ms
+info: 2023-04-18T21:13:45.980Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 17.610 ms
+info: 2023-04-18T21:13:45.993Z ::1 - GET /pets HTTP/1.1 304 - - 27.956 ms
+info: 2023-04-18T21:13:46.001Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 34.250 ms
+info: 2023-04-18T21:13:46.008Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 22.044 ms
+info: 2023-04-18T21:13:46.014Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 18.382 ms
+info: 2023-04-18T21:13:46.018Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 6.969 ms
+info: 2023-04-18T21:13:53.252Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(hasta%204%20kilos)&age=Menos%20de%201%20a%C3%B1o&necessity=Ninguno HTTP/1.1 304 - - 3.738 ms
+warn: 2023-04-18T21:13:53.269Z El siguiente usuario no pasó la validación: [object Object] - ["answer" must be a string]   
+info: 2023-04-18T21:13:53.271Z ::1 - POST /surveys HTTP/1.1 400 27 - 2.729 ms
+info: 2023-04-18T21:14:11.428Z ::1 - GET /pets HTTP/1.1 304 - - 21.366 ms
+info: 2023-04-18T21:14:11.433Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 22.586 ms
+info: 2023-04-18T21:14:11.439Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 24.861 ms
+info: 2023-04-18T21:14:11.444Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 24.867 ms
+info: 2023-04-18T21:14:15.217Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(hasta%204%20kilos)&age=Menos%20de%201%20a%C3%B1o&necessity=Ninguno HTTP/1.1 304 - - 4.458 ms
+info: 2023-04-18T21:14:15.268Z ::1 - POST /surveys HTTP/1.1 201 226 - 32.633 ms
+info: 2023-04-18T21:14:24.206Z ::1 - GET /pets HTTP/1.1 304 - - 18.305 ms
+info: 2023-04-18T21:14:24.212Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 17.370 ms
+info: 2023-04-18T21:14:24.218Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 20.805 ms
+info: 2023-04-18T21:14:24.226Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 26.821 ms
+info: 2023-04-18T21:14:24.235Z ::1 - GET /pets HTTP/1.1 304 - - 13.908 ms
+info: 2023-04-18T21:14:24.243Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 15.455 ms
+info: 2023-04-18T21:14:24.247Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 17.306 ms
+info: 2023-04-18T21:14:24.251Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 13.429 ms
+info: 2023-04-18T21:14:26.681Z ::1 - GET /pets HTTP/1.1 304 - - 15.284 ms
+info: 2023-04-18T21:14:26.685Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 16.257 ms
+info: 2023-04-18T21:14:26.688Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 16.255 ms
+info: 2023-04-18T21:14:26.691Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 16.056 ms
+info: 2023-04-18T21:14:26.706Z ::1 - GET /pets HTTP/1.1 304 - - 13.700 ms
+info: 2023-04-18T21:14:26.709Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 12.352 ms
+info: 2023-04-18T21:14:26.713Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 12.079 ms
+info: 2023-04-18T21:14:26.715Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 12.723 ms
+error: 2023-04-18T21:14:30.650Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Pequeño (hasta 4 kilos), Problemas de piel].
+info: 2023-04-18T21:14:30.652Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(hasta%204%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 404 87 - 4.276 ms
+info: 2023-04-18T21:14:33.266Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(hasta%204%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Ninguno HTTP/1.1 200 58 - 3.246 ms
+info: 2023-04-18T21:14:33.304Z ::1 - POST /surveys HTTP/1.1 201 232 - 24.544 ms
+info: 2023-04-18T21:16:01.141Z ::1 - GET /pets HTTP/1.1 304 - - 31.085 ms
+info: 2023-04-18T21:16:01.144Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 31.975 ms
+info: 2023-04-18T21:16:01.147Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 26.054 ms
+info: 2023-04-18T21:16:01.150Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 25.882 ms
+info: 2023-04-18T21:16:01.166Z ::1 - GET /pets HTTP/1.1 304 - - 14.021 ms
+info: 2023-04-18T21:16:01.170Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 14.046 ms
+info: 2023-04-18T21:16:01.173Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 14.633 ms
+info: 2023-04-18T21:16:01.176Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 13.232 ms
+error: 2023-04-18T21:16:05.626Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Mediano (4 hasta 8 kilos), Problemas de piel].
+info: 2023-04-18T21:16:05.628Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 404 87 - 4.483 ms
+error: 2023-04-18T21:16:08.090Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Mediano (4 hasta 8 kilos), Castrado/Sobrepeso].
+info: 2023-04-18T21:16:08.092Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 4.171 ms
+info: 2023-04-18T21:16:12.088Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Ninguno HTTP/1.1 200 54 - 4.123 ms
+info: 2023-04-18T21:16:12.116Z ::1 - POST /surveys HTTP/1.1 201 229 - 14.729 ms
+info: 2023-04-18T21:16:41.208Z ::1 - GET /pets HTTP/1.1 304 - - 21.429 ms
+info: 2023-04-18T21:16:41.213Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 20.388 ms
+info: 2023-04-18T21:16:41.218Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 28.603 ms
+info: 2023-04-18T21:16:41.224Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 27.451 ms
+info: 2023-04-18T21:16:41.288Z ::1 - GET /pets HTTP/1.1 304 - - 66.344 ms
+info: 2023-04-18T21:16:41.306Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 41.775 ms
+info: 2023-04-18T21:16:41.315Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 41.174 ms
+info: 2023-04-18T21:16:41.318Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 26.604 ms
+info: 2023-04-18T21:16:43.818Z ::1 - GET /pets HTTP/1.1 304 - - 13.780 ms
+info: 2023-04-18T21:16:43.822Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 13.461 ms
+info: 2023-04-18T21:16:43.825Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 12.550 ms
+info: 2023-04-18T21:16:43.829Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 12.817 ms
+info: 2023-04-18T21:16:43.845Z ::1 - GET /pets HTTP/1.1 304 - - 13.410 ms
+info: 2023-04-18T21:16:43.848Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 14.594 ms
+info: 2023-04-18T21:16:43.851Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 14.714 ms
+info: 2023-04-18T21:16:43.854Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 13.927 ms
+error: 2023-04-18T21:16:48.339Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Mediano (4 hasta 8 kilos), Problemas de piel].
+info: 2023-04-18T21:16:48.341Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 404 87 - 5.484 ms
+info: 2023-04-18T21:16:50.965Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Ninguno HTTP/1.1 304 - - 4.778 ms
+info: 2023-04-18T21:16:50.995Z ::1 - POST /surveys HTTP/1.1 201 229 - 15.795 ms
+info: 2023-04-18T21:17:08.343Z ::1 - GET /pets HTTP/1.1 304 - - 20.744 ms
+info: 2023-04-18T21:17:08.348Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 11.323 ms
+info: 2023-04-18T21:17:08.351Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 25.381 ms
+info: 2023-04-18T21:17:08.374Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 19.310 ms
+info: 2023-04-18T21:17:08.385Z ::1 - GET /pets HTTP/1.1 304 - - 19.694 ms
+info: 2023-04-18T21:17:08.389Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 25.230 ms
+info: 2023-04-18T21:17:08.399Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 32.259 ms
+info: 2023-04-18T21:17:08.408Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 10.960 ms
+info: 2023-04-18T21:17:12.757Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%206%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 304 - - 4.369 ms
+info: 2023-04-18T21:17:12.792Z ::1 - POST /surveys HTTP/1.1 201 237 - 21.074 ms
+info: 2023-04-18T21:19:32.145Z ::1 - GET /pets HTTP/1.1 304 - - 23.145 ms
+info: 2023-04-18T21:19:32.149Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 20.993 ms
+info: 2023-04-18T21:19:32.152Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 27.308 ms
+info: 2023-04-18T21:19:32.158Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 26.474 ms
+info: 2023-04-18T21:19:32.168Z ::1 - GET /pets HTTP/1.1 304 - - 14.153 ms
+info: 2023-04-18T21:19:32.177Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 15.609 ms
+info: 2023-04-18T21:19:32.182Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 17.020 ms
+info: 2023-04-18T21:19:32.185Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 13.968 ms
+error: 2023-04-18T21:19:36.932Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Pequeño (hasta 4 kilos), Problemas de piel].
+info: 2023-04-18T21:19:36.934Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(hasta%204%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 404 87 - 4.939 ms
+info: 2023-04-18T21:19:39.724Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(hasta%204%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Ninguno HTTP/1.1 304 - - 3.241 ms
+info: 2023-04-18T21:19:39.752Z ::1 - POST /surveys HTTP/1.1 201 232 - 14.257 ms
+info: 2023-04-18T21:20:00.630Z ::1 - GET /pets HTTP/1.1 304 - - 17.027 ms
+info: 2023-04-18T21:20:00.634Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 13.000 ms
+info: 2023-04-18T21:20:00.655Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 16.343 ms
+info: 2023-04-18T21:20:00.664Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 19.002 ms
+info: 2023-04-18T21:20:00.677Z ::1 - GET /pets HTTP/1.1 304 - - 32.786 ms
+info: 2023-04-18T21:20:00.685Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 37.913 ms
+info: 2023-04-18T21:20:00.699Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 20.233 ms
+info: 2023-04-18T21:20:00.703Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 16.332 ms
+error: 2023-04-18T21:20:03.930Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, null, Mediano (4 hasta 8 kilos), Problemas de piel].
+info: 2023-04-18T21:20:03.932Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=null&necessity=Problemas%20de%20piel HTTP/1.1 404 87 - 4.576 ms
+error: 2023-04-18T21:20:05.979Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, null, Mediano (4 hasta 8 kilos), Castrado/Sobrepeso].
+info: 2023-04-18T21:20:05.981Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=null&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 5.492 ms
+error: 2023-04-18T21:20:08.164Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, null, Mediano (4 hasta 8 kilos), Ninguno].
+info: 2023-04-18T21:20:08.166Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=null&necessity=Ninguno HTTP/1.1 404 87 - 4.707 ms
+info: 2023-04-18T21:20:11.143Z ::1 - GET /pets HTTP/1.1 200 247 - 9.707 ms
+info: 2023-04-18T21:20:11.148Z ::1 - GET /ages?pet_id=1 HTTP/1.1 200 698 - 11.044 ms
+info: 2023-04-18T21:20:11.178Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 200 457 - 23.970 ms
+info: 2023-04-18T21:20:11.189Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 200 427 - 30.865 ms
+info: 2023-04-18T21:20:11.197Z ::1 - GET /pets HTTP/1.1 200 247 - 37.166 ms
+info: 2023-04-18T21:20:11.203Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 200 427 - 22.256 ms
+info: 2023-04-18T21:20:11.208Z ::1 - GET /ages?pet_id=1 HTTP/1.1 200 698 - 44.995 ms
+info: 2023-04-18T21:20:11.212Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 200 457 - 27.647 ms
+info: 2023-04-18T21:20:16.706Z ::1 - GET /forms?pet=Perro&size=Grande%20(mas%20de%208%20kilos)&age=1%20a%206%20a%C3%B1os&necessity=Castrado/Sobrepeso HTTP/1.1 304 - - 3.664 ms
+info: 2023-04-18T21:20:16.734Z ::1 - POST /surveys HTTP/1.1 201 235 - 13.408 ms
+info: 2023-04-18T21:22:43.121Z ::1 - GET /pets HTTP/1.1 304 - - 20.924 ms
+info: 2023-04-18T21:22:43.127Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 19.722 ms
+info: 2023-04-18T21:22:43.134Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 25.142 ms
+info: 2023-04-18T21:22:43.145Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 33.634 ms
+info: 2023-04-18T21:22:43.159Z ::1 - GET /pets HTTP/1.1 304 - - 21.841 ms
+info: 2023-04-18T21:22:43.169Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 20.815 ms
+info: 2023-04-18T21:22:43.174Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 21.853 ms
+info: 2023-04-18T21:22:43.179Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 17.055 ms
+error: 2023-04-18T21:22:47.547Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Mediano (4 hasta 8 kilos), Problemas de piel].
+info: 2023-04-18T21:22:47.549Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 404 87 - 4.236 ms
+info: 2023-04-18T21:22:49.572Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Ninguno HTTP/1.1 304 - - 3.197 ms
+info: 2023-04-18T21:22:49.605Z ::1 - POST /surveys HTTP/1.1 201 230 - 20.208 ms
+info: 2023-04-18T21:24:04.186Z ::1 - GET /pets HTTP/1.1 304 - - 20.985 ms
+info: 2023-04-18T21:24:04.190Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 21.549 ms
+info: 2023-04-18T21:24:04.194Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 22.980 ms
+info: 2023-04-18T21:24:04.197Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 24.320 ms
+info: 2023-04-18T21:24:04.215Z ::1 - GET /pets HTTP/1.1 304 - - 16.172 ms
+info: 2023-04-18T21:24:04.218Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 16.011 ms
+info: 2023-04-18T21:24:04.223Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 17.434 ms
+info: 2023-04-18T21:24:04.227Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 17.015 ms
+info: 2023-04-18T21:24:09.520Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%206%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 304 - - 4.423 ms
+info: 2023-04-18T21:24:09.556Z ::1 - POST /surveys HTTP/1.1 201 238 - 24.504 ms
+info: 2023-04-18T21:25:00.011Z ::1 - GET /pets HTTP/1.1 304 - - 22.893 ms
+info: 2023-04-18T21:25:00.016Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 20.901 ms
+info: 2023-04-18T21:25:00.019Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 27.640 ms
+info: 2023-04-18T21:25:00.023Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 25.104 ms
+info: 2023-04-18T21:25:00.050Z ::1 - GET /pets HTTP/1.1 304 - - 15.414 ms
+info: 2023-04-18T21:25:00.054Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 14.462 ms
+info: 2023-04-18T21:25:00.057Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 13.822 ms
+info: 2023-04-18T21:25:00.060Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 13.163 ms
+info: 2023-04-18T21:25:03.676Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%206%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 304 - - 3.330 ms
+info: 2023-04-18T21:25:03.704Z ::1 - POST /surveys HTTP/1.1 201 238 - 14.522 ms
+info: 2023-04-18T21:25:55.187Z ::1 - GET /pets HTTP/1.1 304 - - 25.639 ms
+info: 2023-04-18T21:25:55.190Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 25.499 ms
+info: 2023-04-18T21:25:55.193Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 25.775 ms
+info: 2023-04-18T21:25:55.196Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 26.706 ms
+info: 2023-04-18T21:25:55.215Z ::1 - GET /pets HTTP/1.1 304 - - 16.249 ms
+info: 2023-04-18T21:25:55.219Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 16.198 ms
+info: 2023-04-18T21:25:55.222Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 16.085 ms
+info: 2023-04-18T21:25:55.225Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 14.428 ms
+info: 2023-04-18T21:25:59.982Z ::1 - GET /forms?pet=Perro&size=Grande%20(mas%20de%208%20kilos)&age=7%20a%C3%B1os%20o%20mas&necessity=Problemas%20de%20piel HTTP/1.1 304 - - 3.478 ms
+info: 2023-04-18T21:26:00.014Z ::1 - POST /surveys HTTP/1.1 201 238 - 18.324 ms
+info: 2023-04-18T21:26:21.522Z ::1 - GET /pets HTTP/1.1 304 - - 19.353 ms
+info: 2023-04-18T21:26:21.529Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 22.535 ms
+info: 2023-04-18T21:26:21.533Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 21.683 ms
+info: 2023-04-18T21:26:21.539Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 29.956 ms
+info: 2023-04-18T21:26:21.549Z ::1 - GET /pets HTTP/1.1 304 - - 14.109 ms
+info: 2023-04-18T21:26:21.557Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 14.674 ms
+info: 2023-04-18T21:26:21.562Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 16.465 ms
+info: 2023-04-18T21:26:21.565Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 13.830 ms
+info: 2023-04-18T21:26:24.672Z ::1 - GET /forms?pet=Perro&size=Grande%20(mas%20de%208%20kilos)&age=7%20a%C3%B1os%20o%20mas&necessity=Problemas%20de%20piel HTTP/1.1 304 - - 4.341 ms
+info: 2023-04-18T21:26:24.696Z ::1 - POST /surveys HTTP/1.1 201 238 - 10.792 ms
+info: 2023-04-18T21:29:24.727Z ::1 - GET /pets HTTP/1.1 304 - - 19.680 ms
+info: 2023-04-18T21:29:24.730Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 20.394 ms
+info: 2023-04-18T21:29:24.732Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 20.777 ms
+info: 2023-04-18T21:29:24.735Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 21.153 ms
+info: 2023-04-18T21:29:24.753Z ::1 - GET /pets HTTP/1.1 304 - - 15.949 ms
+info: 2023-04-18T21:29:24.760Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 14.217 ms
+info: 2023-04-18T21:29:24.768Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 20.911 ms
+info: 2023-04-18T21:29:24.772Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 21.859 ms
+info: 2023-04-18T21:30:10.313Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(hasta%204%20kilos)&age=Menos%20de%201%20a%C3%B1o&necessity=Ninguno HTTP/1.1 304 - - 5.696 ms
+info: 2023-04-18T21:30:10.337Z ::1 - POST /surveys HTTP/1.1 201 227 - 13.035 ms
+info: 2023-04-19T13:13:38.584Z ::1 - POST /images HTTP/1.1 401 - - 8.821 ms
+info: 2023-04-19T13:13:45.277Z ::1 - POST /auth/login HTTP/1.1 500 1691 - 52.620 ms
+info: 2023-04-19T13:14:07.519Z ::1 - POST /auth/login HTTP/1.1 500 1691 - 5.798 ms
+info: 2023-04-19T13:14:15.690Z ::1 - POST /auth/login HTTP/1.1 500 1691 - 51.199 ms
+info: 2023-04-19T13:15:15.120Z ::1 - POST /auth/login HTTP/1.1 500 1691 - 6.650 ms
+info: 2023-04-19T13:15:59.092Z ::1 - POST /auth/login HTTP/1.1 500 1691 - 132.531 ms
+info: 2023-04-19T13:16:33.045Z ::1 - POST /auth/login HTTP/1.1 500 1691 - 49.353 ms
+info: 2023-04-19T13:16:47.946Z Usuario undefined completo autenticacion exitosamente
+info: 2023-04-19T13:16:47.948Z ::1 - POST /auth/login HTTP/1.1 200 149 - 257.076 ms
+info: 2023-04-19T13:17:01.624Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T13:17:01.678Z ::1 - POST /images HTTP/1.1 201 15 - 58.834 ms
+info: 2023-04-19T13:17:45.667Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T13:17:45.676Z Imagen [1.jpg] ya existen.
+info: 2023-04-19T13:17:45.681Z ::1 - POST /images HTTP/1.1 409 61 - 20.150 ms
+info: 2023-04-19T13:29:59.713Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T13:29:59.848Z ::1 - POST /images HTTP/1.1 500 761 - 187.725 ms
+info: 2023-04-19T13:30:56.615Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T13:30:56.628Z ::1 - POST /images HTTP/1.1 500 761 - 21.838 ms
+info: 2023-04-19T13:32:54.897Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T13:32:54.908Z ::1 - POST /images HTTP/1.1 500 761 - 18.920 ms
+info: 2023-04-19T13:33:03.245Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T13:33:03.292Z ::1 - POST /images HTTP/1.1 201 15 - 89.423 ms
+info: 2023-04-19T13:33:31.462Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T13:33:31.480Z ::1 - POST /images HTTP/1.1 201 15 - 19.748 ms
+info: 2023-04-19T13:35:26.110Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T13:35:26.177Z ::1 - POST /images HTTP/1.1 201 15 - 115.133 ms
+info: 2023-04-19T13:37:34.666Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T13:37:34.726Z ::1 - POST /images HTTP/1.1 201 15 - 106.925 ms
+info: 2023-04-19T13:37:51.626Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T13:37:51.645Z ::1 - POST /images HTTP/1.1 201 15 - 23.494 ms
+info: 2023-04-19T13:37:59.355Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T13:37:59.403Z ::1 - POST /images HTTP/1.1 201 15 - 111.183 ms
+info: 2023-04-19T13:39:28.228Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T13:39:28.274Z ::1 - POST /images HTTP/1.1 201 15 - 96.474 ms
+info: 2023-04-19T13:39:58.331Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T13:39:58.377Z ::1 - POST /images HTTP/1.1 201 15 - 91.070 ms
+info: 2023-04-19T13:41:49.648Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T13:41:49.699Z ::1 - POST /images HTTP/1.1 201 15 - 129.358 ms
+info: 2023-04-19T13:41:51.381Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T13:41:51.391Z Imagen [1.jpg] ya existen.
+error: 2023-04-19T13:41:51.398Z Error no controlado al guardar las imágenes.
+info: 2023-04-19T13:41:51.402Z ::1 - POST /images HTTP/1.1 500 61 - 18.870 ms
+info: 2023-04-19T13:42:19.681Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T13:42:19.736Z ::1 - POST /images HTTP/1.1 201 15 - 93.215 ms
+info: 2023-04-19T14:06:58.263Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:06:58.308Z ::1 - POST /images HTTP/1.1 201 15 - 92.593 ms
+info: 2023-04-19T14:10:47.099Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:10:47.146Z ::1 - POST /images HTTP/1.1 201 164 - 107.065 ms
+info: 2023-04-19T14:12:17.977Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 200 50 - 54.690 ms
+info: 2023-04-19T14:12:28.048Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 200 50 - 7.268 ms
+info: 2023-04-19T14:13:04.581Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 200 164 - 50.423 ms
+info: 2023-04-19T14:13:53.276Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 200 177 - 55.834 ms
+info: 2023-04-19T14:15:50.383Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 200 180 - 65.249 ms
+info: 2023-04-19T14:16:02.053Z ::1 - GET /forms?pet=Perro&age=7%20a%C3%B1os%20o%20mas&size=Peque%C3%B1o%20(hasta%204%20kilos)&necessity=Castrado/Sobrepeso HTTP/1.1 200 179 - 9.035 ms
+info: 2023-04-19T14:17:20.410Z ::1 - GET /images/1 HTTP/1.1 500 912 - 13.187 ms
+info: 2023-04-19T14:18:37.083Z ::1 - GET /images/1 HTTP/1.1 500 279 - 57.611 ms
+info: 2023-04-19T14:21:08.262Z ::1 - GET /images/1 HTTP/1.1 500 279 - 50.521 ms
+info: 2023-04-19T14:21:46.162Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:21:46.209Z ::1 - POST /images HTTP/1.1 201 164 - 63.729 ms
+info: 2023-04-19T14:21:49.860Z Usuario dmotta suministro un token valido. Autenticacion completada
+error: 2023-04-19T14:21:49.898Z Error no controlado al guardar las imágenes.
+info: 2023-04-19T14:21:49.900Z ::1 - POST /images HTTP/1.1 500 45 - 44.137 ms
+info: 2023-04-19T14:21:52.633Z Usuario dmotta suministro un token valido. Autenticacion completada
+error: 2023-04-19T14:21:52.663Z Error no controlado al guardar las imágenes.
+info: 2023-04-19T14:21:52.666Z ::1 - POST /images HTTP/1.1 500 45 - 36.227 ms
+info: 2023-04-19T14:22:35.248Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:22:35.313Z ::1 - POST /images HTTP/1.1 500 1053 - 148.320 ms
+info: 2023-04-19T14:23:43.740Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:23:43.788Z ::1 - POST /images HTTP/1.1 500 1053 - 113.654 ms
+info: 2023-04-19T14:24:09.870Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:24:09.900Z ::1 - POST /images HTTP/1.1 500 314 - 80.631 ms
+info: 2023-04-19T14:25:19.626Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:25:19.687Z ::1 - POST /images HTTP/1.1 500 1053 - 130.324 ms
+info: 2023-04-19T14:25:22.025Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:25:22.039Z ::1 - POST /images HTTP/1.1 500 1053 - 20.014 ms
+info: 2023-04-19T14:26:06.513Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:26:06.576Z ::1 - POST /images HTTP/1.1 500 1053 - 126.413 ms
+info: 2023-04-19T14:26:24.929Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:26:24.976Z ::1 - POST /images HTTP/1.1 500 1053 - 119.388 ms
+info: 2023-04-19T14:26:26.000Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:26:26.018Z ::1 - POST /images HTTP/1.1 500 1053 - 24.168 ms
+info: 2023-04-19T14:26:37.334Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:26:37.358Z Imagen [1.jpg] ya existen.
+info: 2023-04-19T14:26:37.365Z ::1 - POST /images HTTP/1.1 409 61 - 83.276 ms
+info: 2023-04-19T14:26:39.112Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:26:39.126Z Imagen [1.jpg] ya existen.
+info: 2023-04-19T14:26:39.130Z ::1 - POST /images HTTP/1.1 409 61 - 22.033 ms
+info: 2023-04-19T14:26:54.133Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:26:54.146Z Imagen [3949102.jpg] ya existen.
+info: 2023-04-19T14:26:54.149Z ::1 - POST /images HTTP/1.1 409 67 - 23.982 ms
+info: 2023-04-19T14:27:38.860Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:27:38.866Z Imagen [3949102.jpg] ya existen.
+info: 2023-04-19T14:27:38.869Z ::1 - POST /images HTTP/1.1 409 67 - 14.459 ms
+info: 2023-04-19T14:27:40.103Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:27:40.110Z Imagen [3949102.jpg] ya existen.
+info: 2023-04-19T14:27:40.112Z ::1 - POST /images HTTP/1.1 409 67 - 11.653 ms
+info: 2023-04-19T14:27:41.184Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:27:41.192Z Imagen [3949102.jpg] ya existen.
+info: 2023-04-19T14:27:41.196Z ::1 - POST /images HTTP/1.1 409 67 - 13.112 ms
+info: 2023-04-19T14:28:20.328Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:28:20.352Z Imagen [3949102.jpg] ya existen.
+info: 2023-04-19T14:28:20.363Z ::1 - POST /images HTTP/1.1 409 67 - 88.504 ms
+info: 2023-04-19T14:28:21.317Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:28:21.325Z Imagen [3949102.jpg] ya existen.
+info: 2023-04-19T14:28:21.328Z ::1 - POST /images HTTP/1.1 409 67 - 15.790 ms
+info: 2023-04-19T14:28:22.059Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:28:22.067Z Imagen [3949102.jpg] ya existen.
+info: 2023-04-19T14:28:22.070Z ::1 - POST /images HTTP/1.1 409 67 - 12.709 ms
+info: 2023-04-19T14:28:22.516Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:28:22.522Z Imagen [3949102.jpg] ya existen.
+info: 2023-04-19T14:28:22.525Z ::1 - POST /images HTTP/1.1 409 67 - 12.120 ms
+info: 2023-04-19T14:28:42.119Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:28:42.128Z Imagen [3949102.jpg] ya existen.
+info: 2023-04-19T14:28:42.132Z ::1 - POST /images HTTP/1.1 409 67 - 19.430 ms
+info: 2023-04-19T14:29:13.960Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:29:14.005Z ::1 - POST /images HTTP/1.1 201 182 - 105.821 ms
+info: 2023-04-19T14:29:16.109Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:29:16.126Z ::1 - POST /images HTTP/1.1 500 1053 - 23.039 ms
+info: 2023-04-19T14:29:19.682Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:29:19.702Z ::1 - POST /images HTTP/1.1 500 1053 - 25.218 ms
+error: 2023-04-19T14:30:31.845Z uncaughtException: missing ) after argument list
+C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\api\resources\images\images.controller.js:102
+            }
+            ^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\api\resources\images\images.route.js:5:25)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10) {"date":"Wed Apr 19 2023 11:30:31 GMT-0300 (hora estándar de Argentina)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":6866},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3256351,"external":4885489,"heapTotal":69513216,"heapUsed":41270880,"rss":83361792},"pid":20180,"uid":null,"version":"v14.18.0"},"stack":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.controller.js:102\n            }\n            ^\n\nSyntaxError: missing ) after argument list\n    at wrapSafe (internal/modules/cjs/loader.js:1001:16)\n    at Module._compile (internal/modules/cjs/loader.js:1049:27)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)\n    at Module.load (internal/modules/cjs/loader.js:950:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:790:12)\n    at Module.require (internal/modules/cjs/loader.js:974:19)\n    at require (internal/modules/cjs/helpers.js:93:18)\n    at Object.<anonymous> (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js:5:25)\n    at Module._compile (internal/modules/cjs/loader.js:1085:14)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","trace":[{"column":16,"file":"internal/modules/cjs/loader.js","function":"wrapSafe","line":1001,"method":null,"native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1049,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":950,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":790,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":974,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":93,"method":null,"native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js","function":null,"line":5,"method":null,"native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1085,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1114,"method":".js","native":false}]}
+info: 2023-04-19T14:30:57.106Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:30:57.151Z ::1 - POST /images HTTP/1.1 500 1053 - 99.567 ms
+info: 2023-04-19T14:30:58.148Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:30:58.172Z ::1 - POST /images HTTP/1.1 500 1053 - 31.512 ms
+info: 2023-04-19T14:31:19.138Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:31:19.152Z ::1 - POST /images HTTP/1.1 500 1053 - 21.749 ms
+info: 2023-04-19T14:31:33.822Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:31:33.884Z ::1 - POST /images HTTP/1.1 500 1053 - 157.666 ms
+info: 2023-04-19T14:31:57.512Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:31:57.540Z ::1 - POST /images HTTP/1.1 500 761 - 80.595 ms
+info: 2023-04-19T14:32:10.776Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:32:10.830Z ::1 - POST /images HTTP/1.1 500 1053 - 115.323 ms
+info: 2023-04-19T14:32:14.465Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:32:14.481Z ::1 - POST /images HTTP/1.1 500 1053 - 23.082 ms
+info: 2023-04-19T14:32:33.074Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:32:33.108Z ::1 - POST /images HTTP/1.1 500 314 - 106.980 ms
+info: 2023-04-19T14:32:54.208Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:32:54.240Z ::1 - POST /images HTTP/1.1 500 1355 - 98.311 ms
+info: 2023-04-19T14:32:56.115Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:32:56.126Z ::1 - POST /images HTTP/1.1 500 1355 - 18.821 ms
+info: 2023-04-19T14:33:01.398Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:33:01.437Z ::1 - POST /images HTTP/1.1 500 314 - 110.640 ms
+info: 2023-04-19T14:34:03.945Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:34:03.999Z ::1 - POST /images HTTP/1.1 500 1053 - 121.309 ms
+info: 2023-04-19T14:34:05.523Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:34:05.539Z ::1 - POST /images HTTP/1.1 500 1053 - 21.358 ms
+info: 2023-04-19T14:34:36.037Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:34:36.098Z ::1 - POST /images HTTP/1.1 500 1053 - 128.433 ms
+info: 2023-04-19T14:35:24.322Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:35:24.394Z ::1 - POST /images HTTP/1.1 500 1053 - 141.388 ms
+info: 2023-04-19T14:36:43.984Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:36:44.010Z Imagen [3949102.jpg] ya existen.
+info: 2023-04-19T14:36:44.022Z ::1 - POST /images HTTP/1.1 409 67 - 99.800 ms
+info: 2023-04-19T14:37:14.128Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:37:14.152Z Imagen [1.jpg] ya existen.
+info: 2023-04-19T14:37:14.160Z ::1 - POST /images HTTP/1.1 409 61 - 97.265 ms
+info: 2023-04-19T14:37:55.732Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:37:55.756Z Imagen [1.jpg] ya existen.
+info: 2023-04-19T14:37:55.767Z ::1 - POST /images HTTP/1.1 409 61 - 96.248 ms
+info: 2023-04-19T14:37:57.854Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:37:57.863Z Imagen [1.jpg] ya existen.
+info: 2023-04-19T14:37:57.866Z ::1 - POST /images HTTP/1.1 409 61 - 15.437 ms
+info: 2023-04-19T14:37:58.568Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:37:58.580Z Imagen [1.jpg] ya existen.
+info: 2023-04-19T14:37:58.583Z ::1 - POST /images HTTP/1.1 409 61 - 18.131 ms
+info: 2023-04-19T14:38:16.558Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:38:16.660Z ::1 - POST /images HTTP/1.1 201 164 - 168.404 ms
+info: 2023-04-19T14:38:18.241Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:38:18.253Z Imagen [1.jpg] ya existen.
+info: 2023-04-19T14:38:18.257Z ::1 - POST /images HTTP/1.1 409 61 - 23.292 ms
+info: 2023-04-19T14:38:19.712Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:38:19.724Z Imagen [1.jpg] ya existen.
+info: 2023-04-19T14:38:19.726Z ::1 - POST /images HTTP/1.1 409 61 - 18.712 ms
+info: 2023-04-19T14:38:27.742Z Usuario dmotta suministro un token valido. Autenticacion completada
+info: 2023-04-19T14:38:27.773Z ::1 - POST /images HTTP/1.1 201 182 - 35.189 ms
+info: 2023-04-19T14:38:29.488Z Usuario dmotta suministro un token valido. Autenticacion completada
+warn: 2023-04-19T14:38:29.508Z Imagen [3949085.jpg] ya existen.
+info: 2023-04-19T14:38:29.511Z ::1 - POST /images HTTP/1.1 409 67 - 25.668 ms
+info: 2023-04-19T14:38:40.988Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 11.082 ms
+info: 2023-04-19T14:48:17.820Z ::1 - GET /pets HTTP/1.1 200 247 - 56.367 ms
+info: 2023-04-19T14:48:17.833Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 200 457 - 46.268 ms
+info: 2023-04-19T14:48:17.852Z ::1 - GET /ages?pet_id=1 HTTP/1.1 200 698 - 75.546 ms
+info: 2023-04-19T14:48:17.861Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 200 427 - 70.779 ms
+info: 2023-04-19T14:48:17.866Z ::1 - GET /pets HTTP/1.1 200 247 - 42.492 ms
+info: 2023-04-19T14:48:17.879Z ::1 - GET /ages?pet_id=1 HTTP/1.1 200 698 - 43.409 ms
+info: 2023-04-19T14:48:17.903Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 200 457 - 30.370 ms
+info: 2023-04-19T14:48:17.914Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 200 427 - 32.299 ms
+info: 2023-04-19T14:48:17.964Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 28.336 ms
+info: 2023-04-19T14:48:17.977Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 68.706 ms
+info: 2023-04-19T14:48:17.983Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 95.638 ms
+info: 2023-04-19T14:48:18.001Z ::1 - GET /pets HTTP/1.1 304 - - 100.177 ms
+info: 2023-04-19T14:48:18.019Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 108.596 ms
+info: 2023-04-19T14:48:18.026Z ::1 - GET /pets HTTP/1.1 304 - - 105.857 ms
+info: 2023-04-19T14:48:18.036Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 28.413 ms
+info: 2023-04-19T14:48:18.040Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 27.915 ms
+error: 2023-04-19T14:48:26.614Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Pequeño (hasta 4 kilos), Problemas de piel].
+info: 2023-04-19T14:48:26.617Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(hasta%204%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 404 87 - 6.112 ms
+error: 2023-04-19T14:48:29.262Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Pequeño (hasta 4 kilos), Castrado/Sobrepeso].
+info: 2023-04-19T14:48:29.265Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(hasta%204%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 4.889 ms
+error: 2023-04-19T14:48:32.583Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Mediano (4 hasta 8 kilos), Castrado/Sobrepeso].
+info: 2023-04-19T14:48:32.584Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 3.789 ms
+info: 2023-04-19T14:48:37.670Z ::1 - GET /ages?pet_id=2 HTTP/1.1 200 424 - 12.432 ms
+info: 2023-04-19T14:48:37.675Z ::1 - GET /sizes?pet_id=2 HTTP/1.1 304 - - 12.987 ms
+info: 2023-04-19T14:48:37.680Z ::1 - GET /necessities?pet_id=2 HTTP/1.1 200 427 - 13.283 ms
+error: 2023-04-19T14:48:42.277Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Gato, Menos de 1 año, Mediano (4 hasta 8 kilos), Castrado/Sobrepeso].
+info: 2023-04-19T14:48:42.279Z ::1 - GET /forms?pet=Gato&size=Mediano%20(4%20hasta%208%20kilos)&age=Menos%20de%201%20a%C3%B1o&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 3.891 ms
+info: 2023-04-19T14:48:49.869Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 12.948 ms
+info: 2023-04-19T14:48:49.874Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 14.925 ms
+info: 2023-04-19T14:48:49.881Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 16.829 ms
+info: 2023-04-19T14:48:57.065Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Ninguno HTTP/1.1 200 54 - 3.791 ms
+warn: 2023-04-19T14:48:57.143Z Codigo del cliente no existen: 1
+info: 2023-04-19T14:48:57.145Z ::1 - POST /surveys HTTP/1.1 409 51 - 32.033 ms
+info: 2023-04-19T14:49:43.378Z ::1 - GET /forms?pet=Perro&size=Grande%20(mas%20de%208%20kilos)&age=1%20a%206%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 304 - - 6.134 ms
+info: 2023-04-19T14:49:43.408Z ::1 - POST /surveys HTTP/1.1 201 235 - 15.549 ms
+info: 2023-04-19T14:54:02.482Z ::1 - GET /pets HTTP/1.1 304 - - 115.873 ms
+info: 2023-04-19T14:54:02.495Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 116.072 ms
+info: 2023-04-19T14:54:02.504Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 119.727 ms
+info: 2023-04-19T14:54:02.510Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 127.746 ms
+info: 2023-04-19T14:54:02.547Z ::1 - GET /pets HTTP/1.1 304 - - 28.575 ms
+info: 2023-04-19T14:54:02.555Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 35.420 ms
+info: 2023-04-19T14:54:02.560Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 36.215 ms
+info: 2023-04-19T14:54:02.565Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 38.218 ms
+error: 2023-04-19T14:54:05.995Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Mediano (4 hasta 8 kilos), Problemas de piel].
+info: 2023-04-19T14:54:05.998Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 404 87 - 8.495 ms
+info: 2023-04-19T14:54:08.673Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Ninguno HTTP/1.1 200 159 - 4.417 ms
+warn: 2023-04-19T14:54:08.717Z El siguiente usuario no pasó la validación: [object Object] - ["answer" is required]   
+info: 2023-04-19T14:54:08.719Z ::1 - POST /surveys HTTP/1.1 400 22 - 30.841 ms
+error: 2023-04-19T14:54:10.479Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, Mediano (4 hasta 8 kilos), Castrado/Sobrepeso].
+info: 2023-04-19T14:54:10.481Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%205%20a%C3%B1os&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 4.865 ms
+info: 2023-04-19T14:54:13.489Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%206%20a%C3%B1os&necessity=Castrado/Sobrepeso HTTP/1.1 200 166 - 4.741 ms
+warn: 2023-04-19T14:54:13.498Z El siguiente usuario no pasó la validación: [object Object] - ["answer" is required]   
+info: 2023-04-19T14:54:13.501Z ::1 - POST /surveys HTTP/1.1 400 22 - 2.931 ms
+info: 2023-04-19T14:54:44.889Z ::1 - GET /pets HTTP/1.1 304 - - 20.635 ms
+info: 2023-04-19T14:54:44.895Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 22.242 ms
+info: 2023-04-19T14:54:44.899Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 21.860 ms
+info: 2023-04-19T14:54:44.902Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 22.469 ms
+info: 2023-04-19T14:54:52.122Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%206%20a%C3%B1os&necessity=Castrado/Sobrepeso HTTP/1.1 304 - - 5.006 ms
+info: 2023-04-19T14:54:52.177Z ::1 - POST /surveys HTTP/1.1 201 236 - 41.732 ms
+info: 2023-04-19T14:55:52.913Z ::1 - GET /pets HTTP/1.1 304 - - 23.209 ms
+info: 2023-04-19T14:55:52.916Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 24.737 ms
+info: 2023-04-19T14:55:52.920Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 25.691 ms
+info: 2023-04-19T14:55:52.927Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 29.756 ms
+info: 2023-04-19T14:55:52.963Z ::1 - GET /pets HTTP/1.1 304 - - 21.233 ms
+info: 2023-04-19T14:55:52.970Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 33.636 ms
+info: 2023-04-19T14:55:52.984Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 8.915 ms
+info: 2023-04-19T14:55:52.987Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 7.598 ms
+info: 2023-04-19T14:55:56.760Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%206%20a%C3%B1os&necessity=Castrado/Sobrepeso HTTP/1.1 304 - - 3.384 ms
+info: 2023-04-19T14:55:56.795Z ::1 - POST /surveys HTTP/1.1 201 236 - 21.339 ms
+info: 2023-04-19T14:56:28.675Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 11.118 ms
+info: 2023-04-19T14:56:44.494Z ::1 - GET /images/0 HTTP/1.1 500 279 - 7.744 ms
+info: 2023-04-19T14:56:44.502Z ::1 - GET /favicon.ico HTTP/1.1 - - - - ms
+info: 2023-04-19T15:02:22.639Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 7.605 ms
+info: 2023-04-19T15:05:25.753Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 11.957 ms
+info: 2023-04-19T15:10:55.602Z ::1 - GET /pets HTTP/1.1 304 - - 22.878 ms
+info: 2023-04-19T15:10:55.606Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 22.948 ms
+info: 2023-04-19T15:10:55.611Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 24.819 ms
+info: 2023-04-19T15:10:55.617Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 28.199 ms
+info: 2023-04-19T15:10:55.631Z ::1 - GET /pets HTTP/1.1 304 - - 12.436 ms
+info: 2023-04-19T15:10:55.636Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 13.114 ms
+info: 2023-04-19T15:10:55.641Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 14.209 ms
+info: 2023-04-19T15:10:55.647Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 17.720 ms
+info: 2023-04-19T15:11:11.661Z ::1 - GET /pets HTTP/1.1 304 - - 24.659 ms
+info: 2023-04-19T15:11:11.667Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 22.560 ms
+info: 2023-04-19T15:11:11.673Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 31.101 ms
+info: 2023-04-19T15:11:11.677Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 29.150 ms
+info: 2023-04-19T15:11:16.253Z ::1 - GET /ages?pet_id=2 HTTP/1.1 200 424 - 4.179 ms
+info: 2023-04-19T15:11:16.263Z ::1 - GET /sizes?pet_id=2 HTTP/1.1 200 11 - 7.583 ms
+info: 2023-04-19T15:11:16.266Z ::1 - GET /necessities?pet_id=2 HTTP/1.1 200 427 - 7.785 ms
+error: 2023-04-19T15:11:19.776Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Gato, 6 años o mas, null, Castrado/Sobrepeso].
+info: 2023-04-19T15:11:19.778Z ::1 - GET /forms?pet=Gato&size=null&age=6%20a%C3%B1os%20o%20mas&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 5.268 ms
+error: 2023-04-19T15:11:33.949Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Gato, 6 años o mas, null, Castrado/Sobrepeso].
+info: 2023-04-19T15:11:33.951Z ::1 - GET /forms?pet=Gato&size=null&age=6%20a%C3%B1os%20o%20mas&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 7.192 ms
+error: 2023-04-19T15:15:13.856Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Gato, 6 años o mas, null, Castrado/Sobrepeso].
+info: 2023-04-19T15:15:13.870Z ::1 - GET /forms?pet=Gato&size=null&age=6%20a%C3%B1os%20o%20mas&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 78.752 ms
+error: 2023-04-19T15:15:16.585Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Gato, 6 años o mas, null, Castrado/Sobrepeso].
+info: 2023-04-19T15:15:16.587Z ::1 - GET /forms?pet=Gato&size=null&age=6%20a%C3%B1os%20o%20mas&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 5.903 ms
+info: 2023-04-19T15:16:05.424Z ::1 - GET /forms?pet=Gato&size=null&age=6%20a%C3%B1os%20o%20mas&necessity=Castrado/Sobrepeso HTTP/1.1 200 158 - 57.774 ms
+info: 2023-04-19T15:16:05.504Z ::1 - POST /surveys HTTP/1.1 201 228 - 69.409 ms
+info: 2023-04-19T15:16:05.585Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 33.114 ms
+info: 2023-04-19T15:18:06.996Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 12.213 ms
+info: 2023-04-19T15:19:03.239Z ::1 - GET /images/1 HTTP/1.1 304 - - 11.888 ms
+info: 2023-04-19T15:24:12.381Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 8.071 ms
+info: 2023-04-19T15:29:46.652Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 9.030 ms
+info: 2023-04-19T15:40:39.841Z ::1 - GET /pets HTTP/1.1 304 - - 41.181 ms
+info: 2023-04-19T15:40:39.848Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 39.538 ms
+info: 2023-04-19T15:40:39.855Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 41.544 ms
+info: 2023-04-19T15:40:39.865Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 49.677 ms
+info: 2023-04-19T15:40:39.886Z ::1 - GET /pets HTTP/1.1 304 - - 16.828 ms
+info: 2023-04-19T15:40:39.891Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 18.403 ms
+info: 2023-04-19T15:40:39.902Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 24.769 ms
+info: 2023-04-19T15:40:39.907Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 28.262 ms
+info: 2023-04-19T15:40:45.459Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=7%20a%C3%B1os%20o%20mas&necessity=Castrado/Sobrepeso HTTP/1.1 200 168 - 5.331 ms
+info: 2023-04-19T15:40:45.488Z ::1 - POST /surveys HTTP/1.1 201 238 - 16.260 ms
+info: 2023-04-19T15:40:45.536Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 7.514 ms
+info: 2023-04-19T15:40:54.510Z ::1 - GET /pets HTTP/1.1 304 - - 16.729 ms
+info: 2023-04-19T15:40:54.516Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 18.929 ms
+info: 2023-04-19T15:40:54.526Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 25.563 ms
+info: 2023-04-19T15:40:54.536Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 30.143 ms
+info: 2023-04-19T15:40:54.549Z ::1 - GET /pets HTTP/1.1 304 - - 29.221 ms
+info: 2023-04-19T15:40:54.558Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 18.842 ms
+info: 2023-04-19T15:40:54.564Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 31.315 ms
+info: 2023-04-19T15:40:54.579Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 24.369 ms
+info: 2023-04-19T15:40:59.954Z ::1 - GET /forms?pet=Perro&size=Grande%20(mas%20de%208%20kilos)&age=7%20a%C3%B1os%20o%20mas&necessity=Castrado/Sobrepeso HTTP/1.1 200 166 - 4.161 ms
+info: 2023-04-19T15:40:59.975Z ::1 - POST /surveys HTTP/1.1 201 236 - 8.625 ms
+info: 2023-04-19T15:41:00.010Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 7.321 ms
+info: 2023-04-19T15:56:29.853Z ::1 - GET /images/0 HTTP/1.1 500 304 - 85.822 ms
+error: 2023-04-19T15:56:29.867Z Error no controlado al al leer el archivo.
+error: 2023-04-19T15:56:29.918Z uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:278:15)
+    at ReadFileContext.callback (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\api\resources\images\images.route.js:80:25)
+    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:281:13) {"date":"Wed Apr 19 2023 12:56:29 GMT-0300 (hora estándar de Argentina)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":12024},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3045775,"external":4791966,"heapTotal":33488896,"heapUsed":31610568,"rss":63303680},"pid":12604,"uid":null,"version":"v14.18.0"},"stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at new NodeError (internal/errors.js:322:7)\n    at ServerResponse.setHeader (_http_outgoing.js:561:11)\n    at ServerResponse.header (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:794:10)\n    at ServerResponse.send (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:174:12)\n    at ServerResponse.json (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:278:15)\n    at ReadFileContext.callback (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js:80:25)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:281:13)","trace":[{"column":7,"file":"internal/errors.js","function":"new NodeError","line":322,"method":null,"native":false},{"column":11,"file":"_http_outgoing.js","function":"ServerResponse.setHeader","line":561,"method":"setHeader","native":false},{"column":10,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":794,"method":"header","native":false},{"column":12,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":174,"method":"send","native":false},{"column":15,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":278,"method":"json","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js","function":"ReadFileContext.callback","line":80,"method":"callback","native":false},{"column":13,"file":"fs.js","function":"FSReqCallback.readFileAfterOpen [as oncomplete]","line":281,"method":"readFileAfterOpen [as oncomplete]","native":false}]}
+info: 2023-04-19T15:57:09.300Z ::1 - GET /images/0 HTTP/1.1 500 304 - 60.401 ms
+error: 2023-04-19T15:57:09.307Z Error no controlado al al leer el archivo.
+error: 2023-04-19T15:57:09.338Z uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:278:15)
+    at ReadFileContext.callback (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\api\resources\images\images.route.js:80:25)
+    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:281:13) {"date":"Wed Apr 19 2023 12:57:09 GMT-0300 (hora estándar de Argentina)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":12063},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3552128,"external":5203760,"heapTotal":70438912,"heapUsed":47073840,"rss":88604672},"pid":5648,"uid":null,"version":"v14.18.0"},"stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at new NodeError (internal/errors.js:322:7)\n    at ServerResponse.setHeader (_http_outgoing.js:561:11)\n    at ServerResponse.header (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:794:10)\n    at ServerResponse.send (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:174:12)\n    at ServerResponse.json (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:278:15)\n    at ReadFileContext.callback (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js:80:25)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:281:13)","trace":[{"column":7,"file":"internal/errors.js","function":"new NodeError","line":322,"method":null,"native":false},{"column":11,"file":"_http_outgoing.js","function":"ServerResponse.setHeader","line":561,"method":"setHeader","native":false},{"column":10,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":794,"method":"header","native":false},{"column":12,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":174,"method":"send","native":false},{"column":15,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":278,"method":"json","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js","function":"ReadFileContext.callback","line":80,"method":"callback","native":false},{"column":13,"file":"fs.js","function":"FSReqCallback.readFileAfterOpen [as oncomplete]","line":281,"method":"readFileAfterOpen [as oncomplete]","native":false}]}
+error: 2023-04-19T15:57:19.948Z Error no controlado al al leer el archivo.
+info: 2023-04-19T15:57:19.962Z ::1 - GET /images/0 HTTP/1.1 500 39 - 84.527 ms
+error: 2023-04-19T15:57:41.590Z Error no controlado al al leer el archivo.
+info: 2023-04-19T15:57:41.600Z ::1 - GET /images/0 HTTP/1.1 500 39 - 71.058 ms
+error: 2023-04-19T15:57:42.657Z Error no controlado al al leer el archivo.
+info: 2023-04-19T15:57:42.661Z ::1 - GET /images/0 HTTP/1.1 500 39 - 10.265 ms
+info: 2023-04-19T15:57:53.532Z ::1 - GET /images/0 HTTP/1.1 500 304 - 60.417 ms
+error: 2023-04-19T15:57:53.542Z Error no controlado al al leer el archivo.
+error: 2023-04-19T15:57:53.574Z uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:278:15)
+    at ReadFileContext.callback (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\api\resources\images\images.route.js:80:25)
+    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:281:13) {"date":"Wed Apr 19 2023 12:57:53 GMT-0300 (hora estándar de Argentina)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":12108},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3146874,"external":4791966,"heapTotal":69140480,"heapUsed":32572712,"rss":85716992},"pid":12848,"uid":null,"version":"v14.18.0"},"stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at new NodeError (internal/errors.js:322:7)\n    at ServerResponse.setHeader (_http_outgoing.js:561:11)\n    at ServerResponse.header (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:794:10)\n    at ServerResponse.send (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:174:12)\n    at ServerResponse.json (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:278:15)\n    at ReadFileContext.callback (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js:80:25)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:281:13)","trace":[{"column":7,"file":"internal/errors.js","function":"new NodeError","line":322,"method":null,"native":false},{"column":11,"file":"_http_outgoing.js","function":"ServerResponse.setHeader","line":561,"method":"setHeader","native":false},{"column":10,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":794,"method":"header","native":false},{"column":12,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":174,"method":"send","native":false},{"column":15,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":278,"method":"json","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js","function":"ReadFileContext.callback","line":80,"method":"callback","native":false},{"column":13,"file":"fs.js","function":"FSReqCallback.readFileAfterOpen [as oncomplete]","line":281,"method":"readFileAfterOpen [as oncomplete]","native":false}]}
+info: 2023-04-19T15:59:38.839Z ::1 - GET /images/0 HTTP/1.1 500 304 - 58.189 ms
+error: 2023-04-19T15:59:38.870Z uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\api\resources\images\images.route.js:82:13
+    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:71:3) {"date":"Wed Apr 19 2023 12:59:38 GMT-0300 (hora estándar de Argentina)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":12213},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3211590,"external":4856682,"heapTotal":68878336,"heapUsed":32497312,"rss":86540288},"pid":4536,"uid":null,"version":"v14.18.0"},"stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at new NodeError (internal/errors.js:322:7)\n    at ServerResponse.setHeader (_http_outgoing.js:561:11)\n    at C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js:82:13\n    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:71:3)","trace":[{"column":7,"file":"internal/errors.js","function":"new NodeError","line":322,"method":null,"native":false},{"column":11,"file":"_http_outgoing.js","function":"ServerResponse.setHeader","line":561,"method":"setHeader","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js","function":null,"line":82,"method":null,"native":false},{"column":3,"file":"internal/fs/read_file_context.js","function":"FSReqCallback.readFileAfterClose [as oncomplete]","line":71,"method":"readFileAfterClose [as oncomplete]","native":false}]}
+info: 2023-04-19T16:00:13.873Z ::1 - GET /images/0 HTTP/1.1 500 304 - 62.661 ms
+error: 2023-04-19T16:00:13.881Z Error no controlado al al leer el archivo.
+error: 2023-04-19T16:00:13.913Z uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:278:15)
+    at ReadFileContext.callback (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\api\resources\images\images.route.js:80:25)
+    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:281:13) {"date":"Wed Apr 19 2023 13:00:13 GMT-0300 (hora estándar de Argentina)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":12248},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3578903,"external":5226042,"heapTotal":70701056,"heapUsed":47023336,"rss":88055808},"pid":15072,"uid":null,"version":"v14.18.0"},"stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at new NodeError (internal/errors.js:322:7)\n    at ServerResponse.setHeader (_http_outgoing.js:561:11)\n    at ServerResponse.header (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:794:10)\n    at ServerResponse.send (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:174:12)\n    at ServerResponse.json (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:278:15)\n    at ReadFileContext.callback (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js:80:25)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:281:13)","trace":[{"column":7,"file":"internal/errors.js","function":"new NodeError","line":322,"method":null,"native":false},{"column":11,"file":"_http_outgoing.js","function":"ServerResponse.setHeader","line":561,"method":"setHeader","native":false},{"column":10,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":794,"method":"header","native":false},{"column":12,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":174,"method":"send","native":false},{"column":15,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":278,"method":"json","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js","function":"ReadFileContext.callback","line":80,"method":"callback","native":false},{"column":13,"file":"fs.js","function":"FSReqCallback.readFileAfterOpen [as oncomplete]","line":281,"method":"readFileAfterOpen [as oncomplete]","native":false}]}
+info: 2023-04-19T16:00:54.175Z ::1 - GET /images/0 HTTP/1.1 500 279 - 61.414 ms
+info: 2023-04-19T16:01:12.664Z ::1 - GET /images/0 HTTP/1.1 500 304 - 58.975 ms
+error: 2023-04-19T16:01:12.671Z Error no controlado al al leer el archivo.
+error: 2023-04-19T16:01:12.707Z uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:278:15)
+    at ReadFileContext.callback (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\api\resources\images\images.route.js:81:25)
+    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:281:13) {"date":"Wed Apr 19 2023 13:01:12 GMT-0300 (hora estándar de Argentina)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":12307},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3570783,"external":5217922,"heapTotal":70438912,"heapUsed":46977360,"rss":88190976},"pid":13508,"uid":null,"version":"v14.18.0"},"stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at new NodeError (internal/errors.js:322:7)\n    at ServerResponse.setHeader (_http_outgoing.js:561:11)\n    at ServerResponse.header (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:794:10)\n    at ServerResponse.send (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:174:12)\n    at ServerResponse.json (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:278:15)\n    at ReadFileContext.callback (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js:81:25)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:281:13)","trace":[{"column":7,"file":"internal/errors.js","function":"new NodeError","line":322,"method":null,"native":false},{"column":11,"file":"_http_outgoing.js","function":"ServerResponse.setHeader","line":561,"method":"setHeader","native":false},{"column":10,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":794,"method":"header","native":false},{"column":12,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":174,"method":"send","native":false},{"column":15,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":278,"method":"json","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js","function":"ReadFileContext.callback","line":81,"method":"callback","native":false},{"column":13,"file":"fs.js","function":"FSReqCallback.readFileAfterOpen [as oncomplete]","line":281,"method":"readFileAfterOpen [as oncomplete]","native":false}]}
+info: 2023-04-19T16:01:33.827Z ::1 - GET /images/0 HTTP/1.1 500 304 - 73.551 ms
+error: 2023-04-19T16:01:33.836Z Error no controlado al al leer el archivo.
+error: 2023-04-19T16:01:33.884Z uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:278:15)
+    at ReadFileContext.callback (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\api\resources\images\images.route.js:81:25)
+    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:281:13) {"date":"Wed Apr 19 2023 13:01:33 GMT-0300 (hora estándar de Argentina)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":12328},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3146874,"external":4791966,"heapTotal":69402624,"heapUsed":32574552,"rss":86212608},"pid":2080,"uid":null,"version":"v14.18.0"},"stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at new NodeError (internal/errors.js:322:7)\n    at ServerResponse.setHeader (_http_outgoing.js:561:11)\n    at ServerResponse.header (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:794:10)\n    at ServerResponse.send (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:174:12)\n    at ServerResponse.json (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:278:15)\n    at ReadFileContext.callback (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js:81:25)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:281:13)","trace":[{"column":7,"file":"internal/errors.js","function":"new NodeError","line":322,"method":null,"native":false},{"column":11,"file":"_http_outgoing.js","function":"ServerResponse.setHeader","line":561,"method":"setHeader","native":false},{"column":10,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":794,"method":"header","native":false},{"column":12,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":174,"method":"send","native":false},{"column":15,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":278,"method":"json","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js","function":"ReadFileContext.callback","line":81,"method":"callback","native":false},{"column":13,"file":"fs.js","function":"FSReqCallback.readFileAfterOpen [as oncomplete]","line":281,"method":"readFileAfterOpen [as oncomplete]","native":false}]}
+info: 2023-04-19T16:02:03.924Z ::1 - GET /images/0 HTTP/1.1 500 304 - 61.798 ms
+error: 2023-04-19T16:02:03.933Z Error no controlado al al leer el archivo.
+error: 2023-04-19T16:02:03.963Z uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\node_modules\express\lib\response.js:278:15)
+    at ReadFileContext.callback (C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\api\resources\images\images.route.js:82:25)
+    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:281:13) {"date":"Wed Apr 19 2023 13:02:03 GMT-0300 (hora estándar de Argentina)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":12358},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3565229,"external":5216861,"heapTotal":70438912,"heapUsed":47019912,"rss":88391680},"pid":19064,"uid":null,"version":"v14.18.0"},"stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at new NodeError (internal/errors.js:322:7)\n    at ServerResponse.setHeader (_http_outgoing.js:561:11)\n    at ServerResponse.header (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:794:10)\n    at ServerResponse.send (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:174:12)\n    at ServerResponse.json (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js:278:15)\n    at ReadFileContext.callback (C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js:82:25)\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:281:13)","trace":[{"column":7,"file":"internal/errors.js","function":"new NodeError","line":322,"method":null,"native":false},{"column":11,"file":"_http_outgoing.js","function":"ServerResponse.setHeader","line":561,"method":"setHeader","native":false},{"column":10,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.header","line":794,"method":"header","native":false},{"column":12,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.send","line":174,"method":"send","native":false},{"column":15,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\node_modules\\express\\lib\\response.js","function":"ServerResponse.json","line":278,"method":"json","native":false},{"column":25,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js","function":"ReadFileContext.callback","line":82,"method":"callback","native":false},{"column":13,"file":"fs.js","function":"FSReqCallback.readFileAfterOpen [as oncomplete]","line":281,"method":"readFileAfterOpen [as oncomplete]","native":false}]}
+error: 2023-04-19T16:02:39.236Z Error no controlado al al leer el archivo.
+info: 2023-04-19T16:02:39.246Z ::1 - GET /images/0 HTTP/1.1 500 39 - 72.639 ms
+info: 2023-04-19T16:03:10.045Z ::1 - GET /images/0 HTTP/1.1 201 146347 - 66.697 ms
+info: 2023-04-19T16:03:33.472Z ::1 - GET /images/0 HTTP/1.1 201 64716 - 76.282 ms
+info: 2023-04-19T16:03:47.262Z ::1 - GET /images/0 HTTP/1.1 500 304 - 68.713 ms
+error: 2023-04-19T16:03:47.296Z uncaughtException: Cannot set headers after they are sent to the client
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at C:\Users\dmotta\Documents\01 DESARROLLO\08 Encuesta\survey-back\api\resources\images\images.route.js:82:13
+    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:71:3) {"date":"Wed Apr 19 2023 13:03:47 GMT-0300 (hora estándar de Argentina)","error":{"code":"ERR_HTTP_HEADERS_SENT"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":12461},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\index.js"],"cwd":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":3211590,"external":4856682,"heapTotal":69402624,"heapUsed":32111248,"rss":85876736},"pid":18188,"uid":null,"version":"v14.18.0"},"stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at new NodeError (internal/errors.js:322:7)\n    at ServerResponse.setHeader (_http_outgoing.js:561:11)\n    at C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js:82:13\n    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:71:3)","trace":[{"column":7,"file":"internal/errors.js","function":"new NodeError","line":322,"method":null,"native":false},{"column":11,"file":"_http_outgoing.js","function":"ServerResponse.setHeader","line":561,"method":"setHeader","native":false},{"column":13,"file":"C:\\Users\\dmotta\\Documents\\01 DESARROLLO\\08 Encuesta\\survey-back\\api\\resources\\images\\images.route.js","function":null,"line":82,"method":null,"native":false},{"column":3,"file":"internal/fs/read_file_context.js","function":"FSReqCallback.readFileAfterClose [as oncomplete]","line":71,"method":"readFileAfterClose [as oncomplete]","native":false}]}
+info: 2023-04-19T16:03:59.075Z ::1 - GET /images/0 HTTP/1.1 201 64716 - 73.547 ms
+info: 2023-04-19T16:04:03.760Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 9.729 ms
+info: 2023-04-19T16:08:24.581Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 96.475 ms
+info: 2023-04-19T16:09:36.649Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 10.452 ms
+info: 2023-04-19T16:12:43.219Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 11.809 ms
+info: 2023-04-19T16:14:17.313Z ::1 - GET /images/1 HTTP/1.1 201 146347 - 14.218 ms
+info: 2023-04-19T16:14:22.710Z ::1 - GET /pets HTTP/1.1 304 - - 36.253 ms
+info: 2023-04-19T16:14:22.722Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 36.519 ms
+info: 2023-04-19T16:14:22.739Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 46.916 ms
+info: 2023-04-19T16:14:22.767Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 71.144 ms
+info: 2023-04-19T16:14:22.779Z ::1 - GET /pets HTTP/1.1 304 - - 53.597 ms
+info: 2023-04-19T16:14:22.790Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 30.417 ms
+info: 2023-04-19T16:14:22.800Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 26.915 ms
+info: 2023-04-19T16:14:22.808Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 24.063 ms
+info: 2023-04-19T16:14:24.877Z ::1 - GET /ages?pet_id=2 HTTP/1.1 304 - - 12.391 ms
+info: 2023-04-19T16:14:24.880Z ::1 - GET /sizes?pet_id=2 HTTP/1.1 304 - - 12.527 ms
+info: 2023-04-19T16:14:24.884Z ::1 - GET /necessities?pet_id=2 HTTP/1.1 304 - - 12.307 ms
+info: 2023-04-19T16:14:27.659Z ::1 - GET /forms?pet=Gato&size=null&age=Menos%20de%201%20a%C3%B1o&necessity=Castrado/Sobrepeso HTTP/1.1 200 145 - 6.027 ms
+info: 2023-04-19T16:14:27.731Z ::1 - POST /surveys HTTP/1.1 201 215 - 59.264 ms
+info: 2023-04-19T16:14:27.770Z ::1 - GET /images/1 HTTP/1.1 304 - - 5.617 ms
+info: 2023-04-19T16:16:51.432Z ::1 - GET /images/1 HTTP/1.1 201 327895 - 7.489 ms
+info: 2023-04-19T16:18:34.362Z ::1 - GET /images/1 HTTP/1.1 201 327895 - 7.799 ms
+info: 2023-04-19T16:29:29.954Z ::1 - GET /pets HTTP/1.1 304 - - 123.735 ms
+info: 2023-04-19T16:29:29.961Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 115.518 ms
+info: 2023-04-19T16:29:29.967Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 118.014 ms
+info: 2023-04-19T16:29:29.971Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 118.485 ms
+info: 2023-04-19T16:29:29.992Z ::1 - GET /pets HTTP/1.1 304 - - 18.666 ms
+info: 2023-04-19T16:29:29.998Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 20.525 ms
+info: 2023-04-19T16:29:30.002Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 20.580 ms
+info: 2023-04-19T16:29:30.005Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 18.970 ms
+info: 2023-04-19T16:29:48.527Z ::1 - GET /pets HTTP/1.1 304 - - 25.186 ms
+info: 2023-04-19T16:29:48.532Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 26.939 ms
+info: 2023-04-19T16:29:48.536Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 27.371 ms
+info: 2023-04-19T16:29:48.539Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 27.492 ms
+info: 2023-04-19T16:29:48.573Z ::1 - GET /pets HTTP/1.1 304 - - 29.114 ms
+info: 2023-04-19T16:29:48.579Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 29.875 ms
+info: 2023-04-19T16:29:48.583Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 31.151 ms
+info: 2023-04-19T16:29:48.587Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 27.192 ms
+info: 2023-04-19T16:29:54.520Z ::1 - GET /pets HTTP/1.1 304 - - 8.257 ms
+info: 2023-04-19T16:29:54.527Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 11.714 ms
+info: 2023-04-19T16:29:54.543Z ::1 - GET /pets HTTP/1.1 304 - - 13.562 ms
+info: 2023-04-19T16:29:54.547Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 14.754 ms
+info: 2023-04-19T16:29:54.550Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 16.010 ms
+info: 2023-04-19T16:29:54.555Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 16.829 ms
+info: 2023-04-19T16:29:54.568Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 10.525 ms
+info: 2023-04-19T16:29:54.573Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 9.982 ms
+info: 2023-04-19T16:30:04.451Z ::1 - GET /forms?pet=Perro&size=Grande%20(mas%20de%208%20kilos)&age=7%20a%C3%B1os%20o%20mas&necessity=Problemas%20de%20piel HTTP/1.1 200 167 - 7.644 ms
+info: 2023-04-19T16:30:04.508Z ::1 - POST /surveys HTTP/1.1 201 237 - 42.318 ms
+info: 2023-04-19T16:30:04.558Z ::1 - GET /images/1 HTTP/1.1 201 327895 - 9.859 ms
