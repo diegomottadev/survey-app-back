@@ -1,4 +1,4 @@
-Installation Guide
+# Installation Guide
 
 1. Install Node.js
     
