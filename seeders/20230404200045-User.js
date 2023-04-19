@@ -16,8 +16,8 @@ module.exports = {
     const password = await bcrypt.hash('admin', 10) 
 
     await queryInterface.bulkInsert('Users', [{
-       name: 'dmotta',
-       email: 'diegomottadev@gmail.com',
+       name: 'dm',
+       email: 'dm@gmail.com',
        password: password,
        active: true,
        confirmedAt:new Date(),
