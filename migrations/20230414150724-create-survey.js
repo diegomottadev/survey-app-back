@@ -35,6 +35,11 @@ module.exports = {
         reference: 'Clients',
         referenceKey: 'id'
       },
+      image_name: {
+        type: Sequelize.STRING,
+        reference: 'Images',
+        referenceKey: 'name'
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

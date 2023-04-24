@@ -12,6 +12,12 @@ const procesarErrores  = require('../../libs/errorHandler').procesarErrores
 const validationSurvey = require('./surveys.validation').validationSurvey
 const jwtAuthenticate = passport.authenticate('jwt', { session: false })
 const surveysRouter = express.Router()
+const xlsx = require('xlsx')
+const ExcelJS = require('exceljs');
+const fs = require('fs');
+
+const BASE_URL = 'http://localhost:3000'
+const IMAGE_API_BASE_URL =`${BASE_URL}/images`;
 
 surveysRouter.get('/', [jwtAuthenticate],procesarErrores((req, res) => {
   const { page = 1, pageSize = 10} = req.query;
@@ -21,30 +27,30 @@ surveysRouter.get('/', [jwtAuthenticate],procesarErrores((req, res) => {
     .then((surveys) => {
       res.json({ data: surveys });
     })
-    .catch((err) => {
-      res.status(500).json({ message: 'Error al obtener todas las encuentas' });
-    });  
+    // .catch((err) => {
+    //   res.status(500).json({ message: 'Error al obtener todas las encuentas' });
+    // });  
 }));
 
 surveysRouter.post('/', [validationSurvey], procesarErrores(async (req, res) => {
     
-    const { pet, age, size, necessity, answer, client_code} = req.body;
+    const { pet, age, size, necessity, answer, client_code, image_name} = req.body;
 
-    const clientExist = await clientController.clienteExist(client_code)
+    const clientExist = await clientController.findByCode(client_code)
     if (!clientExist) {
       log.warn(`Codigo del cliente no existen: ${client_code}`)
-      res.status(409).json({message:`No existe un cliente con el codigo: ${client_code}`})
+      res.status(409).json({message:`No existe un cliente con el id: ${client_code}`})
       throw new InfoClientInUse()
     }
 
 
-    const survey = await surveyController.create(pet, age, size, necessity, answer,client_code);
+    const survey = await surveyController.create(pet, age, size, necessity, answer,clientExist.id,image_name);
 
     res.status(201).json({data: survey})
 
 }));
 
-surveysRouter.put('/:id', [validationSurvey], procesarErrores(async (req, res) => {
+surveysRouter.put('/:id', procesarErrores(async (req, res) => {
     
   let id = req.params.id
   let surveyToUpdate = await surveyController.findById(id)
@@ -52,14 +58,71 @@ surveysRouter.put('/:id', [validationSurvey], procesarErrores(async (req, res) =
   if(!surveyToUpdate){
       throw new  AgeNotExist(`La encuesta con id [${id}] no existe.`)
   }
-  const {name, telefone} = req.body;
-  return surveyController.edit(id,name, telefone)
+  const {name, telephone} = req.body;
+  return surveyController.edit(id,name, telephone)
   .then(surveyUpdated => {
           res.json({message:`La encuenta con id [${surveyUpdated.id}] ha sido modificado con exito.`,data:surveyUpdated})
           log.info(`La encuenta con id [${surveyUpdated.id}] ha sido modificado con exito.`)
   })
 
 }));
+
+
+surveysRouter.get('/export', [jwtAuthenticate], procesarErrores(async (req, res) => {
+  const {page = 1 ,pageSize = Number.MAX_SAFE_INTEGER ,name} = req.query
+  let where = {};
+  if (name) {
+      where.name = { [Op.like]: `%${name}%` };
+  }
+
+  const surveys = await surveyController.all(page, pageSize, true);
+
+  const workbook = new ExcelJS.Workbook();
+  const worksheet = workbook.addWorksheet('Resultados');
+
+  worksheet.columns = [
+    { header: 'Mascota', key: 'pet', width: 10 },
+    { header: 'Edad', key: 'age', width: 30 },
+    { header: 'Tamaño', key: 'size', width: 30 },
+    { header: 'Necesidad', key: 'necessity', width: 30 },
+    { header: 'Producto recomendado', key: 'answer', width: 30 },
+    { header: 'Imagen del producto', key: 'image', width: 30 },
+    { header: 'Cliente', key: 'name', width: 30 },
+    { header: 'Telefono', key: 'telephone', width: 30 },
+    { header: 'Punto de venta', key: 'client_code', width: 30 },
+
+  ];
+
+  surveys.forEach((survey) => {
+    worksheet.addRow({
+      pet: survey.pet,
+      age: survey.age,
+      size: survey.size,
+      necessity: survey.necessity,
+      answer: survey.answer,
+      image: `${IMAGE_API_BASE_URL}/${survey.image_name}`,
+      name: survey.name,
+      telephone: survey.telephone,
+      client_code: survey.client.code,
+
+    });
+  });
+
+  const filename = 'results.xlsx';
+  const filepath = `./${filename}`;
+  await workbook.xlsx.writeFile(filepath);
+
+  const filestream = fs.createReadStream(filepath);
+  res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+  res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+  filestream.pipe(res);
+
+  filestream.on('close', () => {
+    fs.unlinkSync(filepath);
+  });
+}));
+
+
 
 
 

@@ -24,7 +24,7 @@ function find (pet,age,size,necessity) {
           size: sizeP, 
           necessity: necessity.trim() 
           },
-          attributes: ['pet', 'age', 'size','necessity','answer','image_id']
+          attributes: ['pet', 'age', 'size','necessity','answer','image_name']
       }
   )
 }

@@ -12,6 +12,8 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       Survey.belongsTo(models.Client,{foreignKey:"client_id",targetKey:"id", as:"client"})
+      Survey.belongsTo(models.Image,{foreignKey:"image_name",targetKey:"name", as:"image"})
+
     }
   }
   Survey.init({
@@ -22,7 +24,9 @@ module.exports = (sequelize, DataTypes) => {
     telephone: DataTypes.STRING,
     name: DataTypes.STRING,
     answer: DataTypes.STRING,
-    client_id: DataTypes.BIGINT
+    client_id: DataTypes.BIGINT,
+    image_name: DataTypes.STRING
+
   }, {
     sequelize,
     modelName: 'Survey',

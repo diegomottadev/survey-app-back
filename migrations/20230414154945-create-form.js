@@ -24,10 +24,10 @@ module.exports = {
       answer: {
         type: Sequelize.STRING
       },
-      image_id: {
+      image_name: {
         type: Sequelize.STRING,
         reference: 'Images',
-        referenceKey: 'id'
+        referenceKey: 'name'
       },
       createdAt: {
         allowNull: false,

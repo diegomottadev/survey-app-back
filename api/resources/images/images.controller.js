@@ -49,7 +49,7 @@ function findByName(name = null) {
   return new Promise((resolve, reject) => {
       Image.findOne(
         { where: { name: name },
-          attributes: ['name', 'type', 'path', 'filename', 'createdAt', 'updatedAt'] 
+          attributes: ['name', 'type', 'path', 'filename'] 
         },
         ).
           then(img => {

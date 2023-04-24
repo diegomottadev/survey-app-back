@@ -26,9 +26,10 @@ function create(client,codeQr) {
 }
 
 
-async function all(page = 1, pageSize = 10, raw = true) {
+async function all(page = 1, pageSize = 10, raw = true, where) {
     // Define opciones para la consulta a la base de datos.
     const options = {
+       where,
       // Calcula el desplazamiento en función de la página y el tamaño de la página.
       offset: page && pageSize ? (page - 1) * pageSize : undefined,
       // Establece el límite en función del tamaño de la página, o en null para obtener todos los registros.
@@ -37,9 +38,9 @@ async function all(page = 1, pageSize = 10, raw = true) {
       attributes: raw ? undefined : ['code', 'name','address','city','province'],
     };
     // Realiza la consulta a la base de datos utilizando las opciones definidas.
-    const clients = await clientInstance.findAll(options);
+    const clients = await clientInstance.findAndCountAll(options);
     // Si el formato de salida es personalizado, mapea los registros a un nuevo arreglo de objetos con las propiedades deseadas.
-    return raw ? clients : clients.map(({ name, pet_id }) => ({ name, pet_id }));
+    return raw ? clients : clients.rows.map(({ code, name,address,city,province }) => ({code, name,address,city,province }));
   }
 
 function findById(id = null) {
@@ -98,7 +99,8 @@ function clienteExist( code ) {
 
 }
 
-function edit(code, client,codeQr) {
+function edit(clientold, client,codeQr) {
+    const base64StringWithoutPrefix = codeQr.replace(/^data:image\/png;base64,/, '');
 
     return new Promise(function (resolve, reject) {
         clientInstance.update({
@@ -107,13 +109,13 @@ function edit(code, client,codeQr) {
             address: client.address,
             city: client.city,
             province: client.province,
-            codeQr: codeQr
+            codeQr: base64StringWithoutPrefix
         }, {
             where: {
-                code: code
+                id: clientold.id
             }
         }).then(() => {
-            let response = findByCode(code);
+            let response = findById(clientold.id);
             resolve(response);
         });
     })

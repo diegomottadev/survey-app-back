@@ -11,6 +11,7 @@ require('dotenv').config()
 
 const qrcode = require('qrcode')
 const { Buffer } = require('buffer');
+const { Op } = require("sequelize")
 
 
 
@@ -35,6 +36,11 @@ clientRouter.post('/', [jwtAuthenticate,validationClient], procesarErrores(async
     throw new InfoClientInUse()
   }
 
+
+
+
+  
+
   // Generar el código QR
   const codeQr =  await clientController.generateQRCode(`${qr_site_url}${newClient.code}`)
 
@@ -46,54 +52,111 @@ clientRouter.post('/', [jwtAuthenticate,validationClient], procesarErrores(async
 }))
 
 clientRouter.get("/",[jwtAuthenticate], procesarErrores((req, res) => {
-    const { page = 1, pageSize = 10 } = req.query;
+    const { page = 1, pageSize = 10,name } = req.query;
+    let where = {};
+   
+    if (name) {
+      where[Op.or] = [    { name: { [Op.like]: `%${name}%` } },
+        { code: { [Op.like]: `%${name}%` } }
+      ];
+    }
+    
 
-    return clientController.all(page,pageSize).then(clients =>{
+    return clientController.all(page,pageSize,true,where).then(clients =>{
         res.json({data:clients})
     }).catch(err =>{
         res.status(500).json({message:'Error al obtener todos los clients'})
     })
 }))
 
+clientRouter.get('/export', [jwtAuthenticate],procesarErrores((async (req, res) => {
+  try {
+      // Obtener todos los clientes sin paginar
+      const clients = await clientController.all(undefined, undefined, false);
+  
+      // Crear un libro de trabajo de Excel
+      const workbook = xlsx.utils.book_new();
+  
+      // Crear una hoja de trabajo de Excel para los clientes
+      const worksheet = xlsx.utils.json_to_sheet(clients, { header: ['code', 'name','address','city','province','code'] });
+
+  
+      // Agregar encabezados a las columnas
+      worksheet['A1'] = { v: 'Código' };
+      worksheet['B1'] = { v: 'Nombre' };
+      worksheet['C1'] = { v: 'Dirección' };
+      worksheet['D1'] = { v: 'Ciudad' };
+      worksheet['E1'] = { v: 'Provincia' };
+      worksheet['F1'] = { v: 'Enlace_qr' };
+  
+      // Agregar los datos de los clientes a la hoja de trabajo
+      clients.forEach((client, index) => {
+        const rowIndex = index + 2;
+        worksheet[`A${rowIndex}`] = { v: client.code };
+        worksheet[`B${rowIndex}`] = { v: client.name };
+        worksheet[`C${rowIndex}`] = { v: client.address };
+        worksheet[`D${rowIndex}`] = { v: client.city };
+        worksheet[`E${rowIndex}`] = { v: client.province };
+        worksheet[`F${rowIndex}`] = { v: `${qr_site_url}${client.code}` };
+      });
+  
+      // Agregar la hoja de trabajo al libro de trabajo
+      xlsx.utils.book_append_sheet(workbook, worksheet, 'Clientes');
+  
+      // Convertir el libro de trabajo de Excel en un buffer
+      const excelBuffer = xlsx.write(workbook, { type: 'buffer' });
+  
+      // Enviar el archivo Excel al cliente
+      res.set('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+      res.set('Content-Disposition', 'attachment; filename="clientes.xlsx"');
+      res.send(excelBuffer);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Error al exportar los clientes.' });
+    }
+
+  })))
+
+
 clientRouter.get('/:id',[jwtAuthenticate],procesarErrores(async(req, res) => {
 
     const id = req.params.id
 
-    // Obtener el cliente por su ID
+    // Obtener el punto de venta por su ID
     const client = await clientController.findById(id)
 
     if (!client) {
-        throw new ClientNotExist(`El cliente con id [${id}] no existe.`)
+        throw new ClientNotExist(`El punto de venta con id [${id}] no existe.`)
     }
 
-    // Generar el código QR para el cliente
+    // Generar el código QR para el punto de venta
     //const qrImage = await qrcode.toBuffer(`${qr_site_url}${client.code}`, {scale: 8 })
     const qrImageBase64 = `data:image/png;base64,${client.codeQr}`
-    // Escribir la respuesta HTTP con el cliente y su código QR
+    // Escribir la respuesta HTTP con el punto de venta y su código QR
     res.json({
         data : client,
         qr : qrImageBase64
     })
 }))
 
-clientRouter.get('/:id/qrcode',[jwtAuthenticate],procesarErrores(async(req, res) => {
+clientRouter.get('/:id/qrcode',procesarErrores(async(req, res) => {
 
 
     const id = req.params.id
 
-    // Obtener el cliente por su ID
-    const client = await clientController.findById(id)
+    // Obtener el punto de venta por su ID
+    const client = await clientController.findByCode(id)
 
     if (!client) {
-        throw new ClientNotExist(`El cliente con id [${id}] no existe.`)
+        throw new ClientNotExist(`El punto de venta con id [${id}] no existe.`)
     }
 
     /*
 
-    // Generar el código QR para el cliente
+    // Generar el código QR para el punto de venta
     const qrImage = await qrcode.toBuffer(`${qr_site_url}${client.code}`, {scale: 8 });
 
-    // Escribir la respuesta HTTP con el cliente y su código QR
+    // Escribir la respuesta HTTP con el punto de venta y su código QR
     res.writeHead(200, { 'Content-Type': 'image/png' })
     res.end(qrImage)*/
 
@@ -102,7 +165,7 @@ clientRouter.get('/:id/qrcode',[jwtAuthenticate],procesarErrores(async(req, res)
     // Convertir la cadena base64 en un búfer de imagen
     const qrImageBuffer = Buffer.from(qrImageBase64, 'base64')
 
-    // Escribir la respuesta HTTP con el cliente y su código QR
+    // Escribir la respuesta HTTP con el punto de venta y su código QR
     res.writeHead(200, { 'Content-Type': 'image/png' })
     res.write(qrImageBuffer)
     res.end()
@@ -110,19 +173,26 @@ clientRouter.get('/:id/qrcode',[jwtAuthenticate],procesarErrores(async(req, res)
 
 clientRouter.put('/:id',[jwtAuthenticate], procesarErrores(async (req, res) => {
 
-    let code = req.params.id
+    let id = req.params.id
     let clientToUpdate
     
-    clientToUpdate = await clientController.findByCode(code)
+    clientToUpdate = await clientController.findById(id)
 
     if(!clientToUpdate){
-        throw new  ClientNotExist(`El cliente con código [${code}] no existe.`)
+        throw new  ClientNotExist(`El punto de venta con id [${id}] no existe.`)
     }
 
-    return clientController.edit(code,req.body)
+    clientToUpdateCode = await clientController.findByCode(req.body.code)
+    if(clientToUpdateCode?.code){
+        throw new  ClientNotExist(`El punto de venta con codigo [${req.body.code}] ya existe.`)
+    }
+
+    const codeQr =  await clientController.generateQRCode(`${qr_site_url}${clientToUpdate.code}`)
+
+    return clientController.edit(clientToUpdate,req.body,codeQr)
     .then(clienteUpdated => {
-            res.json({message:`El cliente con código [${clienteUpdated.code}] ha sido modificado con exito.`,data:clienteUpdated})
-            log.info(`La categoria con nombre [${clienteUpdated.name}] ha sido modificado con exito.`)
+            res.json({message:`El punto de venta con código [${clienteUpdated.code}] ha sido modificado con exito.`,data:clienteUpdated})
+            log.info(`El punto de venta con nombre [${clienteUpdated.name}] ha sido modificado con exito.`)
     })
    
 }))
@@ -130,17 +200,17 @@ clientRouter.put('/:id',[jwtAuthenticate], procesarErrores(async (req, res) => {
 clientRouter.delete('/:id', [jwtAuthenticate],procesarErrores((async (req, res) => {
 
     let id = req.params.id
-    let categoryDelete
+    let pointOfSaleDelete
 
-    categoryDelete = await clientController.findById(id)
+    pointOfSaleDelete = await clientController.findById(id)
     
-    if (!categoryDelete) {
-        throw new  ClientNotExist(`La categoria con id [${id}] no existe.`)
+    if (!pointOfSaleDelete) {
+        throw new  ClientNotExist(`El punto de venta con id [${id}] no existe.`)
     }
 
-    categoryDelete = await clientController.destroy(id,categoryDelete)
-    log.info(`La categoria con id [${id}] fue eliminado.`)
-    res.json({message:`La categoria con nombre [${categoryDelete.name}] fue eliminado.`, data:categoryDelete})
+    pointOfSaleDelete = await clientController.destroy(id,pointOfSaleDelete)
+    log.info(`El punto de venta con id [${id}] fue eliminado.`)
+    res.json({message:`El punto de venta con nombre [${pointOfSaleDelete.name}] fue eliminado.`, data:pointOfSaleDelete})
 
 })))
 
@@ -208,53 +278,6 @@ clientRouter.post('/import',  [jwtAuthenticate], upload.single('file'),procesarE
   
     res.json({ message: 'Importación completada exitosamente.' })
 })))
-
-
-clientRouter.post('/export', [jwtAuthenticate],procesarErrores((async (req, res) => {
-    try {
-        // Obtener todos los clientes sin paginar
-        const clients = await clientController.all(undefined, undefined, false);
-    
-        // Crear un libro de trabajo de Excel
-        const workbook = xlsx.utils.book_new();
-    
-        // Crear una hoja de trabajo de Excel para los clientes
-        const worksheet = xlsx.utils.json_to_sheet(clients, { header: ['code', 'name','address','city','province'] });
-
-    
-        // Agregar encabezados a las columnas
-        worksheet['A1'] = { v: 'Código' };
-        worksheet['B1'] = { v: 'Nombre' };
-        worksheet['C1'] = { v: 'Dirección' };
-        worksheet['D1'] = { v: 'Ciudad' };
-        worksheet['E1'] = { v: 'Provincia' };
-    
-        // Agregar los datos de los clientes a la hoja de trabajo
-        clients.forEach((client, index) => {
-          const rowIndex = index + 2;
-          worksheet[`A${rowIndex}`] = { v: client.code };
-          worksheet[`B${rowIndex}`] = { v: client.name };
-          worksheet[`C${rowIndex}`] = { v: client.address };
-          worksheet[`D${rowIndex}`] = { v: client.city };
-          worksheet[`E${rowIndex}`] = { v: client.province };
-        });
-    
-        // Agregar la hoja de trabajo al libro de trabajo
-        xlsx.utils.book_append_sheet(workbook, worksheet, 'Clientes');
-    
-        // Convertir el libro de trabajo de Excel en un buffer
-        const excelBuffer = xlsx.write(workbook, { type: 'buffer' });
-    
-        // Enviar el archivo Excel al cliente
-        res.set('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-        res.set('Content-Disposition', 'attachment; filename="clientes.xlsx"');
-        res.send(excelBuffer);
-      } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Error al exportar los clientes.' });
-      }
-
-    })))
 
 
 module.exports = clientRouter

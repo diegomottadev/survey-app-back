@@ -68,7 +68,7 @@ imagesRouter.post('/single', [jwtAuthenticate], Upload.single('image'), procesar
 
 // Endpoint de visualización de imágenes
 imagesRouter.get('/:id',  procesarErrores(async (req, res) => {
-  let name =  req.params.id.toString()
+  let name =  req.params.id
   const imagen = await imageController.findByName(name);
   if (imagen == null) {
     // log.warn(`No se encontró la imagen solicitada con nombre [${image.originalname}].`)

@@ -13,7 +13,8 @@ const blueprintSurvey  = Joi.object({
     }),
     answer: Joi.string().required(),
     necessity: Joi.string().required(),
-    client_code: Joi.number().required()
+    client_code: Joi.string().required(),
+    image_name:Joi.number().required()
 })
 
 let validationSurvey = (req, res, next) => {
