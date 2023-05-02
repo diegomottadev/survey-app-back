@@ -81,6 +81,7 @@ surveysRouter.get('/export', [jwtAuthenticate], procesarErrores(async (req, res)
   const worksheet = workbook.addWorksheet('Resultados');
 
   worksheet.columns = [
+    { header: 'ID', key: 'id', width: 10 },
     { header: 'Mascota', key: 'pet', width: 10 },
     { header: 'Edad', key: 'age', width: 30 },
     { header: 'Tamaño', key: 'size', width: 30 },
@@ -89,12 +90,14 @@ surveysRouter.get('/export', [jwtAuthenticate], procesarErrores(async (req, res)
     { header: 'Imagen del producto', key: 'image', width: 30 },
     { header: 'Cliente', key: 'name', width: 30 },
     { header: 'Telefono', key: 'telephone', width: 30 },
-    { header: 'Punto de venta', key: 'client_code', width: 30 },
+    { header: 'Cod. Punto de venta', key: 'client_code', width: 30 },
+    { header: 'Nombre Punto de venta', key: 'client_name', width: 30 },
 
   ];
 
   surveys.forEach((survey) => {
     worksheet.addRow({
+      id: survey.id,
       pet: survey.pet,
       age: survey.age,
       size: survey.size,
@@ -104,7 +107,7 @@ surveysRouter.get('/export', [jwtAuthenticate], procesarErrores(async (req, res)
       name: survey.name,
       telephone: survey.telephone,
       client_code: survey.client.code,
-
+      client_name: survey.client.name,
     });
   });
 

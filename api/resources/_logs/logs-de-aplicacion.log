@@ -4889,3 +4889,378 @@ info: 2023-04-24T20:21:48.893Z Usuario dm suministro un token valido. Autenticac
 info: 2023-04-24T20:21:48.933Z ::1 - GET /clients/export HTTP/1.1 304 - - 104.515 ms
 info: 2023-04-24T20:23:07.284Z Usuario dm suministro un token valido. Autenticacion completada
 info: 2023-04-24T20:23:07.330Z ::1 - GET /clients/export HTTP/1.1 200 18610 - 118.236 ms
+info: 2023-04-24T21:01:22.142Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-24T21:01:22.181Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 144.452 ms
+info: 2023-04-24T21:01:22.197Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-24T21:01:22.209Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 20.184 ms
+info: 2023-04-24T21:01:22.321Z ::1 - GET /images/1 HTTP/1.1 201 327895 - 37.321 ms
+info: 2023-04-24T21:02:41.931Z ::1 - GET /pets HTTP/1.1 304 - - 35.738 ms
+info: 2023-04-24T21:02:41.942Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 34.936 ms
+info: 2023-04-24T21:02:41.952Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 52.277 ms
+info: 2023-04-24T21:02:41.958Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 47.720 ms
+info: 2023-04-24T21:02:41.984Z ::1 - GET /pets HTTP/1.1 304 - - 19.182 ms
+info: 2023-04-24T21:02:41.990Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 20.463 ms
+info: 2023-04-24T21:02:41.996Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 21.947 ms
+info: 2023-04-24T21:02:41.999Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 22.692 ms
+info: 2023-04-24T21:02:45.910Z ::1 - GET /pets HTTP/1.1 304 - - 15.256 ms
+info: 2023-04-24T21:02:45.918Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 19.772 ms
+info: 2023-04-24T21:02:45.923Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 17.523 ms
+info: 2023-04-24T21:02:45.927Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 14.008 ms
+info: 2023-04-24T21:02:45.947Z ::1 - GET /pets HTTP/1.1 304 - - 17.333 ms
+info: 2023-04-24T21:02:45.956Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 20.371 ms
+info: 2023-04-24T21:02:45.960Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 18.561 ms
+info: 2023-04-24T21:02:45.965Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 14.830 ms
+info: 2023-04-24T21:02:59.160Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=1%20a%206%20a%C3%B1os&necessity=Problemas%20de%20piel HTTP/1.1 200 169 - 11.351 ms
+info: 2023-04-24T21:02:59.264Z ::1 - POST /surveys HTTP/1.1 201 266 - 55.038 ms
+info: 2023-04-24T21:02:59.307Z ::1 - GET /images/1 HTTP/1.1 201 327895 - 5.774 ms
+info: 2023-04-24T21:03:14.251Z La encuenta con id [9] ha sido modificado con exito.
+info: 2023-04-24T21:03:14.252Z ::1 - PUT /surveys/9 HTTP/1.1 200 369 - 26.003 ms
+info: 2023-04-24T21:10:47.635Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-04-24T21:10:47.637Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-04-25T16:20:59.769Z ::1 - POST /auth/login HTTP/1.1 500 1691 - 297.172 ms
+info: 2023-04-25T16:21:51.016Z Usuario undefined completo autenticacion exitosamente
+info: 2023-04-25T16:21:51.021Z ::1 - POST /auth/login HTTP/1.1 200 149 - 471.737 ms
+info: 2023-04-25T16:22:04.275Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:22:04.354Z ::1 - GET /clients?page=1 HTTP/1.1 200 29141 - 125.928 ms
+info: 2023-04-25T16:22:04.425Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:22:04.458Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 95.169 ms
+info: 2023-04-25T16:22:04.797Z ::1 - GET /clients/A/qrcode HTTP/1.1 200 - - 66.123 ms
+info: 2023-04-25T16:22:04.840Z ::1 - GET /clients/G/qrcode HTTP/1.1 200 - - 128.152 ms
+info: 2023-04-25T16:22:04.863Z ::1 - GET /clients/B/qrcode HTTP/1.1 200 - - 134.920 ms
+info: 2023-04-25T16:22:04.874Z ::1 - GET /clients/D/qrcode HTTP/1.1 200 - - 142.630 ms
+info: 2023-04-25T16:22:04.895Z ::1 - GET /clients/C/qrcode HTTP/1.1 200 - - 153.458 ms
+info: 2023-04-25T16:22:05.055Z ::1 - GET /clients/F/qrcode HTTP/1.1 200 - - 124.590 ms
+info: 2023-04-25T16:22:05.080Z ::1 - GET /clients/H/qrcode HTTP/1.1 200 - - 134.468 ms
+info: 2023-04-25T16:22:05.109Z ::1 - GET /clients/I/qrcode HTTP/1.1 200 - - 138.781 ms
+info: 2023-04-25T16:22:05.119Z ::1 - GET /clients/J/qrcode HTTP/1.1 200 - - 105.102 ms
+info: 2023-04-25T16:22:05.151Z ::1 - GET /clients/K/qrcode HTTP/1.1 200 - - 114.108 ms
+info: 2023-04-25T16:22:12.465Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:22:12.569Z ::1 - GET /surveys?page=1 HTTP/1.1 200 3629 - 112.348 ms
+info: 2023-04-25T16:22:12.600Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:22:12.643Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 60.765 ms
+info: 2023-04-25T16:22:12.767Z ::1 - GET /images/1 HTTP/1.1 201 327895 - 41.411 ms
+info: 2023-04-25T16:22:42.411Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:22:42.707Z ::1 - GET /surveys/export HTTP/1.1 200 - - 305.570 ms
+info: 2023-04-25T16:24:01.938Z ::1 - GET /pets HTTP/1.1 200 247 - 114.601 ms
+info: 2023-04-25T16:24:01.996Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 200 457 - 134.414 ms
+info: 2023-04-25T16:24:02.048Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 200 427 - 193.528 ms
+info: 2023-04-25T16:24:02.073Z ::1 - GET /ages?pet_id=1 HTTP/1.1 200 698 - 241.404 ms
+info: 2023-04-25T16:24:02.215Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 109.638 ms
+info: 2023-04-25T16:24:02.226Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 87.259 ms
+info: 2023-04-25T16:24:02.261Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 100.611 ms
+info: 2023-04-25T16:24:02.298Z ::1 - GET /pets HTTP/1.1 304 - - 120.729 ms
+info: 2023-04-25T16:24:33.688Z ::1 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=Menos%20de%201%20a%C3%B1o&necessity=Problemas%20de%20piel HTTP/1.1 200 173 - 40.561 ms
+info: 2023-04-25T16:24:33.780Z ::1 - POST /surveys HTTP/1.1 201 271 - 61.788 ms
+info: 2023-04-25T16:24:33.912Z ::1 - GET /images/1 HTTP/1.1 201 327895 - 17.081 ms
+info: 2023-04-25T16:24:45.876Z La encuenta con id [10] ha sido modificado con exito.
+info: 2023-04-25T16:24:45.879Z ::1 - PUT /surveys/10 HTTP/1.1 200 384 - 56.132 ms
+info: 2023-04-25T16:24:51.755Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-04-25T16:24:52.961Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:24:53.042Z ::1 - GET /surveys?page=1 HTTP/1.1 200 4050 - 96.536 ms
+info: 2023-04-25T16:24:53.067Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:24:53.106Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 50.379 ms
+info: 2023-04-25T16:24:53.333Z ::1 - GET /images/1 HTTP/1.1 304 - - 17.099 ms
+info: 2023-04-25T16:25:34.196Z ::1 - GET /pets HTTP/1.1 304 - - 68.287 ms
+info: 2023-04-25T16:25:34.239Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 80.144 ms
+info: 2023-04-25T16:25:34.257Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 96.699 ms
+info: 2023-04-25T16:25:34.275Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 130.093 ms
+info: 2023-04-25T16:25:34.371Z ::1 - GET /pets HTTP/1.1 304 - - 78.811 ms
+info: 2023-04-25T16:25:34.392Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 68.604 ms
+info: 2023-04-25T16:25:34.432Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 78.328 ms
+info: 2023-04-25T16:25:34.459Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 114.132 ms
+error: 2023-04-25T16:25:52.559Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 7 años o mas, null, Problemas de piel].
+info: 2023-04-25T16:25:52.564Z ::1 - GET /forms?pet=Perro&size=null&age=7%20a%C3%B1os%20o%20mas&necessity=Problemas%20de%20piel HTTP/1.1 404 87 - 20.828 ms
+error: 2023-04-25T16:25:55.364Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 7 años o mas, null, Ninguno].
+info: 2023-04-25T16:25:55.368Z ::1 - GET /forms?pet=Perro&size=null&age=7%20a%C3%B1os%20o%20mas&necessity=Ninguno HTTP/1.1 404 87 - 10.022 ms
+error: 2023-04-25T16:25:58.393Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 6 años, null, Ninguno].
+info: 2023-04-25T16:25:58.397Z ::1 - GET /forms?pet=Perro&size=null&age=1%20a%206%20a%C3%B1os&necessity=Ninguno HTTP/1.1 404 87 - 10.288 ms
+error: 2023-04-25T16:26:01.501Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 7 años o mas, null, Ninguno].
+info: 2023-04-25T16:26:01.506Z ::1 - GET /forms?pet=Perro&size=null&age=7%20a%C3%B1os%20o%20mas&necessity=Ninguno HTTP/1.1 404 87 - 9.267 ms
+error: 2023-04-25T16:26:05.024Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 7 años o mas, null, Castrado/Sobrepeso].
+info: 2023-04-25T16:26:05.030Z ::1 - GET /forms?pet=Perro&size=null&age=7%20a%C3%B1os%20o%20mas&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 14.511 ms
+error: 2023-04-25T16:26:07.812Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, 1 a 5 años, null, Castrado/Sobrepeso].
+info: 2023-04-25T16:26:07.819Z ::1 - GET /forms?pet=Perro&size=null&age=1%20a%205%20a%C3%B1os&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 12.935 ms
+error: 2023-04-25T16:26:10.899Z No se encontró ningún producto que cumpla con los criterios de búsquedaImagen: [Perro, Menos de 1 año, null, Castrado/Sobrepeso].
+info: 2023-04-25T16:26:10.904Z ::1 - GET /forms?pet=Perro&size=null&age=Menos%20de%201%20a%C3%B1o&necessity=Castrado/Sobrepeso HTTP/1.1 404 87 - 12.457 ms
+info: 2023-04-25T16:26:14.988Z ::1 - GET /forms?pet=Perro&size=Peque%C3%B1o%20(hasta%204%20kilos)&age=Menos%20de%201%20a%C3%B1o&necessity=Castrado/Sobrepeso HTTP/1.1 200 171 - 11.729 ms
+info: 2023-04-25T16:26:15.046Z ::1 - POST /surveys HTTP/1.1 201 269 - 22.014 ms
+info: 2023-04-25T16:26:15.211Z ::1 - GET /images/1 HTTP/1.1 201 327895 - 34.048 ms
+info: 2023-04-25T16:27:23.616Z La encuenta con id [11] ha sido modificado con exito.
+info: 2023-04-25T16:27:23.621Z ::1 - PUT /surveys/11 HTTP/1.1 200 376 - 31.140 ms
+info: 2023-04-25T16:27:33.208Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:27:33.246Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 47.452 ms
+info: 2023-04-25T16:27:33.273Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:27:33.308Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 44.732 ms
+info: 2023-04-25T16:27:33.503Z ::1 - GET /clients/A/qrcode HTTP/1.1 200 - - 29.820 ms
+info: 2023-04-25T16:27:33.515Z ::1 - GET /clients/G/qrcode HTTP/1.1 200 - - 28.888 ms
+info: 2023-04-25T16:27:33.547Z ::1 - GET /clients/B/qrcode HTTP/1.1 200 - - 45.697 ms
+info: 2023-04-25T16:27:33.564Z ::1 - GET /clients/D/qrcode HTTP/1.1 200 - - 40.766 ms
+info: 2023-04-25T16:27:33.618Z ::1 - GET /clients/C/qrcode HTTP/1.1 200 - - 36.514 ms
+info: 2023-04-25T16:27:33.673Z ::1 - GET /clients/F/qrcode HTTP/1.1 200 - - 76.621 ms
+info: 2023-04-25T16:27:33.693Z ::1 - GET /clients/H/qrcode HTTP/1.1 200 - - 47.760 ms
+info: 2023-04-25T16:27:33.702Z ::1 - GET /clients/I/qrcode HTTP/1.1 200 - - 41.901 ms
+info: 2023-04-25T16:27:33.723Z ::1 - GET /clients/J/qrcode HTTP/1.1 200 - - 43.868 ms
+info: 2023-04-25T16:27:33.740Z ::1 - GET /clients/K/qrcode HTTP/1.1 200 - - 23.168 ms
+info: 2023-04-25T16:27:41.148Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:27:41.162Z ::1 - GET /clients/1 HTTP/1.1 200 5693 - 27.512 ms
+info: 2023-04-25T16:27:41.195Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:27:41.209Z ::1 - GET /clients/1 HTTP/1.1 304 - - 34.400 ms
+info: 2023-04-25T16:29:37.983Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:29:38.040Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 69.441 ms
+info: 2023-04-25T16:29:38.089Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:29:38.125Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 64.844 ms
+info: 2023-04-25T16:29:38.428Z ::1 - GET /clients/A/qrcode HTTP/1.1 200 - - 18.381 ms
+info: 2023-04-25T16:29:38.480Z ::1 - GET /clients/G/qrcode HTTP/1.1 200 - - 37.024 ms
+info: 2023-04-25T16:29:38.494Z ::1 - GET /clients/D/qrcode HTTP/1.1 200 - - 38.848 ms
+info: 2023-04-25T16:29:38.503Z ::1 - GET /clients/B/qrcode HTTP/1.1 200 - - 59.866 ms
+info: 2023-04-25T16:29:38.570Z ::1 - GET /clients/C/qrcode HTTP/1.1 200 - - 23.293 ms
+info: 2023-04-25T16:29:38.604Z ::1 - GET /clients/H/qrcode HTTP/1.1 200 - - 18.258 ms
+info: 2023-04-25T16:29:38.615Z ::1 - GET /clients/I/qrcode HTTP/1.1 200 - - 24.028 ms
+info: 2023-04-25T16:29:38.635Z ::1 - GET /clients/F/qrcode HTTP/1.1 200 - - 59.991 ms
+info: 2023-04-25T16:29:38.707Z ::1 - GET /clients/K/qrcode HTTP/1.1 200 - - 13.589 ms
+info: 2023-04-25T16:29:38.748Z ::1 - GET /clients/J/qrcode HTTP/1.1 200 - - 58.655 ms
+info: 2023-04-25T16:29:55.753Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:29:55.769Z ::1 - GET /clients/1 HTTP/1.1 304 - - 41.951 ms
+info: 2023-04-25T16:29:55.846Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:29:55.862Z ::1 - GET /clients/1 HTTP/1.1 304 - - 27.534 ms
+info: 2023-04-25T16:30:15.956Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:30:15.996Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 60.064 ms
+info: 2023-04-25T16:30:16.045Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:30:16.093Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 76.217 ms
+info: 2023-04-25T16:30:16.320Z ::1 - GET /clients/A/qrcode HTTP/1.1 200 - - 36.066 ms
+info: 2023-04-25T16:30:16.337Z ::1 - GET /clients/G/qrcode HTTP/1.1 200 - - 27.202 ms
+info: 2023-04-25T16:30:16.362Z ::1 - GET /clients/B/qrcode HTTP/1.1 200 - - 73.338 ms
+info: 2023-04-25T16:30:16.393Z ::1 - GET /clients/D/qrcode HTTP/1.1 200 - - 51.219 ms
+info: 2023-04-25T16:30:16.425Z ::1 - GET /clients/C/qrcode HTTP/1.1 200 - - 14.706 ms
+info: 2023-04-25T16:30:16.449Z ::1 - GET /clients/F/qrcode HTTP/1.1 200 - - 30.702 ms
+info: 2023-04-25T16:30:16.499Z ::1 - GET /clients/H/qrcode HTTP/1.1 200 - - 32.977 ms
+info: 2023-04-25T16:30:16.552Z ::1 - GET /clients/J/qrcode HTTP/1.1 200 - - 19.914 ms
+info: 2023-04-25T16:30:16.579Z ::1 - GET /clients/K/qrcode HTTP/1.1 200 - - 45.661 ms
+info: 2023-04-25T16:30:16.590Z ::1 - GET /clients/I/qrcode HTTP/1.1 200 - - 102.219 ms
+info: 2023-04-25T16:30:26.905Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:30:26.929Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 30.500 ms
+info: 2023-04-25T16:30:26.948Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:30:26.970Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 35.662 ms
+info: 2023-04-25T16:30:50.958Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:30:51.063Z ::1 - POST /clients/import HTTP/1.1 400 73 - 114.751 ms
+info: 2023-04-25T16:31:43.969Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:31:44.577Z ::1 - POST /clients/import HTTP/1.1 200 51 - 618.253 ms
+info: 2023-04-25T16:31:51.200Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:31:51.227Z ::1 - GET /clients?page=1 HTTP/1.1 200 29141 - 38.277 ms
+info: 2023-04-25T16:31:51.302Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:31:51.324Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 34.839 ms
+info: 2023-04-25T16:31:51.536Z ::1 - GET /clients/A/qrcode HTTP/1.1 200 - - 18.537 ms
+info: 2023-04-25T16:31:51.544Z ::1 - GET /clients/G/qrcode HTTP/1.1 200 - - 16.842 ms
+info: 2023-04-25T16:31:51.587Z ::1 - GET /clients/F/qrcode HTTP/1.1 200 - - 21.781 ms
+info: 2023-04-25T16:31:51.601Z ::1 - GET /clients/D/qrcode HTTP/1.1 200 - - 17.318 ms
+info: 2023-04-25T16:31:51.655Z ::1 - GET /clients/B/qrcode HTTP/1.1 200 - - 22.959 ms
+info: 2023-04-25T16:31:51.683Z ::1 - GET /clients/H/qrcode HTTP/1.1 200 - - 44.150 ms
+info: 2023-04-25T16:31:51.690Z ::1 - GET /clients/C/qrcode HTTP/1.1 200 - - 27.342 ms
+info: 2023-04-25T16:31:51.706Z ::1 - GET /clients/I/qrcode HTTP/1.1 200 - - 30.776 ms
+info: 2023-04-25T16:31:51.751Z ::1 - GET /clients/J/qrcode HTTP/1.1 200 - - 52.235 ms
+info: 2023-04-25T16:31:51.782Z ::1 - GET /clients/K/qrcode HTTP/1.1 200 - - 44.812 ms
+info: 2023-04-25T16:31:59.127Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:31:59.193Z ::1 - GET /clients/export HTTP/1.1 200 18610 - 75.119 ms
+info: 2023-04-25T16:32:42.564Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:32:42.585Z ::1 - POST /clients/import HTTP/1.1 400 73 - 29.980 ms
+info: 2023-04-25T16:33:09.643Z ::1 - GET /pets HTTP/1.1 304 - - 95.424 ms
+info: 2023-04-25T16:33:09.685Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 75.109 ms
+info: 2023-04-25T16:33:09.707Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 143.964 ms
+info: 2023-04-25T16:33:09.732Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 151.336 ms
+info: 2023-04-25T16:33:09.834Z ::1 - GET /pets HTTP/1.1 304 - - 90.674 ms
+info: 2023-04-25T16:33:09.843Z ::1 - GET /necessities?pet_id=1 HTTP/1.1 304 - - 61.708 ms
+info: 2023-04-25T16:33:09.857Z ::1 - GET /ages?pet_id=1 HTTP/1.1 304 - - 64.330 ms
+info: 2023-04-25T16:33:09.877Z ::1 - GET /sizes?pet_id=1 HTTP/1.1 304 - - 53.824 ms
+info: 2023-04-25T16:33:21.860Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:33:21.894Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 44.478 ms
+info: 2023-04-25T16:33:21.913Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:33:21.955Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 50.088 ms
+info: 2023-04-25T16:34:00.925Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:34:00.956Z ::1 - GET /surveys?page=1 HTTP/1.1 200 4079 - 47.156 ms
+info: 2023-04-25T16:34:00.985Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:34:01.027Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 54.736 ms
+info: 2023-04-25T16:34:01.223Z ::1 - GET /images/1 HTTP/1.1 201 327895 - 25.783 ms
+info: 2023-04-25T16:38:13.408Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:38:13.555Z ::1 - GET /surveys/export HTTP/1.1 200 - - 162.294 ms
+info: 2023-04-25T16:40:42.820Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-04-25T16:40:42.823Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-04-25T16:40:45.009Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:40:45.071Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 93.474 ms
+info: 2023-04-25T16:40:45.106Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-04-25T16:40:45.135Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 57.421 ms
+info: 2023-04-25T16:40:45.647Z ::1 - GET /images/1 HTTP/1.1 201 327895 - 20.986 ms
+info: 2023-04-25T16:44:46.270Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-04-25T16:44:46.275Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:02:11.162Z ::1 - GET / HTTP/1.1 - - - - ms
+info: 2023-05-02T14:03:57.863Z Usuario undefined completo autenticacion exitosamente
+info: 2023-05-02T14:03:57.869Z ::1 - POST /auth/login HTTP/1.1 200 149 - 366.774 ms
+info: 2023-05-02T14:04:37.544Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:04:37.547Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:06:40.906Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:06:40.908Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:06:40.910Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:06:44.104Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:06:44.153Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 66.607 ms
+info: 2023-05-02T14:06:44.161Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:06:44.172Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 16.788 ms
+info: 2023-05-02T14:06:44.240Z ::1 - GET /images/1 HTTP/1.1 201 327895 - 26.962 ms
+info: 2023-05-02T14:06:45.575Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:06:45.594Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 22.518 ms
+info: 2023-05-02T14:06:45.603Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:06:45.615Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 16.586 ms
+info: 2023-05-02T14:06:45.674Z ::1 - GET /clients/A/qrcode HTTP/1.1 200 - - 9.107 ms
+info: 2023-05-02T14:06:45.677Z ::1 - GET /clients/G/qrcode HTTP/1.1 200 - - 8.612 ms
+info: 2023-05-02T14:06:45.692Z ::1 - GET /clients/F/qrcode HTTP/1.1 200 - - 6.349 ms
+info: 2023-05-02T14:06:45.696Z ::1 - GET /clients/D/qrcode HTTP/1.1 200 - - 7.357 ms
+info: 2023-05-02T14:06:45.705Z ::1 - GET /clients/B/qrcode HTTP/1.1 200 - - 6.594 ms
+info: 2023-05-02T14:06:45.709Z ::1 - GET /clients/H/qrcode HTTP/1.1 200 - - 7.050 ms
+info: 2023-05-02T14:06:45.720Z ::1 - GET /clients/C/qrcode HTTP/1.1 200 - - 8.286 ms
+info: 2023-05-02T14:06:45.723Z ::1 - GET /clients/I/qrcode HTTP/1.1 200 - - 7.183 ms
+info: 2023-05-02T14:06:45.729Z ::1 - GET /clients/J/qrcode HTTP/1.1 200 - - 3.418 ms
+info: 2023-05-02T14:06:45.736Z ::1 - GET /clients/K/qrcode HTTP/1.1 200 - - 4.042 ms
+info: 2023-05-02T14:07:06.927Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:07:06.938Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 20.810 ms
+info: 2023-05-02T14:07:06.945Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:07:06.953Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 10.981 ms
+info: 2023-05-02T14:08:13.245Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:08:13.247Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:08:13.249Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:09:34.036Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:09:34.038Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:09:34.039Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:09:52.432Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:09:52.434Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:09:52.436Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:13:01.029Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:13:01.031Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:14:09.906Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:14:09.908Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:14:09.909Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:14:11.770Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:14:11.772Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:14:35.072Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:14:35.073Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:14:42.750Z Usuario undefined completo autenticacion exitosamente
+info: 2023-05-02T14:14:42.752Z ::1 - POST /auth/login HTTP/1.1 200 149 - 84.850 ms
+info: 2023-05-02T14:15:02.408Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:15:03.782Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:15:03.784Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:15:24.204Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:15:24.206Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:21:48.012Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:21:48.017Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:22:51.471Z Usuario undefined completo autenticacion exitosamente
+info: 2023-05-02T14:22:51.477Z ::1 - POST /auth/login HTTP/1.1 200 149 - 174.819 ms
+info: 2023-05-02T14:24:38.584Z ::1 - POST /images/1 HTTP/1.1 - - - - ms
+info: 2023-05-02T14:24:55.566Z Usuario undefined completo autenticacion exitosamente
+info: 2023-05-02T14:24:55.569Z ::1 - POST /auth/login HTTP/1.1 200 149 - 131.100 ms
+info: 2023-05-02T14:25:24.634Z ::1 - GET /auth/login HTTP/1.1 - - - - ms
+info: 2023-05-02T14:25:25.820Z ::1 - GET /auth/me HTTP/1.1 401 27 - 2.795 ms
+info: 2023-05-02T14:25:27.646Z ::1 - GET /auth/me HTTP/1.1 401 27 - 1.432 ms
+info: 2023-05-02T14:26:00.132Z ::1 - GET /auth/me HTTP/1.1 401 27 - 4.761 ms
+info: 2023-05-02T14:26:01.391Z ::1 - GET /auth/me HTTP/1.1 401 27 - 1.153 ms
+info: 2023-05-02T14:26:02.629Z ::1 - GET /auth/me HTTP/1.1 401 27 - 0.743 ms
+info: 2023-05-02T14:26:28.779Z ::1 - GET /auth/me HTTP/1.1 401 27 - 4.739 ms
+info: 2023-05-02T14:27:36.161Z ::1 - GET /auth/me HTTP/1.1 200 276 - 69.197 ms
+info: 2023-05-02T14:28:08.218Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:28:08.222Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+warn: 2023-05-02T14:28:15.727Z Los datos del usuario no paso la validacion:  {"email":"dm@gmail.com","password":"adin"}
+info: 2023-05-02T14:28:15.734Z ::1 - POST /auth/login HTTP/1.1 400 60 - 26.780 ms
+info: 2023-05-02T14:28:24.564Z Usuario undefined completo autenticacion exitosamente
+info: 2023-05-02T14:28:24.567Z ::1 - POST /auth/login HTTP/1.1 200 149 - 157.268 ms
+info: 2023-05-02T14:28:31.296Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:29:01.504Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:29:01.506Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:29:01.508Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:29:03.768Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:29:03.771Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:29:49.115Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:29:49.118Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:29:49.119Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:29:49.121Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:30:23.811Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:30:23.813Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:30:23.814Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:31:15.541Z ::1 - GET /auth/me HTTP/1.1 200 276 - 13.121 ms
+info: 2023-05-02T14:31:34.625Z ::1 - GET /auth/me HTTP/1.1 304 - - 12.279 ms
+info: 2023-05-02T14:31:49.553Z ::1 - GET /auth/me HTTP/1.1 304 - - 9.851 ms
+info: 2023-05-02T14:33:44.634Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:33:44.636Z ::1 - POST /auth/me HTTP/1.1 - - - - ms
+info: 2023-05-02T14:34:02.542Z ::1 - GET /auth/me HTTP/1.1 304 - - 10.230 ms
+info: 2023-05-02T14:34:02.550Z ::1 - GET /auth/me HTTP/1.1 304 - - 5.633 ms
+info: 2023-05-02T14:37:48.968Z ::1 - GET /auth/me HTTP/1.1 304 - - 10.689 ms
+info: 2023-05-02T14:37:48.978Z ::1 - GET /auth/me HTTP/1.1 304 - - 7.051 ms
+info: 2023-05-02T14:38:18.712Z ::1 - GET /auth/me HTTP/1.1 304 - - 9.359 ms
+info: 2023-05-02T14:38:18.722Z ::1 - GET /auth/me HTTP/1.1 304 - - 6.268 ms
+info: 2023-05-02T14:38:18.977Z ::1 - GET /auth/me HTTP/1.1 304 - - 4.703 ms
+info: 2023-05-02T14:38:18.986Z ::1 - GET /auth/me HTTP/1.1 304 - - 6.324 ms
+info: 2023-05-02T14:39:32.436Z ::1 - GET /auth/me HTTP/1.1 304 - - 13.056 ms
+info: 2023-05-02T14:39:32.447Z ::1 - GET /auth/me HTTP/1.1 304 - - 6.974 ms
+info: 2023-05-02T14:39:52.805Z ::1 - GET /auth/me HTTP/1.1 304 - - 11.253 ms
+info: 2023-05-02T14:39:52.814Z ::1 - GET /auth/me HTTP/1.1 304 - - 5.965 ms
+info: 2023-05-02T14:40:19.898Z Usuario undefined completo autenticacion exitosamente
+info: 2023-05-02T14:40:19.899Z ::1 - POST /auth/login HTTP/1.1 200 149 - 80.368 ms
+info: 2023-05-02T14:40:19.971Z ::1 - GET /auth/me HTTP/1.1 304 - - 5.021 ms
+info: 2023-05-02T14:41:23.237Z Usuario undefined completo autenticacion exitosamente
+info: 2023-05-02T14:41:23.239Z ::1 - POST /auth/login HTTP/1.1 200 149 - 87.167 ms
+info: 2023-05-02T14:41:23.349Z ::1 - GET /auth/me HTTP/1.1 200 276 - 8.043 ms
+info: 2023-05-02T14:42:27.797Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:42:27.824Z ::1 - GET /surveys?page=1 HTTP/1.1 200 4079 - 40.782 ms
+info: 2023-05-02T14:42:27.848Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:42:27.860Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 16.822 ms
+info: 2023-05-02T14:42:27.914Z ::1 - GET /images/1 HTTP/1.1 201 327895 - 10.455 ms
+info: 2023-05-02T14:42:29.207Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:42:29.231Z ::1 - GET /clients?page=1 HTTP/1.1 200 29141 - 27.712 ms
+info: 2023-05-02T14:42:29.256Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:42:29.264Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 13.061 ms
+info: 2023-05-02T14:42:29.325Z ::1 - GET /clients/G/qrcode HTTP/1.1 200 - - 21.028 ms
+info: 2023-05-02T14:42:29.330Z ::1 - GET /clients/A/qrcode HTTP/1.1 200 - - 22.597 ms
+info: 2023-05-02T14:42:29.336Z ::1 - GET /clients/F/qrcode HTTP/1.1 200 - - 24.587 ms
+info: 2023-05-02T14:42:29.350Z ::1 - GET /clients/D/qrcode HTTP/1.1 200 - - 30.492 ms
+info: 2023-05-02T14:42:29.354Z ::1 - GET /clients/H/qrcode HTTP/1.1 200 - - 37.106 ms
+info: 2023-05-02T14:42:29.359Z ::1 - GET /clients/B/qrcode HTTP/1.1 200 - - 37.252 ms
+info: 2023-05-02T14:42:29.387Z ::1 - GET /clients/C/qrcode HTTP/1.1 200 - - 15.589 ms
+info: 2023-05-02T14:42:29.393Z ::1 - GET /clients/I/qrcode HTTP/1.1 200 - - 17.369 ms
+info: 2023-05-02T14:42:29.429Z ::1 - GET /clients/J/qrcode HTTP/1.1 200 - - 18.245 ms
+info: 2023-05-02T14:42:29.442Z ::1 - GET /clients/K/qrcode HTTP/1.1 200 - - 50.973 ms
+info: 2023-05-02T14:42:33.591Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:42:33.602Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 14.651 ms
+info: 2023-05-02T14:42:33.612Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:42:33.622Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 13.341 ms
+info: 2023-05-02T14:42:35.251Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:42:35.372Z ::1 - GET /surveys/export HTTP/1.1 200 - - 122.785 ms
+info: 2023-05-02T14:43:51.424Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:43:51.457Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 122.763 ms
+info: 2023-05-02T14:43:51.462Z ::1 - GET /auth/me HTTP/1.1 304 - - 102.734 ms
+info: 2023-05-02T14:43:51.478Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:43:51.487Z ::1 - GET /auth/me HTTP/1.1 304 - - 12.373 ms
+info: 2023-05-02T14:43:51.494Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 29.129 ms
+info: 2023-05-02T14:43:51.508Z ::1 - GET /images/1 HTTP/1.1 304 - - 10.844 ms
+info: 2023-05-02T14:43:51.612Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:43:51.623Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 14.019 ms
+info: 2023-05-02T14:43:51.633Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:43:51.642Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 12.646 ms
+info: 2023-05-02T14:43:53.601Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:43:53.621Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 26.930 ms
+info: 2023-05-02T14:43:53.635Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:43:53.645Z ::1 - GET /clients?page=1 HTTP/1.1 304 - - 13.605 ms
+info: 2023-05-02T14:43:53.708Z ::1 - GET /clients/A/qrcode HTTP/1.1 200 - - 28.440 ms
+info: 2023-05-02T14:43:53.713Z ::1 - GET /clients/G/qrcode HTTP/1.1 200 - - 27.734 ms
+info: 2023-05-02T14:43:53.718Z ::1 - GET /clients/F/qrcode HTTP/1.1 200 - - 23.613 ms
+info: 2023-05-02T14:43:53.724Z ::1 - GET /clients/D/qrcode HTTP/1.1 200 - - 26.049 ms
+info: 2023-05-02T14:43:53.727Z ::1 - GET /clients/B/qrcode HTTP/1.1 200 - - 26.667 ms
+info: 2023-05-02T14:43:53.731Z ::1 - GET /clients/H/qrcode HTTP/1.1 200 - - 27.454 ms
+info: 2023-05-02T14:43:53.756Z ::1 - GET /clients/C/qrcode HTTP/1.1 200 - - 17.156 ms
+info: 2023-05-02T14:43:53.762Z ::1 - GET /clients/I/qrcode HTTP/1.1 200 - - 16.109 ms
+info: 2023-05-02T14:43:53.766Z ::1 - GET /clients/J/qrcode HTTP/1.1 200 - - 12.724 ms
+info: 2023-05-02T14:43:53.771Z ::1 - GET /clients/K/qrcode HTTP/1.1 200 - - 21.579 ms
+info: 2023-05-02T14:43:56.525Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:43:56.555Z ::1 - GET /clients/export HTTP/1.1 200 18610 - 33.142 ms
+info: 2023-05-02T14:44:09.406Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:44:09.417Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 19.516 ms
+info: 2023-05-02T14:44:09.428Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:44:09.440Z ::1 - GET /surveys?page=1 HTTP/1.1 304 - - 15.666 ms
+info: 2023-05-02T14:44:10.817Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:44:10.942Z ::1 - GET /surveys/export HTTP/1.1 200 - - 128.352 ms
+info: 2023-05-02T14:45:11.451Z Usuario dm suministro un token valido. Autenticacion completada
+info: 2023-05-02T14:45:11.596Z ::1 - GET /surveys/export HTTP/1.1 200 - - 209.160 ms
