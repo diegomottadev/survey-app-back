@@ -21,7 +21,8 @@ module.exports = (sequelize, DataTypes) => {
     address: DataTypes.STRING,
     city: DataTypes.STRING,
     province: DataTypes.STRING,
-    codeQr: DataTypes.TEXT
+    codeQr: DataTypes.TEXT,
+    link:DataTypes.STRING
 
   }, {
     sequelize,

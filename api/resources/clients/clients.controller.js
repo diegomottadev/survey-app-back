@@ -12,7 +12,7 @@ async function generateQRCode(code) {
   return qrCode
 }
 
-function create(client,codeQr) {
+function create(client,codeQr,link) {
 
     const base64StringWithoutPrefix = codeQr.replace(/^data:image\/png;base64,/, '');
     return clientInstance.create({
@@ -21,7 +21,9 @@ function create(client,codeQr) {
         address: client.address,
         city: client.city,
         province: client.province,
-        codeQr: base64StringWithoutPrefix
+        codeQr: base64StringWithoutPrefix,
+        link: link,
+        image_id: client.image_id,
     })
 }
 
@@ -36,6 +38,7 @@ async function all(page = 1, pageSize = 10, raw = true, where) {
       limit: page && pageSize ? pageSize : null,
       // Indica si se deben incluir todas las propiedades del modelo o solo algunas.
       attributes: raw ? undefined : ['code', 'name','address','city','province'],
+
     };
     // Realiza la consulta a la base de datos utilizando las opciones definidas.
     const clients = await clientInstance.findAndCountAll(options);
@@ -99,7 +102,7 @@ function clienteExist( code ) {
 
 }
 
-function edit(clientold, client,codeQr) {
+function edit(clientold, client,codeQr,link) {
     const base64StringWithoutPrefix = codeQr.replace(/^data:image\/png;base64,/, '');
 
     return new Promise(function (resolve, reject) {
@@ -109,7 +112,8 @@ function edit(clientold, client,codeQr) {
             address: client.address,
             city: client.city,
             province: client.province,
-            codeQr: base64StringWithoutPrefix
+            codeQr: base64StringWithoutPrefix,
+            link: link
         }, {
             where: {
                 id: clientold.id

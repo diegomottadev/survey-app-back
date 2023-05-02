@@ -27,6 +27,9 @@ module.exports = {
       codeQr: {
         type: Sequelize.TEXT
       },
+      link: {
+        type: Sequelize.STRING
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

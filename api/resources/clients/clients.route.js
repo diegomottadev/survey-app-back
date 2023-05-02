@@ -8,18 +8,11 @@ const procesarErrores  = require('../../libs/errorHandler').procesarErrores
 const validationClient = require('./clients.validation').validationClient
 const jwtAuthenticate = passport.authenticate('jwt', { session: false })
 require('dotenv').config()
-
 const qrcode = require('qrcode')
 const { Buffer } = require('buffer');
 const { Op } = require("sequelize")
-
-
-
-
 const xlsx = require('xlsx')
-
 const path = require('path');
-
 const multer = require('multer')
 const storage = multer.memoryStorage()
 const upload = multer({ storage: storage })
@@ -35,16 +28,10 @@ clientRouter.post('/', [jwtAuthenticate,validationClient], procesarErrores(async
     res.status(409).json({message:'Existe un cliente con el mismo codigo.'})
     throw new InfoClientInUse()
   }
-
-
-
-
-  
-
   // Generar el código QR
   const codeQr =  await clientController.generateQRCode(`${qr_site_url}${newClient.code}`)
-
-  const clientCreated = await clientController.create(newClient, codeQr)
+  const link = `${qr_site_url}${newClient.code}`
+  const clientCreated = await clientController.create(newClient, codeQr,link)
   res.status(201).json({
     message: `Cliente con codigo [${clientCreated.id}] creado exitosamente.`,
     data: clientCreated
@@ -188,8 +175,8 @@ clientRouter.put('/:id',[jwtAuthenticate], procesarErrores(async (req, res) => {
     }
 
     const codeQr =  await clientController.generateQRCode(`${qr_site_url}${clientToUpdate.code}`)
-
-    return clientController.edit(clientToUpdate,req.body,codeQr)
+    const link = `${qr_site_url}${clientToUpdate.code}`
+    return clientController.edit(clientToUpdate,req.body,codeQr,link)
     .then(clienteUpdated => {
             res.json({message:`El punto de venta con código [${clienteUpdated.code}] ha sido modificado con exito.`,data:clienteUpdated})
             log.info(`El punto de venta con nombre [${clienteUpdated.name}] ha sido modificado con exito.`)
@@ -241,7 +228,7 @@ clientRouter.post('/import',  [jwtAuthenticate], upload.single('file'),procesarE
 
 
       // Valida que el archivo tenga los encabezados correctos
-    const expectedHeaders = ['Código', 'Nombre', 'Dirección', 'Ciudad', 'Provincia']
+    const expectedHeaders = ['Código', 'Nombre', 'Dirección', 'Ciudad', 'Provincia', 'ID image']
     const headers = xlsx.utils.sheet_to_json(worksheet, { header: 1 })[0]
     const invalidHeaders = headers.filter(header => !expectedHeaders.includes(header))
     if (invalidHeaders.length > 0) {
@@ -261,6 +248,7 @@ clientRouter.post('/import',  [jwtAuthenticate], upload.single('file'),procesarE
       address: row[2],
       city: row[3],
       province: row[4],
+      image_id: row[5],
     }))
   
   // Borra todos los clientes existentes en la tabla Clientes
@@ -270,7 +258,8 @@ clientRouter.post('/import',  [jwtAuthenticate], upload.single('file'),procesarE
     const promises = clients.map(async (client) => {
 
         const codeQr = await clientController.generateQRCode(`${qr_site_url}${client.code}`)
-        return clientController.create(client, codeQr)
+        const link = `${qr_site_url}${client.code}`
+        return clientController.create(client, codeQr,link)
     })
 
     // Espera a que se completen todas las promesas

@@ -1,12 +1,15 @@
 const express = require('express');
 const fs = require('fs');
+const path = require('path');
+
 const procesarErrores  = require('../../libs/errorHandler').procesarErrores
 const multer = require('multer');
 const imageController = require('./images.controller');
 const passport = require('passport')
 const jwtAuthenticate = passport.authenticate('jwt', { session: false })
 const { InfoImageInUse , ImageNotExist} = require('./images.error');
-const log = require('../utils/logger')
+const log = require('../utils/logger');
+const { Op } = require('sequelize');
 
 
 const imagesRouter = express.Router();
@@ -29,27 +32,30 @@ const Storage = multer.diskStorage({
 const Upload = multer({ storage: Storage });
 
 
-imagesRouter.post('/', [jwtAuthenticate],Upload.array('images', 10), procesarErrores(async (req, res) => {
- 
+imagesRouter.post('/', [jwtAuthenticate], Upload.array('images', 10), procesarErrores(async (req, res) => {
 
-    const imagenes = req.files;
+  const imagenes = req.files;
+  console.log(imagenes)
+  if (!Array.isArray(imagenes)) {
+    return res.status(400).json({ message: 'El parámetro "images" debe ser un array.' });
+  }
 
-    const imagenesCreadas = await Promise.all(
-      imagenes.map( async(image) =>{
-        const imageExist = await imageController.imageExist(image.originalname)
-        console.log("imageExiste", imageExist)
-        if (imageExist) {
-          log.warn(`Imagen [${image.originalname}] ya existen.`)
-          res.status(409).json({message:`Existe una imagen con el mismo nombre: [${image.originalname}].`})
-          throw new InfoImageInUse()
-        }
-        return imageController.create(image)
-      })
-    );
+  const imagenesCreadas = [];
 
-    res.status(201).json({ data: imagenesCreadas})
+  for (const image of imagenes) {
+    const imageExist = await imageController.imageExist(image.originalname);
+    if (imageExist.exists) {
+      log.warn(`Imagen [${image.originalname}] ya existen.`);
+      return res.status(409).json({ message: `Existe una imagen con el mismo nombre: [${image.originalname}].` });
+    }
+     const imagenCreada = await imageController.create(image);
+    imagenesCreadas.push(imagenCreada);
+  }
+
+  return res.status(201).json({ data: imagenes , message: "La importación de las imagenes a sido exitosa"});
   
 }))
+
 
 imagesRouter.post('/single', [jwtAuthenticate], Upload.single('image'), procesarErrores(async (req, res) => {
   const image = req.file;
@@ -119,21 +125,27 @@ imagesRouter.delete('/',[jwtAuthenticate],  procesarErrores(async (req, res) => 
 
 imagesRouter.get('/',[jwtAuthenticate],  procesarErrores(async (req, res) => {
   try {
-    const { page = 1, pageSize = 10 } = req.query;
+    const { page = 1, pageSize = 10,name } = req.query;
+    let where = {};
+   
+    if (name) {
+      where.name ={ [Op.like]: `%${name}%` } 
 
-    const imagenes = await imageController.all(page, pageSize, true)
+    }
+
+    const imagenes = await imageController.all(page,pageSize,true,where)
 
     if (imagenes.length === 0) {
       return res.status(201).json({ message: 'No hay imágenes para mostrar.' });
     }
 
-    const listaImagenes = imagenes.map(imagen => ({
-      id: imagen.id,
-      name: imagen.name,
-      type: imagen.type
-    }));
+    // const listaImagenes = imagenes.map(imagen => ({
+    //   id: imagen.id,
+    //   name: imagen.name,
+    //   type: imagen.type
+    // }));
 
-    res.status(201).json({ data: listaImagenes });
+    res.status(201).json({ data: imagenes  });
     
   } catch (error) {
     console.error(error);

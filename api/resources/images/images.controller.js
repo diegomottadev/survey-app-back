@@ -3,15 +3,16 @@ const { Op } = require("sequelize")
 const fs = require('fs').promises;
 
 
-async function all(page = 1, pageSize = 10, raw = true) {
+async function all(page = 1, pageSize = 10, raw = true, where) {
 
     const options = {
+      where,
       offset: page && pageSize ? (page - 1) * pageSize : undefined,
       limit: page && pageSize ? pageSize : null,
       attributes: raw ? undefined : ['name', 'type','path','filename'],
     };
-    const images = await Image.findAll(options);
-    return raw ? images : images.map(({ name, type,path,filename}) => ({name, type,path,filename}));
+    const images = await Image.findAndCountAll(options);
+    return raw ? images : images.rows.map(({ name, type,path,filename}) => ({name, type,path,filename}));
 
   }
 
@@ -22,12 +23,10 @@ function create(image) {
       name: nameWithoutExtension,
       type: image.mimetype,
       path: image.path,
-      filename: image.filename,
-      createdAt: new Date(),
-      updatedAt: new Date(),
+      filename: image.filename
     },
     {
-      fields: ['name', 'type', 'path', 'filename', 'createdAt', 'updatedAt'],
+      fields: ['name', 'type', 'path', 'filename']
     })
   }
 
@@ -89,30 +88,25 @@ function findByName(name = null) {
   }
   
 
-  function imageExist( name ) {
+  function imageExist(name) {
     const filename = name; // ejemplo: "1.jpg"
-    const nameWithoutExtension = filename.split('.')[0]; 
+    const nameWithoutExtension = filename.split('.')[0];
     return new Promise((resolve, reject) => {
-        Image.findOne({
-            attributes: ['name'],
-
-            where: {
-
-              name: {
-                [Op.like]: `%${nameWithoutExtension}%`
-              }
-     
-            }
-        }).then(image => {
+      Image.findOne({
+        attributes: ['name'],
+        where: {
+          name: nameWithoutExtension
+        }
+      })
+        .then(image => {
           const exists = !!image;
-          resolve(exists);
+          resolve({ exists }); // resolver con objeto que tenga propiedad exists
         })
         .catch(err => {
-            reject(err)
-        })
-    })
-
-}
+          reject(err);
+        });
+    });
+  }
 
 
   module.exports = {

@@ -19,6 +19,7 @@ module.exports = {
       size: 'Pequeño (hasta 4 kilos)',
       necessity: "Ninguno",
       answer: 'Nutrique Toy & Mini Puppy',
+      image_name: "1",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -28,6 +29,7 @@ module.exports = {
       size: 'Mediano (4 hasta 8 kilos)',
       necessity: "Ninguno",
       answer: 'Nutrique Medium Puppy',
+      image_name: "1",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -37,6 +39,7 @@ module.exports = {
       size: 'Grande (mas de 8 kilos)',
       necessity: "Ninguno",
       answer: 'Nutrique Large Puppy',
+      image_name: "1",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -47,6 +50,7 @@ module.exports = {
       size: 'Pequeño (hasta 4 kilos)',
       necessity: "Ninguno",
       answer: 'Nutrique Toy & Mini Young Adult Dog',
+      image_name: "1",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -56,6 +60,7 @@ module.exports = {
       size: 'Mediano (4 hasta 8 kilos)',
       necessity: "Ninguno",
       answer: 'Nutrique Medium Young Adult Dog',
+      image_name: "1",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -65,6 +70,7 @@ module.exports = {
       size: 'Grande (mas de 8 kilos)',
       necessity: "Ninguno",
       answer: 'Nutrique Large Young Adult Dog',
+      image_name: "1",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -74,6 +80,7 @@ module.exports = {
       size: 'Pequeño (hasta 4 kilos)',
       necessity: "Ninguno",
       answer: 'Nutrique Toy & Mini Adult 7',
+      image_name: "2",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -83,6 +90,7 @@ module.exports = {
       size: 'Mediano (4 hasta 8 kilos)',
       necessity: "Ninguno",
       answer: 'Nutrique Medium Adult 7',
+      image_name: "2",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -92,6 +100,7 @@ module.exports = {
       size: 'Grande (mas de 8 kilos)',
       necessity: "Ninguno",
       answer: 'Nutrique Large Adult',
+      image_name: "3",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -102,6 +111,7 @@ module.exports = {
       size: 'Pequeño (hasta 4 kilos)',
       necessity: "Problemas de piel",
       answer: 'Nutrique Skin Sensitivity Dog',
+      image_name: "3",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -112,6 +122,7 @@ module.exports = {
       size: 'Mediano (4 hasta 8 kilos)',
       necessity: "Problemas de piel",
       answer: 'Nutrique Skin Sensitivity Dog',
+      image_name: "3",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -122,6 +133,7 @@ module.exports = {
       size: 'Grande (mas de 8 kilos)',
       necessity: "Problemas de piel",
       answer: 'Nutrique Skin Sensitivity Dog',
+      image_name: "3",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -132,6 +144,7 @@ module.exports = {
       size: 'Pequeño (hasta 4 kilos)',
       necessity: "Problemas de piel",
       answer: 'Nutrique Skin Sensitivity Dog',
+      image_name: "4",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -142,6 +155,7 @@ module.exports = {
       size: 'Mediano (4 hasta 8 kilos)',
       necessity: "Problemas de piel",
       answer: 'Nutrique Skin Sensitivity Dog',
+      image_name: "4",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -152,6 +166,7 @@ module.exports = {
       size: 'Grande (mas de 8 kilos)',
       necessity: "Problemas de piel",
       answer: 'Nutrique Skin Sensitivity Dog',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -162,6 +177,8 @@ module.exports = {
       size: 'Pequeño (hasta 4 kilos)',
       necessity: "Problemas de piel",
       answer: 'Nutrique Skin Sensitivity Dog',
+      image_name: "5",
+
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -172,6 +189,7 @@ module.exports = {
       size: 'Mediano (4 hasta 8 kilos)',
       necessity: "Problemas de piel",
       answer: 'Nutrique Skin Sensitivity Dog',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});

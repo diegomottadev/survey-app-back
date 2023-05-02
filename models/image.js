@@ -14,14 +14,20 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Image.init({
-    name: DataTypes.STRING,
+    name: {
+      type: DataTypes.STRING,
+      primaryKey: true
+    },
     type: DataTypes.STRING,
     path: DataTypes.TEXT,
-    filename: DataTypes.TEXT
+    filename: DataTypes.TEXT,
+    createdAt:  DataTypes.DATE,
+    updatedAt:  DataTypes.DATE 
   }, {
     sequelize,
     modelName: 'Image',
-    underscored: true
+    underscored: true,
+    timestamps: false,
   });
   return Image;
 };
