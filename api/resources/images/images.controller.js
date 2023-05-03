@@ -1,6 +1,9 @@
 const Image   = require('../../../models').Image;
 const { Op } = require("sequelize")
-const fs = require('fs').promises;
+const fsp = require('fs').promises;
+const fs = require('fs')
+const sequelize = require('sequelize');
+
 
 
 async function all(page = 1, pageSize = 10, raw = true, where) {
@@ -10,6 +13,7 @@ async function all(page = 1, pageSize = 10, raw = true, where) {
       offset: page && pageSize ? (page - 1) * pageSize : undefined,
       limit: page && pageSize ? pageSize : null,
       attributes: raw ? undefined : ['name', 'type','path','filename'],
+      order: sequelize.literal('CAST(name AS UNSIGNED) ASC'),
     };
     const images = await Image.findAndCountAll(options);
     return raw ? images : images.rows.map(({ name, type,path,filename}) => ({name, type,path,filename}));
@@ -68,10 +72,40 @@ function findByName(name = null) {
     
     for (let i = 0; i < imagenes.length; i++) {
       const imagen = imagenes[i];
+      const filePath = `uploads/${imagen.filename}`;
+    
+      try {
+        await fsp.access(filePath, fs.constants.F_OK | fs.constants.R_OK);
+        await fsp.unlink(filePath);
+        console.log(`Archivo ${filePath} eliminado con éxito.`);
+      } catch (err) {
+        console.error(`Error al eliminar el archivo ${filePath}: ${err}`);
+      }
+    
       await imagen.destroy();
-      await fs.unlink(`uploads/${imagen.name}`);
     }
   
+    return true;
+  }
+
+
+  async function destroy(imageId) {
+    const image = await Image.findOne({ where: { name: imageId } });
+    if (!image) {
+        return false;
+    }
+    const filePath = `uploads/${image.filename}`;
+
+    try {
+      await fsp.access(filePath, fs.constants.F_OK | fs.constants.R_OK);
+      await fsp.unlink(filePath);
+      console.log(`Archivo ${filePath} eliminado con éxito.`);
+    } catch (err) {
+      console.error(`Error al eliminar el archivo ${filePath}: ${err}`);
+    }
+
+    await image.destroy();
+      
     return true;
   }
   
@@ -112,6 +146,7 @@ function findByName(name = null) {
   module.exports = {
     create,
     deleteAll,
+    destroy,
     searchByName,
     findById,
     all,

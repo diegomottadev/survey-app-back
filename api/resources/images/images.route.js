@@ -2,12 +2,12 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 
-const procesarErrores  = require('../../libs/errorHandler').procesarErrores
+const procesarErrores = require('../../libs/errorHandler').procesarErrores
 const multer = require('multer');
 const imageController = require('./images.controller');
 const passport = require('passport')
 const jwtAuthenticate = passport.authenticate('jwt', { session: false })
-const { InfoImageInUse , ImageNotExist} = require('./images.error');
+const { InfoImageInUse, ImageNotExist } = require('./images.error');
 const log = require('../utils/logger');
 const { Op } = require('sequelize');
 
@@ -22,9 +22,14 @@ const Storage = multer.diskStorage({
     cb(null, 'uploads/');
   },
   filename: (req, file, cb) => {
-    //const extension = file.originalname.split('.').pop();
-    //const filename = `${file.fieldname}-${Date.now()}.${extension}`;
-    const filename = `${file.originalname}`;
+    const extension = file.originalname.split('.').pop();
+    const date = new Date().toISOString();
+    const random = Math.floor(Math.random() * 1000000);
+    const filename = `${file.fieldname}-${date.replace(/[:.]/g, "-")}-${random}.${extension}`;
+    
+    //const filename = `${file.originalname}`;
+    // const filename = `${file.originalname}-${Date.now()}`;
+
     cb(null, filename);
   },
 });
@@ -32,28 +37,29 @@ const Storage = multer.diskStorage({
 const Upload = multer({ storage: Storage });
 
 
-imagesRouter.post('/', [jwtAuthenticate], Upload.array('images', 10), procesarErrores(async (req, res) => {
-
+imagesRouter.post('/', [jwtAuthenticate], Upload.array('images'), procesarErrores(async (req, res) => {
+  // return res.status(201).json({message: "La importación de las imagenes a sido exitosa"}); 
   const imagenes = req.files;
-  console.log(imagenes)
-  if (!Array.isArray(imagenes)) {
-    return res.status(400).json({ message: 'El parámetro "images" debe ser un array.' });
+
+  if (Array.isArray(imagenes) && imagenes.length > 10) {
+    return res.status(400).json({ message: 'No se pueden cargar más de 10 imágenes.' });
   }
 
   const imagenesCreadas = [];
 
   for (const image of imagenes) {
+
     const imageExist = await imageController.imageExist(image.originalname);
     if (imageExist.exists) {
       log.warn(`Imagen [${image.originalname}] ya existen.`);
       return res.status(409).json({ message: `Existe una imagen con el mismo nombre: [${image.originalname}].` });
     }
-     const imagenCreada = await imageController.create(image);
+    const imagenCreada = await imageController.create(image);
     imagenesCreadas.push(imagenCreada);
   }
 
-  return res.status(201).json({ data: imagenes , message: "La importación de las imagenes a sido exitosa"});
-  
+  return res.status(201).json({ data: imagenes, message: "La importación de las imagenes a sido exitosa" });
+
 }))
 
 
@@ -66,15 +72,15 @@ imagesRouter.post('/single', [jwtAuthenticate], Upload.single('image'), procesar
     res.status(409).json({ message: `Existe una imagen con el mismo nombre: [${image.originalname}].` });
     throw new InfoImageInUse();
   }
-  
+
   const imagenCreada = await imageController.create(image);
-  
+
   res.status(201).json({ data: imagenCreada });
 }));
 
 // Endpoint de visualización de imágenes
-imagesRouter.get('/:id',  procesarErrores(async (req, res) => {
-  let name =  req.params.id
+imagesRouter.get('/:id', procesarErrores(async (req, res) => {
+  let name = req.params.id
   const imagen = await imageController.findByName(name);
   if (imagen == null) {
     // log.warn(`No se encontró la imagen solicitada con nombre [${image.originalname}].`)
@@ -89,9 +95,9 @@ imagesRouter.get('/:id',  procesarErrores(async (req, res) => {
         res.status(201).send(contenido);
       }
     });
-    return         
+    return
   }
- 
+
 
   fs.readFile(imagen.path, (err, contenido) => {
     if (err) {
@@ -105,9 +111,9 @@ imagesRouter.get('/:id',  procesarErrores(async (req, res) => {
   });
 }))
 
-imagesRouter.delete('/',[jwtAuthenticate],  procesarErrores(async (req, res) => {
-  
-  try {
+imagesRouter.delete('/', [jwtAuthenticate], procesarErrores(async (req, res) => {
+
+ 
     const resultado = await imageController.deleteAll();
 
     if (resultado) {
@@ -115,25 +121,38 @@ imagesRouter.delete('/',[jwtAuthenticate],  procesarErrores(async (req, res) => 
     } else {
       res.status(201).json({ message: 'No hay imágenes para eliminar.' });
     }
+
+}))
+
+imagesRouter.delete('/:id', [jwtAuthenticate], procesarErrores(async (req, res) => {
+  const image_id = req.params.id
+  try {
+    const resultado = await imageController.destroy(image_id);
+
+    if (resultado) {
+      res.status(201).json({ message: 'La imagen han sido eliminada.' });
+    } else {
+      res.status(201).json({ message: 'No hay imagen para eliminar.' });
+    }
   } catch (error) {
     console.error(error);
-    log.error(`Error no controlado al eliminar las imágenes.`)
-    res.status(500).json({ message: 'Error al eliminar las imágenes.' });
+    log.error(`Error no controlado al eliminar la imagen.`)
+    res.status(500).json({ message: 'Error al eliminar la imagen.' });
   }
 }))
 
 
-imagesRouter.get('/',[jwtAuthenticate],  procesarErrores(async (req, res) => {
+imagesRouter.get('/', [jwtAuthenticate], procesarErrores(async (req, res) => {
   try {
-    const { page = 1, pageSize = 10,name } = req.query;
+    const { page = 1, pageSize = 10, name } = req.query;
     let where = {};
-   
+
     if (name) {
-      where.name ={ [Op.like]: `%${name}%` } 
+      where.name = { [Op.like]: `%${name}%` }
 
     }
 
-    const imagenes = await imageController.all(page,pageSize,true,where)
+    const imagenes = await imageController.all(page, pageSize, true, where)
 
     if (imagenes.length === 0) {
       return res.status(201).json({ message: 'No hay imágenes para mostrar.' });
@@ -145,14 +164,14 @@ imagesRouter.get('/',[jwtAuthenticate],  procesarErrores(async (req, res) => {
     //   type: imagen.type
     // }));
 
-    res.status(201).json({ data: imagenes  });
-    
+    res.status(201).json({ data: imagenes });
+
   } catch (error) {
     console.error(error);
     log.error(`Error no controlado al obtener la lista de imágenes.`)
     res.status(500).json({ message: 'Error al obtener la lista de imágenes.' });
   }
-  
+
 }))
 
 
