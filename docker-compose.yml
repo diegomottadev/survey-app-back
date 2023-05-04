@@ -1,0 +1,27 @@
+version: "2.12.2"
+services:
+  app:
+    build: 
+     context: .
+    ports:
+      - "3003:3000"
+    volumes:
+      - .:/home/super-app-back
+      -  /home/super-app-back/node_modules
+    links:
+      - mysql
+  mysql:
+    image: mysql
+    restart: unless-stopped
+    env_file: ./.env
+    stdin_open: true
+    tty: true
+    environment:
+      - MYSQL_ROOT_PASSWORD=$MYSQLDB_ROOT_PASSWORD
+      - MYSQL_DATABASE=$MYSQLDB_DATABASE
+    ports:
+      - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT
+    volumes:
+      - dbdata:/var/lib/mysql
+volumes:
+  dbdata:

@@ -213,6 +213,7 @@ module.exports = {
       size: 'Pequeño (hasta 4 kilos)',
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Healthy Weight Dog',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -223,6 +224,7 @@ module.exports = {
       size: 'Mediano (4 hasta 8 kilos)',
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Healthy Weight Dog',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -233,6 +235,7 @@ module.exports = {
       size: 'Grande (mas de 8 kilos)',
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Healthy Weight Dog',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -243,6 +246,7 @@ module.exports = {
       size: 'Pequeño (hasta 4 kilos)',
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Healthy Weight Dog',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -253,6 +257,7 @@ module.exports = {
       size: 'Mediano (4 hasta 8 kilos)',
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Healthy Weight Dog',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -263,6 +268,7 @@ module.exports = {
       size: 'Grande (mas de 8 kilos)',
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Healthy Weight Dog',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -273,6 +279,7 @@ module.exports = {
       size: 'Pequeño (hasta 4 kilos)',
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Healthy Weight Dog',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -283,6 +290,7 @@ module.exports = {
       size: 'Mediano (4 hasta 8 kilos)',
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Healthy Weight Dog',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -293,6 +301,7 @@ module.exports = {
       size: 'Grande (mas de 8 kilos)',
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Healthy Weight Dog',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -306,6 +315,7 @@ module.exports = {
       size: null,
       necessity: "Ninguno",
       answer: 'Nutrique Young Adult CatSteril/H. Weight',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -316,6 +326,7 @@ module.exports = {
       size: null,
       necessity: "Ninguno",
       answer: 'Nutrique Young Adult CatSteril/H. Weight',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -326,6 +337,7 @@ module.exports = {
       size: null,
       necessity: "Ninguno",
       answer: 'Nutrique Young Adult CatSteril/H. Weight',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -338,6 +350,7 @@ module.exports = {
       size: null,
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Baby Cat & Kitten',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -348,6 +361,7 @@ module.exports = {
       size: null,
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Young Adult Cat Healthy Maint',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -358,6 +372,7 @@ module.exports = {
       size: null,
       necessity: "Castrado/Sobrepeso",
       answer: 'Nutrique Adult 7+ Cat Healthy Maintenance',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -369,6 +384,7 @@ module.exports = {
       size: null,
       necessity: "Problema urinario",
       answer: 'Nutrique Urinary Care',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -379,6 +395,7 @@ module.exports = {
       size: null,
       necessity: "Problema urinario",
       answer: 'Nutrique Urinary Care',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
@@ -389,6 +406,7 @@ module.exports = {
       size: null,
       necessity: "Problema urinario",
       answer: 'Nutrique Urinary Care',
+      image_name: "5",
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});

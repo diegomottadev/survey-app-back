@@ -44,14 +44,6 @@ module.exports = {
     }], {});
 
     await queryInterface.bulkInsert('Ages', [{
-      name: '7 años o mas',
-      pet_id:1,
-      createdAt:new Date(),
-      updatedAt: new Date(),
-    }], {});
-
-
-    await queryInterface.bulkInsert('Ages', [{
       name: 'Menos de 1 año',
       pet_id: 2,
       createdAt:new Date(),
