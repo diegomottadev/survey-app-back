@@ -3681,3 +3681,4 @@ info: 2023-05-03T21:33:12.953Z ::ffff:192.168.0.102 - GET /forms?pet=Perro&size=
 info: 2023-05-03T21:33:15.300Z ::ffff:192.168.0.102 - GET /forms?pet=Perro&size=Mediano%20(4%20hasta%208%20kilos)&age=7%20a%C3%B1os%20o%20mas&necessity=Problemas%20de%20piel HTTP/1.1 200 171 - 4.912 ms
 info: 2023-05-03T21:33:15.471Z ::ffff:192.168.0.102 - POST /surveys HTTP/1.1 201 269 - 23.297 ms
 info: 2023-05-03T21:33:15.756Z ::ffff:192.168.0.102 - GET /images/5 HTTP/1.1 201 3655 - 6.120 ms
+info: 2023-05-04T15:52:50.525Z ::ffff:172.20.0.1 - POST /auth/login HTTP/1.1 500 1206 - 35.992 ms

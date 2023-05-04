@@ -1,9 +1,10 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "survey",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "password": "root",
+    "database": "surveyform",
+    "host": "survey-back-mysql-1",
+    "dialect": "mysql",
+    "port":3306
   }
 }
