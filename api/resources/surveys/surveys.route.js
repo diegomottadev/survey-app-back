@@ -58,8 +58,8 @@ surveysRouter.put('/:id', procesarErrores(async (req, res) => {
   if(!surveyToUpdate){
       throw new  AgeNotExist(`La encuesta con id [${id}] no existe.`)
   }
-  const {name, telephone} = req.body;
-  return surveyController.edit(id,name, telephone)
+  const {name, telephone,email} = req.body;
+  return surveyController.edit(id,name, telephone,email)
   .then(surveyUpdated => {
           res.json({message:`La encuenta con id [${surveyUpdated.id}] ha sido modificado con exito.`,data:surveyUpdated})
           log.info(`La encuenta con id [${surveyUpdated.id}] ha sido modificado con exito.`)
@@ -89,6 +89,7 @@ surveysRouter.get('/export', [jwtAuthenticate], procesarErrores(async (req, res)
     { header: 'Producto recomendado', key: 'answer', width: 30 },
     { header: 'Imagen del producto', key: 'image', width: 30 },
     { header: 'Cliente', key: 'name', width: 30 },
+    { header: 'Email', key: 'email', width: 30 },
     { header: 'Telefono', key: 'telephone', width: 30 },
     { header: 'Cod. Punto de venta', key: 'client_code', width: 30 },
     { header: 'Nombre Punto de venta', key: 'client_name', width: 30 },
@@ -105,6 +106,7 @@ surveysRouter.get('/export', [jwtAuthenticate], procesarErrores(async (req, res)
       answer: survey.answer,
       image: `${IMAGE_API_BASE_URL}/${survey.image_name}`,
       name: survey.name,
+      email: survey.email,
       telephone: survey.telephone,
       client_code: survey.client.code,
       client_name: survey.client.name,

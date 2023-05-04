@@ -8,7 +8,7 @@ async function all(page = 1, pageSize = 10, raw = true) {
     const options = {
       offset: page && pageSize ? (page - 1) * pageSize : undefined,
       limit: page && pageSize ? pageSize : null,
-      attributes: raw ? undefined : ['pet', 'age','size','necessity','answer','name','telephone','client_id','image_name'],
+      attributes: raw ? undefined : ['pet', 'age','size','necessity','answer','name','telephone','email','client_id','image_name'],
       include: [{
           model: Client,
           as: 'client',
@@ -40,12 +40,13 @@ function create(pet, age, size, necessity, answer,client_id,image_id) {
     })
 }
 
-function edit(id, name, telephone) {
+function edit(id, name, telephone,email) {
 
   return new Promise(function (resolve, reject) {
     Survey.update({
           name: name,
           telephone: telephone,
+          email: email,
       }, {
           where: {
               id: id
