@@ -1,13 +1,12 @@
 FROM node:19
 
-RUN mkdir -p /home/super-app-back
+RUN mkdir -p /home/survey-app-back
 
-COPY . /home/super-app-back
-WORKDIR /home/super-app-back
+COPY . /home/survey-app-back
+WORKDIR /home/survey-app-back
 
 RUN npm install
 RUN npm install -g sequelize-cli
-RUN apt-get update && apt-get install -y mysql-server
 
 EXPOSE 3000
 
