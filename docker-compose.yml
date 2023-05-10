@@ -5,9 +5,11 @@ services:
      context: .
     ports:
       - "3003:3000"
+
     volumes:
-      - .:/home/super-app-back
-      -  /home/super-app-back/node_modules
+      - .:/home/survey-app-back
+      -  /home/survey-app-back/node_modules
+    working_dir: /home/survey-app-back
     links:
       - mysql
   mysql:
@@ -19,7 +21,6 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=$MYSQLDB_ROOT_PASSWORD
       - MYSQL_DATABASE=$MYSQLDB_DATABASE
-      - MYSQL_ROOT_HOST=localhost
     ports:
       - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT
     volumes:

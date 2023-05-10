@@ -1,4 +1,4 @@
-const Image   = require('../../../models').Image;
+const imageInstance   = require('../../../models').Image;
 const { Op } = require("sequelize")
 const fsp = require('fs').promises;
 const fs = require('fs')
@@ -15,7 +15,7 @@ async function all(page = 1, pageSize = 10, raw = true, where) {
       attributes: raw ? undefined : ['name', 'type','path','filename'],
       order: sequelize.literal('CAST(name AS UNSIGNED) ASC'),
     };
-    const images = await Image.findAndCountAll(options);
+    const images = await imageInstance.findAndCountAll(options);
     return raw ? images : images.rows.map(({ name, type,path,filename}) => ({name, type,path,filename}));
 
   }
@@ -23,7 +23,7 @@ async function all(page = 1, pageSize = 10, raw = true, where) {
 function create(image) {
     const filename = image.originalname; // ejemplo: "1.jpg"
     const nameWithoutExtension = filename.split('.')[0]; 
-    return Image.create({
+    return imageInstance.create({
       name: nameWithoutExtension,
       type: image.mimetype,
       path: image.path,
@@ -37,7 +37,7 @@ function create(image) {
   function findById(id = null) {
     if (!id) throw new Error("No especificó el parámetro id para buscar la imagen")
     return new Promise((resolve, reject) => {
-        Image.findOne({ where: { id: id } }).
+      imageInstance.findOne({ where: { id: id } }).
             then(img => {
                 resolve(img)
             })
@@ -50,7 +50,7 @@ function create(image) {
 function findByName(name = null) {
   if (!name) throw new Error("No especificó el parámetro nombre para buscar la imagen")
   return new Promise((resolve, reject) => {
-      Image.findOne(
+    imageInstance.findOne(
         { where: { name: name },
           attributes: ['name', 'type', 'path', 'filename'] 
         },
@@ -65,7 +65,7 @@ function findByName(name = null) {
 }
   
   async function deleteAll() {
-    const imagenes = await Image.findAll();
+    const imagenes = await imageInstance.findAll();
     if (imagenes.length === 0) {
         return false;
     }
@@ -90,7 +90,7 @@ function findByName(name = null) {
 
 
   async function destroy(imageId) {
-    const image = await Image.findOne({ where: { name: imageId } });
+    const image = await imageInstance.findOne({ where: { name: imageId } });
     if (!image) {
         return false;
     }
@@ -110,7 +110,7 @@ function findByName(name = null) {
   }
   
   async function searchByName(name) {
-    const imagenes = await Image.findAll({
+    const imagenes = await imageInstance.findAll({
       where: {
         name: {
           [Op.like]: `%${name}%`
@@ -126,7 +126,7 @@ function findByName(name = null) {
     const filename = name; // ejemplo: "1.jpg"
     const nameWithoutExtension = filename.split('.')[0];
     return new Promise((resolve, reject) => {
-      Image.findOne({
+      imageInstance.findOne({
         attributes: ['name'],
         where: {
           name: nameWithoutExtension
