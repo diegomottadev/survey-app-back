@@ -22,7 +22,7 @@ async function all(page = 1, pageSize = 10, raw = true) {
         // }
       ],
     };
-    const surveys = await Survey.findAll(options);
+    const surveys = await Survey.findAndCountAll(options);
     return raw ? surveys : surveys.map(({pet, age,size,necessity,answer,name,telephone,image_name,client  }) => ({pet, age,size,necessity,answer,name,telephone,image_name,client_code: client.code,}));
 
   }

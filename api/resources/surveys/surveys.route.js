@@ -69,7 +69,7 @@ surveysRouter.put('/:id', procesarErrores(async (req, res) => {
 
 
 surveysRouter.get('/export', [jwtAuthenticate], procesarErrores(async (req, res) => {
-  const {page = 1 ,pageSize = Number.MAX_SAFE_INTEGER ,name} = req.query
+  const {page = 1 ,pageSize = null ,name} = req.query
   let where = {};
   if (name) {
       where.name = { [Op.like]: `%${name}%` };
@@ -81,6 +81,7 @@ surveysRouter.get('/export', [jwtAuthenticate], procesarErrores(async (req, res)
   const worksheet = workbook.addWorksheet('Resultados');
 
   worksheet.columns = [
+    { header: 'Fecha', key: 'createdAt', width: 10 },
     { header: 'ID', key: 'id', width: 10 },
     { header: 'Mascota', key: 'pet', width: 10 },
     { header: 'Edad', key: 'age', width: 30 },
@@ -93,11 +94,16 @@ surveysRouter.get('/export', [jwtAuthenticate], procesarErrores(async (req, res)
     { header: 'Telefono', key: 'telephone', width: 30 },
     { header: 'Cod. Punto de venta', key: 'client_code', width: 30 },
     { header: 'Nombre Punto de venta', key: 'client_name', width: 30 },
+    { header: 'Dirección', key: 'address', width: 30 },
+    { header: 'Ciudad', key: 'city', width: 30 },
+    { header: 'Provincia', key: 'province', width: 30 },
 
   ];
 
-  surveys.forEach((survey) => {
+
+  surveys.rows.forEach((survey) => {
     worksheet.addRow({
+      createdAt: survey.createdAt,
       id: survey.id,
       pet: survey.pet,
       age: survey.age,
@@ -110,6 +116,9 @@ surveysRouter.get('/export', [jwtAuthenticate], procesarErrores(async (req, res)
       telephone: survey.telephone,
       client_code: survey.client.code,
       client_name: survey.client.name,
+      address: survey.client.address,
+      city: survey.client.city,
+      province: survey.client.province,
     });
   });
 
