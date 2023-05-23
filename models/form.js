@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
     size: DataTypes.STRING,
     necessity: DataTypes.STRING,
     answer: DataTypes.STRING,
-    image_id: DataTypes.STRING,
+    image_name: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'Form',

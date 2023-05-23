@@ -1,4 +1,18 @@
 const formInstance   = require('../../../models').Form;
+
+function create(form) {
+  console.table(form)
+
+  return formInstance.create({
+    pet: form.pet,
+    age: form.age,
+    size: form.size,
+    necessity: form.necessity,
+    answer: form.answer,
+    image_name: form.image_name
+  })
+}
+
 async function all(page = 1, pageSize = 10, raw = true) {
 
     const options = {
@@ -29,7 +43,14 @@ function find (pet,age,size,necessity) {
   )
 }
 
+
+function allDestroy(){
+  return formInstance.destroy({ truncate: true })
+}
+
 module.exports  = {
     find,
-    all
+    all,
+    allDestroy,
+    create
 }

@@ -30,7 +30,7 @@ module.exports = {
     }], {});
     
     await queryInterface.bulkInsert('Ages', [{
-      name: '1 a 6 años',
+      name: '6 a 7 años',
       pet_id: 1,
       createdAt:new Date(),
       updatedAt: new Date(),
@@ -56,7 +56,13 @@ module.exports = {
       updatedAt: new Date(),
     }], {});
     await queryInterface.bulkInsert('Ages', [{
-      name: '6 años o mas',
+      name: '6 a 7 años',
+      pet_id: 2,
+      createdAt:new Date(),
+      updatedAt: new Date(),
+    }], {});
+    await queryInterface.bulkInsert('Ages', [{
+      name: '7 años o mas',
       pet_id: 2,
       createdAt:new Date(),
       updatedAt: new Date(),
