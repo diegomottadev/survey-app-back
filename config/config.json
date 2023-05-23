@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
+    "username": "vitalcan2023",
+    "password": "H4b3musFormulario2023",
     "database": "surveyform",
     "host": "survey-back-mysql-1",
     "dialect": "mysql",
