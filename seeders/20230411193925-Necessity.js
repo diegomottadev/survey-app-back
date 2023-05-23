@@ -50,7 +50,7 @@ module.exports = {
     }], {});
 
     await queryInterface.bulkInsert('Necessities', [{
-      name: 'Problema urinario',
+      name: 'Problemas urinarios',
       pet_id: 2,
       createdAt:new Date(),
       updatedAt: new Date(),
