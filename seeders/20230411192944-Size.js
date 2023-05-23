@@ -13,19 +13,19 @@ module.exports = {
      * }], {});
     */
     await queryInterface.bulkInsert('Sizes', [{
-      name: 'Pequeño (hasta 4 kilos)',
+      name: 'Pequeño (hasta 4 kg)',
       pet_id: 1,
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
     await queryInterface.bulkInsert('Sizes', [{
-      name: 'Mediano (4 hasta 8 kilos)',
+      name: 'Mediano (4 hasta 8 kg)',
       pet_id: 1,
       createdAt:new Date(),
       updatedAt: new Date(),
     }], {});
     await queryInterface.bulkInsert('Sizes', [{
-      name: 'Grande (mas de 8 kilos)',
+      name: 'Grande (mas de 8 kg)',
       pet_id: 1,
       createdAt:new Date(),
       updatedAt: new Date(),
