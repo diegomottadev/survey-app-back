@@ -56,6 +56,13 @@ module.exports = {
       updatedAt: new Date(),
     }], {});
 
+    await queryInterface.bulkInsert('Necessities', [{
+      name: 'Problemas de piel',
+      pet_id: 2,
+      createdAt:new Date(),
+      updatedAt: new Date(),
+    }], {});
+
   },
 
   async down (queryInterface, Sequelize) {
